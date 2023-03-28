@@ -3,4 +3,1533 @@
 @tailwind utilities;
 
 @layer components {
+  .wa {
+    @apply relative top-0 bottom-0 left-0 right-0 pt-8 pb-8 overflow-hidden leading-[32px];
+  }
+
+  .container-big {
+    @apply mw-[1680px] mx-auto my-0 leading-[32px];
+  }
+
+  div.hc-bg {
+    bottom: 0px;
+    box-sizing: inherit;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    left: 0px;
+    line-height: 32px;
+    padding-bottom: 2.5rem;
+    position: relative;
+    right: 0px;
+    top: 0px;
+  }
+
+  div.ast-container {
+    box-sizing: inherit;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  div.ast-container::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  div.ast-container::before {
+    content: "";
+    display: table;
+  }
+
+  div.st {
+    box-sizing: inherit;
+    display: flex;
+    flex-direction: column;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    gap: 1.5rem;
+    line-height: 32px;
+    margin-bottom: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  h2 {
+    box-sizing: inherit;
+    clear: both;
+    color: #161616;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 48px;
+    font-style: inherit;
+    font-weight: 600;
+    line-height: 60.48px;
+    margin: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    vertical-align: baseline;
+  }
+
+  div.st-btn {
+    box-sizing: inherit;
+    display: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 32px;
+  }
+
+  a.btn-view {
+    background-color: transparent;
+    border: 0.8px solid #161616;
+    border-radius: 10px;
+    box-sizing: inherit;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 1.25rem 2.25rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in 0s;
+  }
+
+  a.btn-view:active {
+    outline: 0px;
+  }
+
+  a.btn-view:focus {
+    color: #e53734;
+    outline: dotted thin;
+    text-decoration: none;
+  }
+
+  a.btn-view:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(22, 22, 22);
+    color: #000000;
+    outline: 0px;
+    text-decoration: none;
+  }
+
+  a.btn-view:visited {
+    text-decoration: none;
+  }
+
+  div.ast-row.flex-row {
+    box-sizing: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 32px;
+    margin-left: -20px;
+    margin-right: -20px;
+    row-gap: 2.5rem;
+  }
+
+  div.ast-row.flex-row::after {
+    clear: both;
+    content: "";
+    display: none;
+  }
+
+  div.ast-row.flex-row::before {
+    content: "";
+    display: none;
+  }
+
+  div.ast-col-md-4.ast-col-xs-12 {
+    bottom: 0px;
+    box-sizing: inherit;
+    float: left;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    left: 0px;
+    line-height: 32px;
+    min-height: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+  }
+
+  article.hc-box {
+    border-radius: 10px;
+    box-sizing: inherit;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 32px;
+  }
+
+  div.hc-box-thumb {
+    bottom: 0px;
+    box-sizing: inherit;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    left: 0px;
+    line-height: 32px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+  }
+
+  a.hc-box-thumb-img {
+    background-color: transparent;
+    bottom: 0px;
+    box-sizing: inherit;
+    color: #000000;
+    cursor: pointer;
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    left: 0px;
+    line-height: 32px;
+    padding-top: 58.5676%;
+    position: relative;
+    right: 0px;
+    text-decoration: none;
+    top: 0px;
+    transition: all 0.2s linear 0s;
+  }
+
+  a.hc-box-thumb-img:active {
+    outline: 0px;
+  }
+
+  a.hc-box-thumb-img:focus {
+    color: #e53734;
+    outline: dotted thin;
+    text-decoration: none;
+  }
+
+  a.hc-box-thumb-img:hover {
+    color: #e53734;
+    outline: 0px;
+    text-decoration: none;
+  }
+
+  a.hc-box-thumb-img:visited {
+    text-decoration: none;
+  }
+
+  img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image.entered.lazyloaded {
+    border-radius: 10px;
+    bottom: 0px;
+    box-sizing: inherit;
+    cursor: pointer;
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    height: 100%;
+    left: 0px;
+    line-height: 32px;
+    max-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transition: all 0.3s ease-in 0s;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  noscript {
+    box-sizing: inherit;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 32px;
+  }
+
+  a.cat-label {
+    background-color: #e53935;
+    border-radius: 10px;
+    bottom: 156.637px;
+    box-sizing: inherit;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    left: 2.625rem;
+    line-height: 30px;
+    padding: 0px 0.625rem;
+    position: absolute;
+    right: 207.45px;
+    text-decoration: none;
+    top: 2rem;
+    transition: all 0.3s ease-in 0s;
+  }
+
+  a.cat-label:active {
+    outline: 0px;
+  }
+
+  a.cat-label:focus {
+    color: #e53734;
+    outline: dotted thin;
+    text-decoration: none;
+  }
+
+  a.cat-label:hover {
+    background-color: #e53935;
+    color: #ffffff;
+    outline: 0px;
+    text-decoration: none;
+  }
+
+  a.cat-label:visited {
+    text-decoration: none;
+  }
+
+  div.hc-box-bottom {
+    box-sizing: inherit;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 32px;
+    margin-top: 1.5rem;
+  }
+
+  div.hc-box-bottom-meta {
+    align-items: center;
+    box-sizing: inherit;
+    display: flex;
+    flex-direction: row;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    line-height: 32px;
+    margin-bottom: 0.75rem;
+  }
+
+  span.entry-time {
+    box-sizing: inherit;
+    color: #4b4b4b;
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  span.entry-dot {
+    box-sizing: inherit;
+    color: #4b4b4b;
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  span.entry-comment {
+    box-sizing: inherit;
+    color: #4b4b4b;
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  a {
+    background-color: transparent;
+    box-sizing: inherit;
+    color: #000000;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 32px;
+    text-decoration: none;
+    transition: all 0.2s linear 0s;
+  }
+
+  a:active {
+    outline: 0px;
+  }
+
+  a:focus {
+    color: #e53734;
+    outline: dotted thin;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #e53734;
+    outline: 0px;
+    text-decoration: none;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  h3 {
+    box-sizing: inherit;
+    clear: both;
+    color: #161616;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-style: inherit;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    transition: all 0.3s ease-in 0s;
+    vertical-align: baseline;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2) {
+    bottom: 0px;
+    box-sizing: inherit;
+    float: left;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    left: 0px;
+    line-height: 32px;
+    min-height: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2)
+    > :nth-child(1) {
+    border-radius: 10px;
+    box-sizing: inherit;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 32px;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1) {
+    bottom: 0px;
+    box-sizing: inherit;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    left: 0px;
+    line-height: 32px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+  }
+
+  .hc-box-thumb-img[href="https\:\/\/www\.shoutmeloud\.com\/schedule-twitter-thread\.html"] {
+    background-color: transparent;
+    bottom: 0px;
+    box-sizing: inherit;
+    color: #000000;
+    cursor: pointer;
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    left: 0px;
+    line-height: 32px;
+    padding-top: 58.5676%;
+    position: relative;
+    right: 0px;
+    text-decoration: none;
+    top: 0px;
+    transition: all 0.2s linear 0s;
+  }
+
+  .hc-box-thumb-img[href="https\:\/\/www\.shoutmeloud\.com\/schedule-twitter-thread\.html"]:active {
+    outline: 0px;
+  }
+
+  .hc-box-thumb-img[href="https\:\/\/www\.shoutmeloud\.com\/schedule-twitter-thread\.html"]:focus {
+    color: #e53734;
+    outline: dotted thin;
+    text-decoration: none;
+  }
+
+  .hc-box-thumb-img[href="https\:\/\/www\.shoutmeloud\.com\/schedule-twitter-thread\.html"]:hover {
+    color: #e53734;
+    outline: 0px;
+    text-decoration: none;
+  }
+
+  .hc-box-thumb-img[href="https\:\/\/www\.shoutmeloud\.com\/schedule-twitter-thread\.html"]:visited {
+    text-decoration: none;
+  }
+
+  [src="https\:\/\/www\.shoutmeloud\.com\/wp-content\/uploads\/2022\/09\/Best-Twitter-Thread-Scheduler\.jpg"] {
+    border-radius: 10px;
+    bottom: 0px;
+    box-sizing: inherit;
+    cursor: pointer;
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    height: 100%;
+    left: 0px;
+    line-height: 32px;
+    max-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transition: all 0.3s ease-in 0s;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .hc-box-thumb-img[href="https\:\/\/www\.shoutmeloud\.com\/schedule-twitter-thread\.html"]
+    noscript {
+    box-sizing: inherit;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 32px;
+  }
+
+  [href="https\:\/\/www\.shoutmeloud\.com\/category\/social-media-marketing\/twitter"] {
+    background-color: #e53935;
+    border-radius: 10px;
+    bottom: 156.637px;
+    box-sizing: inherit;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    left: 2.625rem;
+    line-height: 30px;
+    padding: 0px 0.625rem;
+    position: absolute;
+    right: 271.888px;
+    text-decoration: none;
+    top: 2rem;
+    transition: all 0.3s ease-in 0s;
+  }
+
+  [href="https\:\/\/www\.shoutmeloud\.com\/category\/social-media-marketing\/twitter"]:active {
+    outline: 0px;
+  }
+
+  [href="https\:\/\/www\.shoutmeloud\.com\/category\/social-media-marketing\/twitter"]:focus {
+    color: #e53734;
+    outline: dotted thin;
+    text-decoration: none;
+  }
+
+  [href="https\:\/\/www\.shoutmeloud\.com\/category\/social-media-marketing\/twitter"]:hover {
+    background-color: #e53935;
+    color: #ffffff;
+    outline: 0px;
+    text-decoration: none;
+  }
+
+  [href="https\:\/\/www\.shoutmeloud\.com\/category\/social-media-marketing\/twitter"]:visited {
+    text-decoration: none;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(2) {
+    box-sizing: inherit;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 32px;
+    margin-top: 1.5rem;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(1) {
+    align-items: center;
+    box-sizing: inherit;
+    display: flex;
+    flex-direction: row;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    line-height: 32px;
+    margin-bottom: 0.75rem;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1) {
+    box-sizing: inherit;
+    color: #4b4b4b;
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(2) {
+    box-sizing: inherit;
+    color: #4b4b4b;
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(3) {
+    box-sizing: inherit;
+    color: #4b4b4b;
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2) {
+    background-color: transparent;
+    box-sizing: inherit;
+    color: #000000;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 32px;
+    text-decoration: none;
+    transition: all 0.2s linear 0s;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2):active {
+    outline: 0px;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2):focus {
+    color: #e53734;
+    outline: dotted thin;
+    text-decoration: none;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2):hover {
+    color: #e53734;
+    outline: 0px;
+    text-decoration: none;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2):visited {
+    text-decoration: none;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2)
+    > :nth-child(1) {
+    box-sizing: inherit;
+    clear: both;
+    color: #161616;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-style: inherit;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    transition: all 0.3s ease-in 0s;
+    vertical-align: baseline;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(3) {
+    bottom: 0px;
+    box-sizing: inherit;
+    float: left;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    left: 0px;
+    line-height: 32px;
+    min-height: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(3)
+    > :nth-child(1) {
+    border-radius: 10px;
+    box-sizing: inherit;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 32px;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1) {
+    bottom: 0px;
+    box-sizing: inherit;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    left: 0px;
+    line-height: 32px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+  }
+
+  .hc-box-thumb-img[href="https\:\/\/www\.shoutmeloud\.com\/freelancer-writer-ai-scam\.html"] {
+    background-color: transparent;
+    bottom: 0px;
+    box-sizing: inherit;
+    color: #000000;
+    cursor: pointer;
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    left: 0px;
+    line-height: 32px;
+    padding-top: 58.5676%;
+    position: relative;
+    right: 0px;
+    text-decoration: none;
+    top: 0px;
+    transition: all 0.2s linear 0s;
+  }
+
+  .hc-box-thumb-img[href="https\:\/\/www\.shoutmeloud\.com\/freelancer-writer-ai-scam\.html"]:active {
+    outline: 0px;
+  }
+
+  .hc-box-thumb-img[href="https\:\/\/www\.shoutmeloud\.com\/freelancer-writer-ai-scam\.html"]:focus {
+    color: #e53734;
+    outline: dotted thin;
+    text-decoration: none;
+  }
+
+  .hc-box-thumb-img[href="https\:\/\/www\.shoutmeloud\.com\/freelancer-writer-ai-scam\.html"]:hover {
+    color: #e53734;
+    outline: 0px;
+    text-decoration: none;
+  }
+
+  .hc-box-thumb-img[href="https\:\/\/www\.shoutmeloud\.com\/freelancer-writer-ai-scam\.html"]:visited {
+    text-decoration: none;
+  }
+
+  [src="https\:\/\/www\.shoutmeloud\.com\/wp-content\/uploads\/2023\/01\/Freelance-Writer-AI-Generated-Content\.jpg"] {
+    border-radius: 10px;
+    bottom: 0px;
+    box-sizing: inherit;
+    cursor: pointer;
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    height: 100%;
+    left: 0px;
+    line-height: 32px;
+    max-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transition: all 0.3s ease-in 0s;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .hc-box-thumb-img[href="https\:\/\/www\.shoutmeloud\.com\/freelancer-writer-ai-scam\.html"]
+    noscript {
+    box-sizing: inherit;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 32px;
+  }
+
+  [href="https\:\/\/www\.shoutmeloud\.com\/category\/freelancing"] {
+    background-color: #e53935;
+    border-radius: 10px;
+    bottom: 156.637px;
+    box-sizing: inherit;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    left: 2.625rem;
+    line-height: 30px;
+    padding: 0px 0.625rem;
+    position: absolute;
+    right: 244.1px;
+    text-decoration: none;
+    top: 2rem;
+    transition: all 0.3s ease-in 0s;
+  }
+
+  [href="https\:\/\/www\.shoutmeloud\.com\/category\/freelancing"]:active {
+    outline: 0px;
+  }
+
+  [href="https\:\/\/www\.shoutmeloud\.com\/category\/freelancing"]:focus {
+    color: #e53734;
+    outline: dotted thin;
+    text-decoration: none;
+  }
+
+  [href="https\:\/\/www\.shoutmeloud\.com\/category\/freelancing"]:hover {
+    background-color: #e53935;
+    color: #ffffff;
+    outline: 0px;
+    text-decoration: none;
+  }
+
+  [href="https\:\/\/www\.shoutmeloud\.com\/category\/freelancing"]:visited {
+    text-decoration: none;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(2) {
+    box-sizing: inherit;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 32px;
+    margin-top: 1.5rem;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(1) {
+    align-items: center;
+    box-sizing: inherit;
+    display: flex;
+    flex-direction: row;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    line-height: 32px;
+    margin-bottom: 0.75rem;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1) {
+    box-sizing: inherit;
+    color: #4b4b4b;
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(2) {
+    box-sizing: inherit;
+    color: #4b4b4b;
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(3) {
+    box-sizing: inherit;
+    color: #4b4b4b;
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2) {
+    background-color: transparent;
+    box-sizing: inherit;
+    color: #000000;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 32px;
+    text-decoration: none;
+    transition: all 0.2s linear 0s;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2):active {
+    outline: 0px;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2):focus {
+    color: #e53734;
+    outline: dotted thin;
+    text-decoration: none;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2):hover {
+    color: #e53734;
+    outline: 0px;
+    text-decoration: none;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2):visited {
+    text-decoration: none;
+  }
+
+  :root
+    > :nth-child(2)
+    > :nth-child(12)
+    > :nth-child(2)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(3)
+    > :nth-child(1)
+    > :nth-child(2)
+    > :nth-child(2)
+    > :nth-child(1) {
+    box-sizing: inherit;
+    clear: both;
+    color: #161616;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-style: inherit;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    transition: all 0.3s ease-in 0s;
+    vertical-align: baseline;
+  }
+
+  div.btn-block {
+    box-sizing: inherit;
+    display: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 32px;
+  }
+
+  .hc-bg .btn-block .btn-view {
+    background-color: transparent;
+    border: 0.8px solid #161616;
+    border-radius: 10px;
+    box-sizing: inherit;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 1.25rem 2.25rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in 0s;
+  }
+
+  .hc-bg .btn-block .btn-view:active {
+    outline: 0px;
+  }
+
+  .hc-bg .btn-block .btn-view:focus {
+    color: #e53734;
+    outline: dotted thin;
+    text-decoration: none;
+  }
+
+  .hc-bg .btn-block .btn-view:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(22, 22, 22);
+    color: #000000;
+    outline: 0px;
+    text-decoration: none;
+  }
+
+  .hc-bg .btn-block .btn-view:visited {
+    text-decoration: none;
+  }
+
+  @media (min-width: 992px) {
+    div.section.hc {
+      padding-bottom: 3rem;
+      padding-top: 3rem;
+    }
+
+    div.hc-bg {
+      padding-bottom: 5.625rem;
+    }
+
+    div.hc-bg::before {
+      background-color: rgba(0, 0, 0, 0);
+      border-radius: 30px;
+      bottom: 0px;
+      content: "";
+      height: 66%;
+      left: 0px;
+      position: absolute;
+      width: 100%;
+    }
+
+    div.st {
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    h2 {
+      font-size: 3rem;
+      line-height: 60.48px;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+    }
+
+    :root
+      > :nth-child(2)
+      > :nth-child(12)
+      > :nth-child(2)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(3)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(2)
+      > :nth-child(2)
+      > :nth-child(1)
+      > :nth-child(2)
+      > :nth-child(2)
+      > :nth-child(1) {
+      font-size: 1.25rem;
+    }
+
+    :root
+      > :nth-child(2)
+      > :nth-child(12)
+      > :nth-child(2)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(3)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(2)
+      > :nth-child(3)
+      > :nth-child(1)
+      > :nth-child(2)
+      > :nth-child(2)
+      > :nth-child(1) {
+      font-size: 1.25rem;
+    }
+  }
+
+  @media (min-width: 544px) {
+    div.ast-container {
+      max-width: 100%;
+    }
+  }
+
+  @media (min-width: 922px) {
+    div.ast-container {
+      max-width: 1240px;
+    }
+  }
+
+  @media (min-width: 993px) {
+    div.ast-container {
+      max-width: 1240px;
+    }
+  }
+
+  @media (min-width: 1201px) {
+    div.ast-container {
+      max-width: 1240px;
+    }
+  }
+
+  @media (max-width: 921px) {
+    h2 {
+      font-size: 25px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    :root
+      > :nth-child(2)
+      > :nth-child(12)
+      > :nth-child(2)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(3)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(2)
+      > :nth-child(2)
+      > :nth-child(1)
+      > :nth-child(2)
+      > :nth-child(2)
+      > :nth-child(1) {
+      font-size: 20px;
+    }
+
+    :root
+      > :nth-child(2)
+      > :nth-child(12)
+      > :nth-child(2)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(3)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(2)
+      > :nth-child(3)
+      > :nth-child(1)
+      > :nth-child(2)
+      > :nth-child(2)
+      > :nth-child(1) {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 544px) {
+    h2 {
+      font-size: 25px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    :root
+      > :nth-child(2)
+      > :nth-child(12)
+      > :nth-child(2)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(3)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(2)
+      > :nth-child(2)
+      > :nth-child(1)
+      > :nth-child(2)
+      > :nth-child(2)
+      > :nth-child(1) {
+      font-size: 20px;
+    }
+
+    :root
+      > :nth-child(2)
+      > :nth-child(12)
+      > :nth-child(2)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(3)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(2)
+      > :nth-child(3)
+      > :nth-child(1)
+      > :nth-child(2)
+      > :nth-child(2)
+      > :nth-child(1) {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    div.st-btn {
+      display: flex;
+    }
+
+    div.ast-col-md-4.ast-col-xs-12 {
+      float: left;
+      width: 33.3333%;
+    }
+
+    :root
+      > :nth-child(2)
+      > :nth-child(12)
+      > :nth-child(2)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(3)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(2)
+      > :nth-child(2) {
+      float: left;
+      width: 33.3333%;
+    }
+
+    :root
+      > :nth-child(2)
+      > :nth-child(12)
+      > :nth-child(2)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(3)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(1)
+      > :nth-child(2)
+      > :nth-child(3) {
+      float: left;
+      width: 33.3333%;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    div.btn-block {
+      display: block;
+      margin-top: 2.5rem;
+      text-align: center;
+    }
+  }
 }
