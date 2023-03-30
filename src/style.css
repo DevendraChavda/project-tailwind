@@ -1,0 +1,44 @@
+.current-trending-card-background1 {
+    background-image: url("https://www.shoutmeloud.com/wp-content/uploads/2023/02/3x-affilaite-income-1536x864.webp");
+    background-size: cover;
+    height: 13rem;
+    width : auto;
+    cursor: pointer;
+  }
+
+  .current-trending-card-background2 {
+    background-image: url("https://img.freepik.com/free-photo/person-holding-mobile-phone-analyzing-twitter-graph_23-2147847487.jpg?w=740&t=st=1680080642~exp=1680081242~hmac=bcab38be3e07d1124dd2c50d09bd5bb75f9d58dc7b892a770f2aff0dd05727be");
+    background-size: cover;
+    height: 13rem;
+    width : auto;
+    cursor: pointer;
+  }
+
+  .current-trending-card-background3 {
+    background-image: url("https://img.freepik.com/free-vector/telecommuting-concept_52683-37089.jpg?w=740&t=st=1680080691~exp=1680081291~hmac=92f8f1084322e093a5aed52f7ae22be7b7c85596582ac6955ca66d0fee891402");
+    background-size: cover;
+    height: 13rem;
+    width : auto;
+    cursor: pointer;
+  }
+ .current-bg {
+    background-image: linear-gradient(to bottom, #ece9e6, #ffffff);
+ }
+
+ .IWT-cards {
+    background-color: #edf0ee;
+    height: auto;
+ }
+
+ .tools-bg {
+  background-image: linear-gradient(to right, #4b6cb7, #182848);
+ }
+
+ .blogging-bg {
+  background-color: #eaf7e1;
+ }
+
+ .elem:hover {
+  background-color: #eef2f3;
+  cursor: pointer;
+ }
