@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Document</title>
+    <title>About</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <style type="text/tailwindcss">
@@ -14,7 +14,7 @@
   @apply text-center max-w-[940px] mb-[75px] mx-auto;
 }
 .about-Services-module-2 .wd_ourJourney-caption {
-  @apply text-xs uppercase tracking-[2px] text-[orange] font-[normal] m-0;
+  @apply text-xs uppercase tracking-[2px] text-[#ee4a03] font-[normal] m-0;
   font-family: "proxima_nova_rgbold";
 }
 .about-Services-module-2 .wd_ourJourney-timelineyear {
@@ -63,7 +63,7 @@
 }
 @media screen and (max-width: 991px) {
   div.about-Services-module-2 .wd_ourJourney-timelineContent {
-    @apply mr-[110px] p-5;
+    @apply mr-[115px] p-5;
   }
   div.about-Services-module-2
     .wd_ourJourney-timelineRow:nth-child(2n + 2)
@@ -127,8 +127,26 @@
 
 <body>
     <div class="w-full mr-auto ml-auto">
+        <header>
+            <div class="bg-white h-8 ml-10">
+                <div class="inline-block mr-10">
+                    <a href="">
+                        <h3 class="text-lg">E Book</h3>
+                    </a>
+                </div>
+                <div class="inline-block">
+                    <a href="">
+                        <h3 class="text-[#ee4a03] text-lg">courses</h3>
+                    </a>
+                </div>
+            </div>
+
+            <div class="h-28 bg-gray-50">
+                
+            </div>
+        </header>
         <main id="main-content" class="body-container-wrapper about">
-            
+
             <!---CURIOUS-------------------------------------------------------------------->
             <div class="w-screen relative bg-black">
                 <div class="w-[80%] ml-[10%] pb-24 border-b-gray-300 ">
@@ -137,8 +155,9 @@
                             <div class="flext flext-row justify-around align-middle md:flex-col">
                                 <div class="md:w-[40%] inline-block">
                                     <div class="pt-8 pb-8">
-                                        <h6 class="text-orange-500 text-sm"><span>C U R I O U S ?</span></h6>
-                                        <h1 class="text-5xl font-sans text-gray-50 pt-3 pb-8"> <b>Get to know about us and
+                                        <h6 class="text-[#ee4a03] text-sm"><span>C U R I O U S ?</span></h6>
+                                        <h1 class="text-5xl font-sans text-gray-50 pt-3 pb-8"> <b>Get to know about us
+                                                and
                                                 relive our
                                                 journey</b></h1>
                                         <p class="text-gray-100">Get acquainted with our team and
@@ -152,7 +171,7 @@
                                             </div>
                                             <div class="inline-block">
                                                 <h6 class="text-sm text-gray-400">(4.9 out of 5 Ratings)</h6>
-    
+
                                             </div>
                                         </div>
                                         <div>
@@ -160,40 +179,41 @@
                                                 <h6 class="text-sm">Based on 1000+ Reviews on</h6>
                                             </div>
                                         </div>
-    
+
                                         <div class="flext flext-row justify-around align-middle">
                                             <img src="../src/assest/clutch_Logo-icon.png" alt="clutch_Logo-icon"
-                                                class="w-[150px] p-5 inline-block bg-gray-300 rounded-xl hover:bg-orange-400">
+                                                class="w-[150px] p-5 inline-block bg-gray-300 rounded-xl hover:bg-[#ee4a03]">
                                             <img src="../src/assest/upwork_Logo-icon.png" alt="upwork_Logo-icon"
-                                                class="w-[150px] p-5 inline-block bg-gray-300 rounded-xl hover:bg-orange-400">
+                                                class="w-[150px] p-5 inline-block bg-gray-300 rounded-xl hover:bg-[#ee4a03]">
                                             <img src="../src/assest/g2_Logo-icon.png" alt="g2_Logo-icon"
-                                                class="w-[70px] p-5 inline-block bg-gray-300 rounded-xl hover:bg-orange-400">
+                                                class="w-[70px] p-5 inline-block bg-gray-300 rounded-xl hover:bg-[#ee4a03]">
                                         </div>
-    
-    
+
+
                                     </div>
-    
+
                                 </div>
                                 <div class="md:w-[44%] min-w-[300px] inline-block float-right pt-10">
-    
+
                                     <img src="../src/assest/group-photo.webp" alt="about-banner" loading="lazy"
                                         style="max-width: 100%; height: auto;">
-    
-    
+
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <!---review--------------------------------------------------------------------->
             <div class="w-[80%] ml-[10%] block pb-24 pt-20 border-b-gray-300">
                 <div>
-                    <div class="text-center mb-2">
-                        <!-- <div class="bg-slate-500 h-[1px] p-0 align-middle"> -->
-                        You are in Good Hands
-                        <!-- </div> -->
+                    <div class="text-center mb-2 flex flex-row justify-between">
+                        <div class="w-[38%] bg-slate-500 h-[1px] p-0 align-middle inline-block"></div>
+                        <div class="inline-block -mt-3">You are in Good Hands</div>
+                        <div class="w-[38%] bg-slate-500 h-[1px] p-0 align-middle inline-block">
+                        </div>
                     </div>
                     <div>
                         <ul class="flex flex-row justify-between">
@@ -264,11 +284,17 @@
 
                         </ul>
                     </div>
-                    <div class="text-center">
-                        <button type="submit"
-                            class="w-[200px] items-center justify-center px-6 py-4 mt-3 font-semibold text-orange-500 transition-all duration-200 border-2 border-orange-500 bg-white hover:text-white rounded-md hover:bg-orange-500 focus:bg-orange-500">
-                            Review
-                        </button>
+
+                    <div class="text-center mb-2 flex flex-row justify-center pt-5">
+                        <div class="w-[35%] bg-slate-500 h-[1px] p-0 align-middle inline-block"></div>
+                        <div class="inline-block -mt-10">
+                            <button type="submit"
+                                class="w-[200px] items-center justify-center px-6 py-4 mt-3 font-semibold text-[#ee4a03] transition-all duration-200 border-2 border-[#ee4a03] bg-white hover:text-white rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                                Review
+                            </button>
+                        </div>
+                        <div class="w-[35%] bg-slate-500 h-[1px] p-0 align-middle inline-block">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -277,18 +303,18 @@
             <!-----our values and goal------------------------------------------------------>
             <div class="w-full lg:flex lg:flex-row block">
 
-                <div class="md:w-[65%] -ml-[10%] pl-[20%] float-left inline-block bg-orange-500">
+                <div class="md:w-[90%] -ml-[10%] pl-[18%] float-left inline-block bg-[#ee4a03]">
                     <div class="p-10">
-                        <div>
+                        <div class="p-8">
                             <div>
                                 <div class="text-white">OUR</div>
                                 <h2 class="text-white text-3xl font-sans"><b>Values</b></h2>
                             </div>
                         </div>
-                        <div class="flex flex-wrap justify-around pt-10">
+                        <div class="flex flex-wrap justify-between pt-10 float-left">
 
-                            <div class="w-[45%] flex flex-row">
-                                <div class="w-[20%] inline-block">
+                            <div class="w-[45%] flex flex-row pb-5">
+                                <div class="w-[20%] inline-block p-5">
                                     <div
                                         class="w-[95px] h-[95px] shrink-0 bg-[url(https://www.webdew.com/hubfs/Final\_Webdew/final-webdew-img/brand-icon\_shape.svg)] bg-contain bg-no-repeat bg-center leading-[95px] align-middle p-6">
                                         <img src="../src/assest/Integrity.png" alt="Integrity" loading="lazy" width="40"
@@ -299,16 +325,15 @@
                                 <div class="inline-block ml-16">
                                     <h4 class="text-white text-2xl"><b>Integrity</b></h4>
                                     <div class="text-white">
-                                        <p>Our first principal is
-                                            honesty, which helps us meet
+                                        <p>Our first principal is honesty, which helps us meet
                                             the expectations we create.
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="w-[45%] flex flex-row">
-                                <div class="w-[20%] inline-block">
+                            <div class="w-[45%] flex flex-row pb-5">
+                                <div class="w-[20%] inline-block p-5">
                                     <div
                                         class="w-[95px] h-[95px] shrink-0 bg-[url(../src/assest/brand-icon_shape.svg)] bg-contain bg-no-repeat bg-center leading-[95px] align-middle p-6">
                                         <img src="../src/assest/Commitment.png" alt="Integrity" loading="lazy"
@@ -332,8 +357,8 @@
                                 </div>
                             </div>
 
-                            <div class="w-[45%] flex flex-row">
-                                <div class="w-[20%] inline-block">
+                            <div class="w-[45%] flex flex-row pb-5">
+                                <div class="w-[20%] inline-block p-5">
                                     <div
                                         class="w-[95px] h-[95px] shrink-0 bg-[url(https://www.webdew.com/hubfs/Final\_Webdew/final-webdew-img/brand-icon\_shape.svg)] bg-contain bg-no-repeat bg-center leading-[95px] align-middle p-6">
                                         <img src="../src/assest/Passion.png" alt="Integrity" loading="lazy" width="40"
@@ -353,8 +378,8 @@
                                 </div>
                             </div>
 
-                            <div class="w-[45%] flex flex-row">
-                                <div class="w-[20%] inline-block">
+                            <div class="w-[45%] flex flex-row pb-5">
+                                <div class="w-[20%] inline-block p-5">
                                     <div
                                         class="w-[95px] h-[95px] shrink-0 bg-[url(https://www.webdew.com/hubfs/Final\_Webdew/final-webdew-img/brand-icon\_shape.svg)] bg-contain bg-no-repeat bg-center leading-[95px] align-middle p-6">
                                         <img src="../src/assest/learning.png" alt="Integrity" loading="lazy" width="40"
@@ -374,8 +399,8 @@
                                 </div>
                             </div>
 
-                            <div class="w-[45%] flex flex-row">
-                                <div class="w-[20%] inline-block">
+                            <div class="w-[45%] flex flex-row pb-5">
+                                <div class="w-[20%] inline-block p-5">
                                     <div
                                         class="w-[95px] h-[95px] shrink-0 bg-[url(https://www.webdew.com/hubfs/Final\_Webdew/final-webdew-img/brand-icon\_shape.svg)] bg-contain bg-no-repeat bg-center leading-[95px] align-middle p-6">
                                         <img src="../src/assest/team work.png" alt="Integrity" loading="lazy" width="40"
@@ -395,7 +420,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:w-[50%] bg-[url(../src/assest/wdDotted-bg.svg)] inline-block float-right pl-10 pt-20 mr-[10%]">
+                <div
+                    class="md:w-[50%] bg-[url(../src/assest/wdDotted-bg.svg)] inline-block float-right pl-10 pt-20 mr-[10%]">
                     <div class="wd_values_wraper">
 
                         <div>
@@ -430,8 +456,8 @@
                 <div>
                     <div>
                         <div class="text-center pb-10">
-                            <span class="text-orange-500">OUR</span>
-                            <h2 class="text-black"><span>Journey</span></h2>
+                            <span class="text-[#ee4a03]">OUR</span>
+                            <h2 class="text-black text-3xl font-bold"><span>Journey</span></h2>
                             <p class="text-black"><span>Come join us in our journey to growth
                                     and betterment.</span></p>
                         </div>
@@ -622,15 +648,15 @@
             </div>
 
             <!---Executive----------------------------------------------------------------->
-            <div class="w-screen pl-[10%] block pb-24 border-b-gray-300 bg-black">
+            <div class="w-screen pl-[10%] block pb-24 pt-10 border-b-gray-300 bg-black">
                 <div class="w-[80%]">
                     <div class="text-center align-middle pb-10">
                         <h1 class="text-4xl text-white"><b>Executive</b></h1>
                     </div>
 
                     <div>
-                        <div>
-                            <div class="flex flex-row border-orange-300">
+                        <div class="p-10">
+                            <div class="flex flex-row border-[#ee4a03]">
                                 <div class="inline-block">
                                     <div class="w-[50%]">
                                         <img src="https://www.webdew.com/hs-fs/hubfs/our-executive-img.png?width=1542&amp;height=1838&amp;name=our-executive-img.png"
@@ -642,29 +668,28 @@
                                         <div class="flex flex-wrap">
                                             <div>
                                                 <h4>Danish Wadhwa</h4>
-                                                <h5 class="text-orange-500">
+                                                <h5 class="text-[#ee4a03]">
                                                     Co-Founder &amp; CEO</h5>
                                             </div>
                                             <div class="pl-10">
                                                 <ul class="flex flex-row justify-between w-40 ">
-        
+
                                                     <li>
-                                                        <a href="" target="_blank"
-                                                            rel="noopener">
-                                                            <h1 class="text-orange-500 w-16 text-4xl">
+                                                        <a href="" target="_blank" rel="noopener">
+                                                            <h1 class="text-[#ee4a03] w-16 text-4xl">
                                                                 <i class="fa-brands fa-facebook"></i>
                                                             </h1>
-        
+
                                                         </a>
                                                     </li>
-        
+
                                                     <li>
                                                         <a href="">
-                                                            <h1 class="text-orange-500 w-16 text-4xl">
+                                                            <h1 class="text-[#ee4a03] w-16 text-4xl">
                                                                 <i class="fa-brands fa-linkedin-in"></i>
                                                         </a>
                                                     </li>
-                                                        
+
                                                 </ul>
                                             </div>
                                         </div>
@@ -697,9 +722,9 @@
                                 </div>
                             </div>
                         </div>
-        
-                        <div>
-                            <div class="flex flex-row border-orange-300">
+
+                        <div class="p-10">
+                            <div class="flex flex-row border-[#ee4a03]">
                                 <div class="inline-block">
                                     <div class="w-[50%]">
                                         <img src="https://www.webdew.com/hs-fs/hubfs/our-executive-image.png?width=1542&amp;height=1838&amp;name=our-executive-image.png"
@@ -711,54 +736,53 @@
                                         <div class="flex flex-wrap">
                                             <div>
                                                 <h4>Chehak-Wadhwa</h4>
-                                                <h5 class="text-orange-500">Co-Founder
+                                                <h5 class="text-[#ee4a03]">Co-Founder
                                                     &amp; COO</h5>
                                             </div>
                                             <div class="pl-10">
                                                 <ul class="flex flex-row justify-between w-40 ">
                                                     <li>
-                                                        <a href="" target="_blank"
-                                                            rel="noopener">
-                                                            <h1 class="text-orange-500 w-16 text-4xl">
+                                                        <a href="" target="_blank" rel="noopener">
+                                                            <h1 class="text-[#ee4a03] w-16 text-4xl">
                                                                 <i class="fa-brands fa-facebook"></i>
                                                             </h1>
                                                         </a>
                                                     </li>
-            
+
                                                     <li>
                                                         <a href="">
-                                                            <h1 class="text-orange-500 w-16 text-4xl">
+                                                            <h1 class="text-[#ee4a03] w-16 text-4xl">
                                                                 <i class="fa-brands fa-linkedin-in"></i>
                                                         </a>
                                                     </li>
-            
+
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="webdew_executive-content_desc">
                                             <p>Chehak Wadhwa, a creative lead at
-                                            webdew and has worked across a
-                                            variety of brands and lead the
-                                            creative sessions for project
-                                            kick-offs. She has managed multiple
-                                            projects from concept through
-                                            completion.<br><br>She always guides
-                                            her team players as a mentor and
-                                            supervises the creative team of
-                                            designers while introducing new,
-                                            innovative, and challenging methods
-                                            of creative execution for all
-                                            projects.</p>
+                                                webdew and has worked across a
+                                                variety of brands and lead the
+                                                creative sessions for project
+                                                kick-offs. She has managed multiple
+                                                projects from concept through
+                                                completion.<br><br>She always guides
+                                                her team players as a mentor and
+                                                supervises the creative team of
+                                                designers while introducing new,
+                                                innovative, and challenging methods
+                                                of creative execution for all
+                                                projects.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
 
                 </div>
-                
+
             </div>
 
         </main>
@@ -766,81 +790,48 @@
     </div>
 
     <!----Gallery------------------------------------------------------------------------>
-    <div class="w-[80%] ml-[10%] pb-24 border-b-gray-300">
+    <div class="w-[80%] ml-[10%] pb-24 pt-20 border-b-gray-300 align-middle">
         <div class="text-center align-middle">
-            <span class="text-orange-500">Gallery</span>
-            <h2><span>Life at webdew</span></h2>
+            <span class="text-[#ee4a03]">Gallery</span>
+            <h2 class="font-bold text-4xl"><span>Life at webdew</span></h2>
             <p><span>Canada, the United States, and India
                     across the globe.</span></p>
-            <div class="bg-white border-orange-500 rounded">
+            <div class="bg-white border-[#ee4a03] rounded">
                 <button type="submit"
-                    class="inline-flex w-40 items-center justify-center px-6 py-4 mt-3 font-semibold text-orange-500 transition-all duration-200 bg-white border-orange-500 hover:text-white rounded-md hover:bg-orange-700 focus:bg-orange-700">
+                    class="inline-flex w-40 items-center justify-center px-6 py-4 mt-3 font-semibold text-[#ee4a03] transition-all duration-200 bg-white border-[#ee4a03] hover:text-white rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
                     Join Team
                 </button>
             </div>
         </div>
         <div>
-            <div class=" flext flext-row">
-                <div class="inline-block">
-                    <div><img class="rounded shadow-gray-300"
-                            src="https://www.webdew.com/hubfs/life-at-webdew-1.jpg"
-                            alt="Life at Webdew 1" loading="lazy">
-                    </div>
-                </div>
-                <div class="inline-block">
-                    <div class=""><img class="rounded shadow-gray-300"
-                            src="https://www.webdew.com/hubfs/life-at-webdew-2.jpg"
-                            alt="Life at Webdew 2" loading="lazy">
-                    </div>
-                </div>
-                <div class="inline-block">
-                    <div class=""><img class="rounded shadow-gray-300"
-                            src="https://www.webdew.com/hubfs/life-at-webdew-3.jpg"
-                            alt="Life at Webdew 3" loading="lazy">
-                    </div>
-                </div>
-                <div class="inline-block">
-                    <div class=""><img class="rounded shadow-gray-300"
-                            src="https://www.webdew.com/hubfs/Final_Webdew/final-webdew-img/life-at-webdew-4.jpg"
-                            alt="Life at Webdew 4" loading="lazy">
-                    </div>
-                </div>
-                <div class="inline-block">
-                    <div class=""><img class="rounded shadow-gray-300"
-                            src="https://www.webdew.com/hubfs/life-at-webdew-5.jpg"
-                            alt="Life at Webdew 5" loading="lazy">
-                    </div>
-                </div>
-                <div class="inline-block">
-                    <div class=""><img class="rounded shadow-gray-300"
-                            src="https://www.webdew.com/hubfs/life-at-webdew-6.jpg"
-                            alt="Life at Webdew 6" loading="lazy">
-                    </div>
-                </div>
-                <div class="inline-block">
-                    <div class=""><img class="rounded shadow-gray-300"
-                            src="https://www.webdew.com/hubfs/life-at-webdew-7.jpg"
-                            alt="Life at Webdew 7" loading="lazy">
-                    </div>
-                </div>
-                <div class="inline-block">
-                    <div class=""><img class="rounded shadow-gray-300"
-                            src="https://www.webdew.com/hubfs/life-at-webdew-8.jpg"
-                            alt="Life at Webdew 8" loading="lazy">
-                    </div>
-                </div>
-                <div class="inline-block">
-                    <div class=""><img class="rounded shadow-gray-300"
-                            src="https://www.webdew.com/hubfs/Final_Webdew/final-webdew-img/life-at-webdew-9.jpg"
-                            alt="Life at Webdew 9" loading="lazy">
-                    </div>
-                </div>
-                <div class="inline-block">
-                    <div class=""><img class="rounded shadow-gray-300"
-                            src="https://www.webdew.com/hubfs/Final_Webdew/final-webdew-img/life-at-webdew-10.jpg"
-                            alt="Life at Webdew 10" loading="lazy">
-                    </div>
-                </div>
+            <div class="flex flex-wrap">
+                <img class="rounded shadow-gray-300 inline-block" src="https://www.webdew.com/hubfs/life-at-webdew-1.jpg"
+                    alt="Life at Webdew 1" loading="lazy">
+                <img class="rounded shadow-gray-300 pt-20 p-2" src="https://www.webdew.com/hubfs/life-at-webdew-2.jpg"
+                    alt="Life at Webdew 2" loading="lazy">
+                <img class="rounded shadow-gray-300" src="https://www.webdew.com/hubfs/life-at-webdew-2.jpg"
+                    alt="Life at Webdew 2" loading="lazy">
+                <img class="rounded shadow-gray-300 p-1" src="https://www.webdew.com/hubfs/life-at-webdew-3.jpg"
+                    alt="Life at Webdew 3" loading="lazy">
+                <img class="rounded shadow-gray-300" src="https://www.webdew.com/hubfs/life-at-webdew-6.jpg"
+                    alt="Life at Webdew 6" loading="lazy">
+                <img class="rounded shadow-gray-300 p-1"
+                    src="https://www.webdew.com/hubfs/Final_Webdew/final-webdew-img/life-at-webdew-4.jpg"
+                    alt="Life at Webdew 4" loading="lazy">
+                <img class="rounded shadow-gray-300 w-[400px] h-[200px] pt-5" src="https://www.webdew.com/hubfs/life-at-webdew-5.jpg"
+                    alt="Life at Webdew 5" loading="lazy">
+                <img class="rounded shadow-gray-300 p-1" src="https://www.webdew.com/hubfs/life-at-webdew-7.jpg"
+                    alt="Life at Webdew 7" loading="lazy">
+                <img class="rounded shadow-gray-300" src="https://www.webdew.com/hubfs/life-at-webdew-8.jpg"
+                    alt="Life at Webdew 8" loading="lazy">
+                <img class="rounded shadow-gray-300 p-2"
+                    src="https://www.webdew.com/hubfs/Final_Webdew/final-webdew-img/life-at-webdew-9.jpg"
+                    alt="Life at Webdew 9" loading="lazy">
+                <img class="rounded shadow-gray-300 p-6 lg:-mt-40"
+                    src="https://www.webdew.com/hubfs/Final_Webdew/final-webdew-img/life-at-webdew-10.jpg"
+                    alt="Life at Webdew 10" loading="lazy">
+
+
             </div>
         </div>
     </div>
@@ -849,7 +840,7 @@
     <div class="w-full pr-10 pl-10">
         <div class="flex flex-wrap justify-around">
 
-            <div class="bg-orange-500 rounded h-36 w-[600px] mb-8">
+            <div class="bg-[#ee4a03] rounded h-36 w-[600px] mb-8">
                 <a href="">
                     <div class="p-10 flext flex-row align-middle">
                         <div class="inline-block p-0 m-0">
@@ -872,7 +863,7 @@
                 </a>
             </div>
 
-            <div class="bg-orange-500 rounded h-36 w-[600px] mb-8">
+            <div class="bg-[#ee4a03] rounded h-36 w-[600px] mb-8">
                 <a href="">
                     <div class="p-10 flext flex-row align-middle">
                         <div class="inline-block p-0 m-0">
@@ -893,7 +884,7 @@
                 </a>
             </div>
 
-            <div class="bg-orange-500 rounded h-36 w-[600px] mb-8">
+            <div class="bg-[#ee4a03] rounded h-36 w-[600px] mb-8">
                 <a href="">
                     <div class="p-10 flext flex-row align-middle">
                         <div class="inline-block p-0 m-0">
@@ -906,15 +897,15 @@
                                         Openings</span></a>
                             </h4>
                             <p class="text-white"><span>Join us in our journey
-                                to success, by choosing
-                                your aspired career
-                                path.</span></p>
+                                    to success, by choosing
+                                    your aspired career
+                                    path.</span></p>
                         </div>
                     </div>
                 </a>
             </div>
 
-            <div class="bg-orange-500 rounded h-36 w-[600px] mb-8">
+            <div class="bg-[#ee4a03] rounded h-36 w-[600px] mb-8">
                 <a href="">
                     <div class="p-10 flext flex-row align-middle">
                         <div class="inline-block p-0 m-0">
@@ -928,9 +919,9 @@
                                 <span>Schedule Interview</span>
                             </h4>
                             <p class="text-white"><span>Take your first step to
-                                a prosperous career,
-                                schedule your interview
-                                now! </span>
+                                    a prosperous career,
+                                    schedule your interview
+                                    now! </span>
                             </p>
                         </div>
                     </div>
@@ -945,69 +936,53 @@
 
     <div>
         <footer class="footer">
-            <div class="mb-5 p-20 border-b-gray-100">
+            <div class="pb-5 border-b-gray-100 bg-gray-100">
                 <div>
                     <div class="mt-20 align-middle">
                         <div class="pl-[45%]">
-                            <img src="../src/assest/review-star.svg" class="w-32"
-                                alt="review-star">
+                            <img src="../src/assest/review-star.svg" class="w-32" alt="review-star">
                         </div>
                         <div class="text-center">
                             <h4>Based on 1000+ Reviews on</h4>
                         </div>
-                        <div>
-                            <div class="">
-                                <img src="../src/assest/dotted-bg.svg">
 
+                        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                            <div class="grid items-center grid-cols-2 gap-10 sm:gap-y-16 sm:grid-cols-3 xl:grid-cols-6">
+                                <div>
+                                    <img class="object-contain w-auto mx-auto h-14"
+                                        src="../src/assest/dailyhunt-logo-white.png" alt="" />
+                                </div>
+
+                                <div>
+                                    <img class="object-contain w-auto mx-auto h-14"
+                                        src="../src/assest/Deccan_Herald_logo.svg.png" alt="" />
+                                </div>
+
+                                <div>
+                                    <img class="object-contain w-auto mx-auto h-14"
+                                        src="../src/assest/Digital-Journal-Logo.png" alt="" />
+                                </div>
+
+                                <div>
+                                    <img class="object-contain w-auto mx-auto h-14"
+                                        src="../src/assest/marketwatch-logo.png" alt="" />
+                                </div>
+
+                                <div>
+                                    <img class="object-contain w-auto mx-auto h-14" src="../src/assest/midday.png"
+                                        alt="" />
+                                </div>
+
+                                <div>
+                                    <img class="object-contain w-auto mx-auto h-14"
+                                        src="../src/assest/The_times_of_india.svg.png" alt="" />
+                                </div>
                             </div>
-                            <ul class="flex flex-row justify-around -mt-20">
-                                <li class="w-[12%]">
-                                    <a href="">
-                                        <img
-                                            src= "../src/assest/hubspot color.webp">
-                                    </a>
-                                </li>
-
-                                <li class="w-[12%]">
-                                    <a href="">
-                                        <img
-                                            src="../src/assest/upwork_Logo-icon.png">
-                                    </a>
-                                </li>
-
-                                <li class="w-[12%]">
-                                    <a href="">
-                                        <img
-                                            src="../src/assest/upwork_Logo-icon.png">
-                                    </a>
-                                </li>
-
-                                <li class="w-[12%]">
-                                    <a href="">
-                                        <img
-                                            src="../src/assest/t mobile color.webp">
-                                    </a>
-                                </li>
-
-                                <li class="w-[12%]">
-                                    <a href="" rel="noopener">
-                                        <img
-                                            src="../src/assest/Microsoft color.webp">
-                                    </a>
-                                </li>
-
-                                <li class="w-[12%]">
-                                    <a href="" target="_blank" rel="noopener">
-                                        <img
-                                            src="../src/assest/g2_Logo-icon.png">
-                                    </a>
-                                </li>
-
-                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <div class="px-20 py-20 border-t-gray-100 bg-orange-50 border-t border-solid">
                 <div class="max-w-[1170px] px-[15px] py-0">
@@ -1016,7 +991,7 @@
                             <div class="flex flex-row">
                                 <div class="float-left w-[50%] ">
                                     <div class="text-conts">
-                                        <h2><span class="text-orange-500">Subscribe</span> to our Monthly Newsletter
+                                        <h2><span class="text-[#ee4a03]">Subscribe</span> to our Monthly Newsletter
                                         </h2>
                                         <p>Join the growing community of webdew and get latest marketing trends,
                                             agency updates, valuable resources, and more to grow your business. </p>
@@ -1028,19 +1003,19 @@
                                             <div class="flex flex-row justify-around">
                                                 <div class="inline-block">
                                                     <input type="text" name="firstname" placeholder="First Name"
-                                                        class="p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-orange-600 caret-orange-600" />
+                                                        class="p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-[#ee4a03] caret-[#ee4a03]" />
 
                                                 </div>
                                                 <div class="inline-block">
                                                     <input type="email" name="email" id="email"
                                                         placeholder="Enter your email"
-                                                        class="p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-orange-600 caret-orange-600" />
+                                                        class="p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-orange-600 caret-[#ee4a03]" />
 
                                                 </div>
                                             </div>
 
                                             <button type="submit"
-                                                class="inline-flex w-full items-center justify-center px-6 py-4 mt-3 font-semibold text-orange-500 transition-all duration-200 bg-white border-orange-500 hover:text-white rounded-md hover:bg-orange-700 focus:bg-orange-700">
+                                                class="inline-flex w-full items-center justify-center px-6 py-4 mt-3 font-semibold text-[#ee4a03] transition-all duration-200 bg-white border-[#ee4a03] hover:text-white rounded-md hover:bg-[#ee4a03] focus:[#ee4a03]">
                                                 Subscribe Now!
                                             </button>
 
@@ -1054,6 +1029,8 @@
             </div>
         </footer>
     </div>
+
+
 </body>
 
 </html>
