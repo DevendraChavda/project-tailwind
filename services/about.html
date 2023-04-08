@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -126,26 +127,27 @@
     </style>
 </head>
 
-<body>
-    <div class="w-full mr-auto ml-auto">
+<body class="w-full items-center">
+    <div class=" w-full m-0 flex flex-col">
         <header>
             <div class="bg-white h-8 px-10 fixed w-full z-20 flex flex-row justify-between">
                 <div>
                     <div class="inline-block mr-10">
                         <a href="">
-                            <h3 class="text-lg">E Book</h3>
+                            <h3 class="text-sm lg:text-lg">EBook</h3>
                         </a>
                     </div>
                     <div class="inline-block">
                         <a href="">
-                            <h3 class="text-[#ee4a03] text-lg">courses</h3>
+                            <h3 class="text-[#ee4a03] text-sm lg:text-lg">courses</h3>
                         </a>
                     </div>
                 </div>
                 <div>
                     <div class="inline-block pr-5 pt-0.5">
-                        <input type="text" name="srearch" id="email" placeholder="  &#xF002; Search" style="font-family:Arial, FontAwesome"
-                            class="text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none border-orange-600 caret-[#ee4a03]" />
+                        <input type="text" name="srearch" id="email" placeholder="  &#xF002; Search"
+                            style="font-family:Arial, FontAwesome"
+                            class="text-black placeholder-gray-500 transition-all duration-200 bg-white border rounded-md focus:outline-none border-orange-600 caret-[#ee4a03]" />
 
                     </div>
                     <div class="inline-block">
@@ -160,8 +162,7 @@
 
 
             </div>
-            <nav
-                class="flex items-center justify-between flex-wrap bg-[#ee4a03] p-6 fixed w-full z-20 top-8 left-0 border-b border-gray-200">
+            <nav class="flex items-center justify-between flex-wrap bg-[#ee4a03] p-6 fixed w-full z-20 top-8 left-0 border-b border-gray-200">
                 <div class="flex items-center flex-shrink-0 text-white mr-6">
                     <span class="font-semibold text-xl tracking-tight">Compnay LOGO</span>
                 </div>
@@ -179,8 +180,8 @@
                         class="flex items-center px-3 py-2 border rounded text-red-200 text-xl border-[#ee4a03] hover:text-white hover:border-white">X
                     </button>
                 </div>
-                <div id="menudiv" class="hidden flex-grow lg:flex lg:items-center lg:w-auto w-full ">
-                    <div class="text-sm lg:flex-grow">
+                <div id="menudiv" class="hidden flex-col md:flex md:flex-row lg:flex lg:flex-row lg:items-center lg:w-auto w-full ">
+                    <div class="text-sm lg:flex-grow pr-10">
                         <a href="" class="block mt-4 lg:inline-block lg:mt-0 text-red-200 hover:text-white mr-4">
                             Docs
                         </a>
@@ -205,9 +206,13 @@
 
 
         </header>
-        <main id="main-content" class="flex flex-col about pt-28">
 
-            <!---CURIOUS-------------------------------------------------------------------->
+        <div></div>
+
+        <!-- <main id="main-content" class="w-full m-0 flex flex-col pt-28"> -->
+
+        <!---CURIOUS-------------------------------------------------------------------->
+        <section class="pt-28">
             <div class="w-screen relative bg-black">
                 <div class="w-[80%] ml-[10%] pb-24 border-b-gray-300 ">
                     <div>
@@ -240,13 +245,23 @@
                                             </div>
                                         </div>
 
-                                        <div class="flext flext-row justify-around align-middle">
-                                            <img src="../src/assest/clutch_Logo-icon.png" alt="clutch_Logo-icon"
-                                                class="w-[150px] p-5 inline-block bg-gray-300 rounded-xl hover:bg-[#ee4a03]">
-                                            <img src="../src/assest/upwork_Logo-icon.png" alt="upwork_Logo-icon"
-                                                class="w-[150px] p-5 inline-block bg-gray-300 rounded-xl hover:bg-[#ee4a03]">
-                                            <img src="../src/assest/g2_Logo-icon.png" alt="g2_Logo-icon"
-                                                class="w-[70px] p-5 inline-block bg-gray-300 rounded-xl hover:bg-[#ee4a03]">
+                                        <div class="">
+                                            <div class="grid items-center grid-cols-2 gap-10 sm:gap-y-16 sm:grid-cols-5 lg:grid-cols-4">
+                                                <div>
+                                                    <img class="object-contain w-auto mx-auto h-10"
+                                                        src="../src/assest/t mobile dark grey.webp" alt="" />
+                                                </div>
+                
+                                                <div>
+                                                    <img class="object-contain w-auto mx-auto h-14"
+                                                        src="../src/assest/Microsoft Grey.webp" alt="" />
+                                                </div>
+                
+                                                <div>
+                                                    <img class="object-contain w-auto mx-auto h-14"
+                                                        src="../src/assest/hubspot grey.webp" alt="" />
+                                                </div>
+                                            </div>
                                         </div>
 
 
@@ -265,8 +280,11 @@
                     </div>
                 </div>
             </div>
+        </section>
+            
 
-            <!---review--------------------------------------------------------------------->
+        <!---review--------------------------------------------------------------------->
+        <section>
             <div class="w-[80%] ml-[10%] block pb-24 pt-20 border-b-gray-300">
                 <div>
                     <div class="text-center mb-2 flex flex-row justify-between">
@@ -358,20 +376,23 @@
                     </div>
                 </div>
             </div>
+        </section>
+            
 
 
-            <!-----our values and goal------------------------------------------------------>
+        <!-----our values and goal------------------------------------------------------>
+        <section>
             <div class="w-full lg:flex lg:flex-row block">
 
-                <div class="md:w-[90%] -ml-[10%] pl-[18%] float-left inline-block bg-[#ee4a03]">
+                <div class="md:w-[80%] -ml-[10%] md:pl-[10%] lg:pl-[18%] float-left inline-block bg-[#ee4a03]">
                     <div class="p-10">
-                        <div class="p-8">
+                        <div class="lg:p-8">
                             <div>
                                 <div class="text-white">OUR</div>
                                 <h2 class="text-white text-3xl font-sans"><b>Values</b></h2>
                             </div>
                         </div>
-                        <div class="flex flex-wrap justify-between pt-10 float-left">
+                        <div class="flex flex-col md:flex-wrap lg:flex-wrap justify-between pt-10 float-left">
 
                             <div class="lg:w-[45%] flex flex-row pb-5">
                                 <div class="w-[20%] inline-block p-[1%]">
@@ -480,7 +501,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div
                     class="md:w-[50%] bg-[url(../src/assest/wdDotted-bg.svg)] inline-block float-right pl-10 pt-20 mr-[10%]">
                     <div class="wd_values_wraper">
@@ -510,10 +531,13 @@
                     </div>
                 </div>
             </div>
+        </section>
+            
 
 
-            <!-----our journay---------------------------------------------------------------->
-            <div class="about-Services-module-2 pb-24 pt-10">
+        <!-----our journay---------------------------------------------------------------->
+        <section>
+            <div class="w-[90%] items-center about-Services-module-2 pl-[10%] pb-24 pt-10">
                 <div>
                     <div>
                         <div class="text-center pb-10">
@@ -707,8 +731,11 @@
                     </div>
                 </div>
             </div>
+        </section>
+            
 
-            <!---Executive----------------------------------------------------------------->
+        <!---Executive----------------------------------------------------------------->
+        <section>
             <div class="w-screen pl-[10%] block pb-24 pt-10 border-b-gray-300 bg-black">
                 <div class="w-[80%]">
                     <div class="text-center align-middle pb-10">
@@ -717,24 +744,23 @@
 
                     <div>
                         <div class="p-10">
-                            <div class="flex flex-row border-[#ee4a03]">
-                                <div>
-                                    <div class="lg:w-[50%] min-[100px]">
+                            <div class="flex flex-col lg:flex-row border-[#ee4a03]">
+                                <div class="items-center">
+                                    <div class="w-[50%] min-[100px]">
                                         <img src="https://www.webdew.com/hs-fs/hubfs/our-executive-img.png?width=1542&amp;height=1838&amp;name=our-executive-img.png"
                                             alt="our-executive-img">
                                     </div>
                                 </div>
                                 <div class="text-white">
                                     <div>
-                                        <div class="flex flex-wrap">
+                                        <div class="flex flex-wrap items-center align-middle">
                                             <div class="inline-block">
-                                                <h4>Danish Wadhwa</h4>
+                                                <h4 class="text-2xl">Danish Wadhwa</h4>
                                                 <h5 class="text-[#ee4a03]">
                                                     Co-Founder &amp; CEO</h5>
                                             </div>
-                                            <div class="pl-10">
-                                                <ul class="flex flex-row justify-between w-40 ">
-
+                                            <div class="pl-3 lg:pl-10">
+                                                <ul class="flex flex-row justify-between w-5 md:w-16 lg:w-40 ">
                                                     <li>
                                                         <a href="" target="_blank" rel="noopener">
                                                             <h1 class="text-[#ee4a03] w-16 text-4xl">
@@ -785,23 +811,23 @@
                         </div>
 
                         <div class="p-10">
-                            <div class="flex flex-row border-[#ee4a03]">
-                                <div class="inline-block">
-                                    <div class="lg:w-[50%] min-[100px]">
+                            <div class="flex flex-col lg:flex-row border-[#ee4a03]">
+                                <div>
+                                    <div class="w-[50%] min-[100px]">
                                         <img src="https://www.webdew.com/hs-fs/hubfs/our-executive-image.png?width=1542&amp;height=1838&amp;name=our-executive-image.png"
                                             alt="our-executive-image">
                                     </div>
                                 </div>
                                 <div class="text-white">
                                     <div class="">
-                                        <div class="flex flex-wrap">
+                                        <div class="flex flex-wrap items-center align-middle">
                                             <div class="inline-block">
-                                                <h4>Chehak-Wadhwa</h4>
+                                                <h4 class="text-2xl">Chehak-Wadhwa</h4>
                                                 <h5 class="text-[#ee4a03]">Co-Founder
                                                     &amp; COO</h5>
                                             </div>
                                             <div class="pl-10">
-                                                <ul class="flex flex-row justify-between w-40 ">
+                                                <ul class="flex flex-row justify-between w-16 lg:w-40 ">
                                                     <li>
                                                         <a href="" target="_blank" rel="noopener">
                                                             <h1 class="text-[#ee4a03] w-16 text-4xl">
@@ -845,8 +871,10 @@
                 </div>
 
             </div>
+        </section>
+            
 
-        </main>
+        <!-- </main> -->
     </div>
     </div>
 
@@ -901,7 +929,7 @@
     <div class="w-full pr-10 pl-10">
         <div class="flex flex-wrap justify-around">
 
-            <div class="bg-[#ee4a03] rounded h-36 w-[600px] mb-8">
+            <div class="bg-[#ee4a03] rounded max-w-[500px] mb-8">
                 <a href="">
                     <div class="p-10 flext flex-row align-middle">
                         <div class="inline-block p-0 m-0">
@@ -912,7 +940,7 @@
                         </div>
                         <div class="inline-block w-[70%] float-right">
                             <h4 class="text-white text-2xl">
-                                <span>Career Blog</span>
+                                <span class="text-2xl">Career Blog</span>
                             </h4>
                             <p class="text-white"><span>Make
                                     the most of our
@@ -924,7 +952,7 @@
                 </a>
             </div>
 
-            <div class="bg-[#ee4a03] rounded h-36 w-[600px] mb-8">
+            <div class="bg-[#ee4a03] rounded max-w-[500px] mb-8">
                 <a href="">
                     <div class="p-10 flext flex-row align-middle">
                         <div class="inline-block p-0 m-0">
@@ -933,7 +961,7 @@
                         </div>
                         <div class="inline-block w-[70%] float-right">
                             <h4 class="text-white"><a href="https://careers.webdew.com/#test" rel="noopener"
-                                    target="_blank"><span>Test
+                                    target="_blank"><span class="text-2xl">Test
                                         Skills</span></a>
                             </h4>
                             <p class="text-white"><span>Take our skill test to
@@ -945,7 +973,7 @@
                 </a>
             </div>
 
-            <div class="bg-[#ee4a03] rounded h-36 w-[600px] mb-8">
+            <div class="bg-[#ee4a03] rounded max-w-[500px] mb-8">
                 <a href="">
                     <div class="p-10 flext flex-row align-middle">
                         <div class="inline-block p-0 m-0">
@@ -954,7 +982,7 @@
                         </div>
                         <div class="inline-block w-[70%] float-right">
                             <h4 class="text-white"><a href="https://careers.webdew.com/#test" rel="noopener"
-                                    target="_blank"><span>Job
+                                    target="_blank"><span class="text-2xl">Job
                                         Openings</span></a>
                             </h4>
                             <p class="text-white"><span>Join us in our journey
@@ -966,7 +994,7 @@
                 </a>
             </div>
 
-            <div class="bg-[#ee4a03] rounded h-36 w-[600px] mb-8">
+            <div class="bg-[#ee4a03] rounded max-w-[500px] mb-8">
                 <a href="">
                     <div class="p-10 flext flex-row align-middle">
                         <div class="inline-block p-0 m-0">
@@ -1061,8 +1089,8 @@
                                 <div class="lg:float-right lg:w-[60%] lg:inline-block">
                                     <div class="items-center align-middle lg:float-right lg:pl-20">
                                         <form action="">
-                                            <div class="flex flex-row justify-around">
-                                                <div class="inline-block">
+                                            <div class="flex flex-wrap lg:flex-row justify-around">
+                                                <div class="inline-block pb-5">
                                                     <input type="text" name="firstname" placeholder="First Name"
                                                         class="p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-[#ee4a03] caret-[#ee4a03]" />
 
