@@ -12,8 +12,95 @@
 
 <body>
 
-   <!-- Intro Section STARTS -->
-   <section class="relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32">
+  <header>
+    <div class="bg-white h-8 px-10 fixed w-full z-20 flex flex-row justify-between">
+      <div>
+        <div class="inline-block mr-10">
+          <button type="submit"
+            class="inline-block text-sm px-4 py-1 leading-none border rounded text-[#ee4a03] border-[#ee4a03] hover:border-transparent hover:text-white hover:bg-[#ee4a03] mt-4 lg:mt-0">
+            Login
+          </button>
+        </div>
+        <div class="inline-block">
+          <button type="submit"
+            class="inline-block text-sm px-4 py-1 leading-none border rounded text-[#ee4a03] border-[#ee4a03] hover:border-transparent hover:text-white hover:bg-[#ee4a03] mt-4 lg:mt-0">
+            Login
+          </button>
+        </div>
+      </div>
+      <div>
+        <div class="inline-block pr-5 pt-0.5">
+          <input type="text" name="srearch" id="email" placeholder="  &#xF002; Search"
+            style="font-family:Arial, FontAwesome"
+            class="text-black placeholder-gray-500 transition-all duration-200 bg-white border rounded-md focus:outline-none border-orange-600 caret-[#ee4a03]" />
+
+        </div>
+        <div class="inline-block">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 inline-block"
+            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z" />
+          </svg>
+          <h1 class="text-black inline-block pl-5">9016488128</h1>
+        </div>
+      </div>
+
+
+    </div>
+    <nav
+      class="flex items-center justify-between flex-wrap bg-[#ee4a03] p-6 fixed w-full z-20 top-8 left-0 border-b border-gray-200">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <span class="font-semibold text-xl tracking-tight">Compnay LOGO</span>
+      </div>
+      <div id="listicon" class="block lg:hidden">
+        <button id="toggelbtn" onclick="showmenu()"
+          class="flex items-center px-3 py-2 border rounded text-red-200 border-[#ee4a03] hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div id="closeicon" class="hidden">
+        <button id="toggelbtn" onclick="hidemenu()"
+          class="flex items-center px-3 border rounded text-red-200 text-xl border-[#ee4a03] hover:text-white hover:border-white">x
+        </button>
+      </div>
+      <div id="menudiv" class="hidden flex-col lg:flex lg:flex-row lg:items-center lg:w-auto w-full ">
+        <div class="text-sm lg:flex-grow pr-10">
+          <a href="" class="block mt-4 lg:inline-block lg:mt-0 text-red-200 hover:text-white mr-4">
+            SEO & Lead Generation
+          </a>
+          <a href="" class="block mt-4 lg:inline-block lg:mt-0 text-red-200 hover:text-white mr-4">
+            Ecommerce
+          </a>
+          <a href="" class="block mt-4 lg:inline-block lg:mt-0 text-red-200 hover:text-white mr-4">
+            UX & Interactive
+          </a>
+          <a href="" class="block mt-4 lg:inline-block lg:mt-0 text-red-200 hover:text-white mr-4">
+            Our Technology
+          </a>
+        </div>
+        <div>
+          <button type="submit"
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-[#ee4a03] hover:bg-white mt-4 lg:mt-0">
+            Login
+          </button>
+          <a href=""
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-[#ee4a03] hover:bg-white mt-4 lg:mt-0">Get
+            a Proposal</a>
+        </div>
+      </div>
+
+
+    </nav>
+
+
+
+
+  </header>
+  <!-- Intro Section STARTS -->
+  <section class="relative py-10 overflow-hidden bg-black sm:pt-52 lg:pt-72 xl:pt-96">
     <div class="absolute inset-0">
       <img class="object-cover w-full h-full md:object-left md:scale-150 md:origin-top-left"
         src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/5/girl-working-on-laptop.jpg" alt="" />
@@ -61,8 +148,8 @@
   </section>
   <!-- Intro Section ENDS -->
 
-   <!-- I want to section STARTS -->
-   <section class="py-10 bg-gray-50 sm:py-16 lg:py-18">
+  <!-- I want to section STARTS -->
+  <section class="py-10 bg-gray-50 sm:py-16 lg:py-18">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
       <h1 class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">I want to learn</h1>
       <div class="grid grid-cols-1 gap-4 mt-10 md:grid-cols-2 lg:grid-cols-4 md:gap-4 lg:gap-4">
@@ -131,7 +218,7 @@
   </section>
   <!-- I want to section ENDS -->
 
-  
+
   <!-- Currently Trending STARTS -->
   <section class="py-10 bg-gray-100 sm:py-16 lg:py-18">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -205,77 +292,164 @@
   </section>
   <!-- Currently Trending ENDS -->
 
- <!-- Learn to be pro STARTS -->
- <section class="py-10 bg-gray-50 sm:py-16 lg:py-14">
-  <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-    <h2 class="text-3xl font-bold leading-tight text-center text-black sm:text-4xl lg:text-5xl ltr">
-      Learn to be pro digital marketing 
-    </h2>
-    <h2 class="text-3xl font-bold leading-tight text-center text-black sm:text-4xl lg:text-5xl ltr">
-      with Ravi Gupta
-    </h2>
-    <div class="grid max-w-md grid-cols-1 gap-6 mx-auto mt-8 lg:mt-16 lg:grid-cols-3 lg:max-w-full">
-      <div>
-      <div class="overflow-hidden bg-white border rounded-md shadow hover:shadow-2xl">
-          <div class="relative">
-            <a href="#" title="" class="block aspect-w-4 aspect-h-3">
-              <img class="object-cover w-full h-full"
-                src="https://www.shoutmeloud.com/wp-content/uploads/edd/2022/06/Google-Adsense-Mastery-Guide-Cover.jpg" alt="" />
-            </a>
+  <!-- Learn to be pro STARTS -->
+  <section class="py-10 bg-gray-50 sm:py-16 lg:py-14">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold leading-tight text-center text-black sm:text-4xl lg:text-5xl ltr">
+        Learn to be pro digital marketing
+      </h2>
+      <h2 class="text-3xl font-bold leading-tight text-center text-black sm:text-4xl lg:text-5xl ltr">
+        with Ravi Gupta
+      </h2>
+      <div class="flex flex-col justify-center">
+        <div class="flex justify-center pt-10">
+          <div class="p-2 border border-gray-900 rounded-lg lg:visible">
+            <button id="ebookbtn" onclick="showebook()"
+              class="h-12 px-8 py-2 text-xl font-medium border rounded-lg bg-[#ee4a03] text-white border-[#ee4a03]">
+              eBooks
+            </button>
+            <button id="coursesbtn" onclick="showcourses()"
+              class="h-12 px-8 py-2 text-xl font-medium bg-transparent border border-black rounded-lg"> Courses
+            </button>
           </div>
-      </div>
-      <p class="mt-5 text-xl font-semibold">
-        <a href="#" title="" class="text-black hover:text-[#ee4a03]">
-          Google AdSense Mastery HandBook – From Zero To Hero (With Income Proof)
-        </a>
-      </p>
-      </div>
-
-      <div>
-        <div class="overflow-hidden bg-white border rounded-md shadow hover:shadow-2xl">
-            <div class="relative">
-              <a href="#" title="" class="block aspect-w-4 aspect-h-3">
-                <img class="object-cover w-full h-full"
-                  src="https://www.shoutmeloud.com/wp-content/uploads/edd/2019/04/sml-affiliate-marketing-ebook.jpg" alt="" />
-              </a>
-            </div>
-        </div>
-        <p class="mt-5 text-xl font-semibold">
-          <a href="#" title="" class="text-black hover:text-red-500">
-            Earn $1000/Month – The Handbook To Profitable Affiliate Marketing (2023 Version)
-          </a>
-        </p>
         </div>
 
-        <div>
-          <div class="overflow-hidden bg-white border rounded-md shadow hover:shadow-2xl">
-              <div class="relative">
-                <a href="#" title="" class="block aspect-w-4 aspect-h-3">
-                  <img class="object-cover w-full h-full"
-                    src="https://www.shoutmeloud.com/wp-content/uploads/edd/2022/06/WordPress-Book-Compact-cover.jpeg" alt="" />
-                </a>
+        <div id="ebook">
+          <div id="ebook" class="grid max-w-md grid-cols-1 gap-6 mx-auto mt-8 lg:mt-16 lg:grid-cols-3 lg:max-w-full">
+            <div>
+              <div class="overflow-hidden bg-white border rounded-md shadow hover:shadow-2xl">
+                <div class="relative">
+                  <a href="#" title="" class="block aspect-w-4 aspect-h-3">
+                    <img class="object-cover w-full h-full"
+                      src="https://www.shoutmeloud.com/wp-content/uploads/edd/2022/06/Google-Adsense-Mastery-Guide-Cover.jpg"
+                      alt="" />
+                  </a>
+                </div>
               </div>
+              <p class="mt-5 text-xl font-semibold">
+                <a href="#" title="" class="text-black hover:text-[#ee4a03]">
+                  Google AdSense Mastery HandBook – From Zero To Hero (With Income Proof)
+                </a>
+              </p>
+            </div>
+
+            <div>
+              <div class="overflow-hidden bg-white border rounded-md shadow hover:shadow-2xl">
+                <div class="relative">
+                  <a href="#" title="" class="block aspect-w-4 aspect-h-3">
+                    <img class="object-cover w-full h-full"
+                      src="https://www.shoutmeloud.com/wp-content/uploads/edd/2019/04/sml-affiliate-marketing-ebook.jpg"
+                      alt="" />
+                  </a>
+                </div>
+              </div>
+              <p class="mt-5 text-xl font-semibold">
+                <a href="#" title="" class="text-black hover:text-red-500">
+                  Earn $1000/Month – The Handbook To Profitable Affiliate Marketing (2023 Version)
+                </a>
+              </p>
+            </div>
+
+            <div>
+              <div class="overflow-hidden bg-white border rounded-md shadow hover:shadow-2xl">
+                <div class="relative">
+                  <a href="#" title="" class="block aspect-w-4 aspect-h-3">
+                    <img class="object-cover w-full h-full"
+                      src="https://www.shoutmeloud.com/wp-content/uploads/edd/2022/06/WordPress-Book-Compact-cover.jpeg"
+                      alt="" />
+                  </a>
+                </div>
+              </div>
+              <p class="mt-5 text-xl font-semibold">
+                <a href="#" title="" class="text-black hover:text-red-500">
+                  WordPress eBook: Create A Perfect Blog
+                </a>
+              </p>
+            </div>
+
           </div>
-          <p class="mt-5 text-xl font-semibold">
-            <a href="#" title="" class="text-black hover:text-red-500">
-              WordPress eBook: Create A Perfect Blog
-            </a>
-          </p>
+
+          <div class="flex items-center lg:space-x-3">
+            <button
+              class="h-12 px-8 py-2 mx-auto mt-10 text-xl font-medium bg-transparent border border-gray-900 rounded-lg hover:bg-red-500 hover:text-white hover:border-red-500">View
+              All Deals
+            </button>
           </div>
+        </div>
+
+        <div id="courses" class="hidden">
+          <div class="grid max-w-md grid-cols-1 gap-6 mx-auto mt-8 lg:mt-16 lg:grid-cols-3 lg:max-w-full">
+            <div>
+              <div class="overflow-hidden bg-white border rounded-md shadow hover:shadow-2xl">
+                <div class="relative">
+                  <a href="#" title="" class="block aspect-w-4 aspect-h-3">
+                    <img class="object-cover w-full h-full"
+                      src="https://www.shoutmeloud.com/wp-content/uploads/edd/2019/04/sml-affiliate-marketing-ebook.jpg"
+                      alt="" />
+                  </a>
+                </div>
+              </div>
+              <p class="mt-5 text-xl font-semibold">
+                <a href="#" title="" class="text-black hover:text-red-500">
+                  Earn $1000/Month – The Handbook To Profitable Affiliate Marketing (2023 Version)
+                </a>
+              </p>
+            </div>
+            
+            <div>
+              <div class="overflow-hidden bg-white border rounded-md shadow hover:shadow-2xl">
+                <div class="relative">
+                  <a href="#" title="" class="block aspect-w-4 aspect-h-3">
+                    <img class="object-cover w-full h-full"
+                      src="https://www.shoutmeloud.com/wp-content/uploads/edd/2022/06/Google-Adsense-Mastery-Guide-Cover.jpg"
+                      alt="" />
+                  </a>
+                </div>
+              </div>
+              <p class="mt-5 text-xl font-semibold">
+                <a href="#" title="" class="text-black hover:text-[#ee4a03]">
+                  Google AdSense Mastery HandBook – From Zero To Hero (With Income Proof)
+                </a>
+              </p>
+            </div>
+
+            <div>
+              <div class="overflow-hidden bg-white border rounded-md shadow hover:shadow-2xl">
+                <div class="relative">
+                  <a href="#" title="" class="block aspect-w-4 aspect-h-3">
+                    <img class="object-cover w-full h-full"
+                      src="https://www.shoutmeloud.com/wp-content/uploads/edd/2022/06/WordPress-Book-Compact-cover.jpeg"
+                      alt="" />
+                  </a>
+                </div>
+              </div>
+              <p class="mt-5 text-xl font-semibold">
+                <a href="#" title="" class="text-black hover:text-red-500">
+                  WordPress eBook: Create A Perfect Blog
+                </a>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="flex items-center lg:space-x-3">
+            <button
+              class="h-12 px-8 py-2 mx-auto mt-10 text-xl font-medium bg-transparent border border-gray-900 rounded-lg hover:bg-red-500 hover:text-white hover:border-red-500">View
+              All Deals
+            </button>
+          </div>
+        </div>
+
+      </div>
+
 
     </div>
-    <div class="flex items-center lg:space-x-3">
-      <button
-        class="h-12 px-8 py-2 mx-auto mt-10 text-xl font-medium bg-transparent border border-gray-900 rounded-lg hover:bg-red-500 hover:text-white hover:border-red-500">View All Deals
-      </button>
-    </div>
-  </div>
-</section>
-<!-- Learn to be pro  -->
+  </section>
+  <!-- Learn to be pro  -->
 
 
-   <!-- About Me STARTS -->
-   <section class="py-10 bg-bl sm:py-16 lg:py-18">
+  <!-- About Me STARTS -->
+  <section class="py-10 bg-bl sm:py-16 lg:py-18">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
       <div class="grid grid-cols-1 lg:grid-cols-2">
         <div>
@@ -288,13 +462,16 @@
             Hey Digital marketers, welcome to the Ravi-Gupta.com
           </p>
           <p class="mt-4 text-lg leading-relaxed text-gray-600">
-            I’m Ravi Gupta, The Digital marketer. I started Ravi-Gupta.com as a passion, and now Userscan make digital marketing career even easier by helping to live a boss-free life via blogging &digital marketing. 
+            I’m Ravi Gupta, The Digital marketer. I started Ravi-Gupta.com as a passion, and now Userscan make digital
+            marketing career even easier by helping to live a boss-free life via blogging &digital marketing.
           </p>
           <p class="mt-4 text-lg leading-relaxed text-gray-600">
-            Make money online Here at Ravi-Gupta.com, you will learn how to start, growand make money from your online brand. 
+            Make money online Here at Ravi-Gupta.com, you will learn how to start, growand make money from your online
+            brand.
           </p>
           <p class="mt-4 text-lg leading-relaxed text-gray-600">
-            you are a blogger, an influencer or a small businessowner, you will find proven methods to grow your brand. About me Ravi Gupta
+            you are a blogger, an influencer or a small businessowner, you will find proven methods to grow your brand.
+            About me Ravi Gupta
             <a href="" class="hover:text-red-600">About me Ravi Gupta</a>.
           </p>
           <p class="mt-4 text-lg leading-relaxed text-gray-600">
@@ -347,7 +524,8 @@
       </div>
 
       <div class="grid max-w-md grid-cols-1 gap-6 mx-auto mt-8 md:grid-cols-1 lg:mt-16 lg:grid-cols-4 lg:max-w-full">
-        <div class="overflow-hidden transition-all duration-200 delay-150 transform bg-white border rounded shadow-sm hover:scale-105 hover:shadow-2xl">
+        <div
+          class="overflow-hidden transition-all duration-200 delay-150 transform bg-white border rounded shadow-sm hover:scale-105 hover:shadow-2xl">
           <div class="p-4">
             <div class="relative">
               <a href="#" title="" class="block aspect-w-4">
@@ -379,7 +557,8 @@
             </div>
           </div>
         </div>
-        <div class="overflow-hidden transition-all duration-200 delay-150 transform bg-white border rounded shadow-sm hover:scale-105 hover:shadow-2xl">
+        <div
+          class="overflow-hidden transition-all duration-200 delay-150 transform bg-white border rounded shadow-sm hover:scale-105 hover:shadow-2xl">
           <div class="p-4">
             <div class="relative">
               <a href="#" title="" class="block aspect-w-4">
@@ -391,7 +570,7 @@
               <hr class="mx-auto border md:mt-5" />
               <p class="mt-2 text-2xl font-semibold text-center">
                 <a href="#" title="" class="text-gray-900">
-                 Semrush
+                  Semrush
                 </a>
               </p>
               <p class="mt-5 text-xl font-medium">
@@ -412,7 +591,8 @@
           </div>
         </div>
 
-        <div class="overflow-hidden transition-all duration-200 delay-150 transform bg-white border rounded shadow-sm hover:scale-105 hover:shadow-2xl">
+        <div
+          class="overflow-hidden transition-all duration-200 delay-150 transform bg-white border rounded shadow-sm hover:scale-105 hover:shadow-2xl">
           <div class="p-4">
             <div class="relative">
               <a href="#" title="" class="block aspect-w-4">
@@ -444,12 +624,14 @@
             </div>
           </div>
         </div>
-        <div class="overflow-hidden transition-all duration-200 delay-150 transform bg-white border rounded shadow-sm hover:scale-105 hover:shadow-2xl">
+        <div
+          class="overflow-hidden transition-all duration-200 delay-150 transform bg-white border rounded shadow-sm hover:scale-105 hover:shadow-2xl">
           <div class="p-4">
             <div class="relative">
               <a href="#" title="" class="block aspect-w-4">
                 <img class="object-cover w-full"
-                  src="https://bloggerspassion.com/wp-content/themes/bloggerspassion/assets/img/generatepress.webp" alt="" />
+                  src="https://bloggerspassion.com/wp-content/themes/bloggerspassion/assets/img/generatepress.webp"
+                  alt="" />
               </a>
             </div>
             <div class="px-2 py-3 text-center">
@@ -493,298 +675,325 @@
       <h2 class="mb-10 text-3xl font-bold leading-tight text-center text-black sm:text-4xl lg:text-5xl">
         Join Our Community
       </h2>
-      <div class="grid grid-cols-1 mx-auto mt-4 text-center sm:grid-cols-2 gap-y-8 lg:grid-cols-4 sm:gap-12">
-        <div>
-          <div class="flex items-center justify-center w-20 h-20 mx-auto bg-blue-100 rounded-full">
-            <!-- <svg class="text-blue-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
-            </svg> -->
-            <svg class="text-blue-600 w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-              <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-              <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
-            </svg>
-          </div>
-          <h3 class="mt-8 text-lg font-semibold text-black">Instagram</h3>
-        </div>
+      <div class="grid grid-cols-1 mx-auto mt-4 text-center sm:grid-cols-2 gap-y-6 lg:grid-cols-5 sm:gap-12">
 
         <div>
           <div class="flex items-center justify-center w-20 h-20 mx-auto bg-orange-100 rounded-full">
-            <!-- <svg class="text-orange-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg> -->
-            <svg class=" text-orange-600 w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+            <svg class=" text-orange-600 w-10 h-10" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+            </svg>
           </div>
           <h3 class="mt-8 text-lg font-semibold text-black">Facebook</h3>
+          <button
+            class="h-12 px-8 py-2 text-xl font-medium bg-transparent border border-gray-900 rounded-lg lg:visible lg:mt-10 hover:bg-[#ee4a03] hover:text-white hover:border-[#ee4a03]">
+            1M+ Follows
+          </button>
         </div>
 
         <div>
-          <div class="flex items-center justify-center w-20 h-20 mx-auto bg-green-100 rounded-full">
-            <!-- <svg class="text-green-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-            </svg> -->
-            <svg class="text-green-600 w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+          <div class="flex items-center justify-center w-20 h-20 mx-auto bg-blue-100 rounded-full">
+            <svg class="text-blue-600 w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+            </svg>
           </div>
-          <h3 class="mt-8 text-lg font-semibold text-black">LinkedIn</h3>
+          <h3 class="mt-8 text-lg font-semibold text-black">Instagram</h3>
+          <button
+            class="h-12 px-8 py-2 text-xl font-medium bg-transparent border border-gray-900 rounded-lg lg:visible lg:mt-10 hover:bg-[#ee4a03] hover:text-white hover:border-[#ee4a03]">
+            1M+ Follows
+          </button>
         </div>
 
         <div>
           <div class="flex items-center justify-center w-20 h-20 mx-auto bg-red-100 rounded-full">
-            <!-- <svg class="text-red-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
-            </svg> -->
-            <svg class="text-red-600 w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.<path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></svg>
+            <svg class="w-10" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+            </svg>
           </div>
-          <h3 class="mt-8 text-lg font-semibold text-black">Telegram</h3>
+          <h3 class="mt-8 text-lg font-semibold text-black">Twitter</h3>
+          <button
+            class="h-12 px-8 py-2 text-xl font-medium bg-transparent border border-gray-900 rounded-lg lg:visible lg:mt-10 hover:bg-[#ee4a03] hover:text-white hover:border-[#ee4a03]">
+            1M+ Follows
+          </button>
+        </div>
+
+        <div>
+          <div class="flex items-center justify-center w-20 h-20 mx-auto bg-green-100 rounded-full">
+            <svg class="text-green-600 w-10 h-10" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+            </svg>
+          </div>
+          <h3 class="mt-8 text-lg font-semibold text-black">LinkedIn</h3>
+          <button
+            class="h-12 px-8 py-2 text-xl font-medium bg-transparent border border-gray-900 rounded-lg lg:visible lg:mt-10 hover:bg-[#ee4a03] hover:text-white hover:border-[#ee4a03]">
+            1M+ Follows
+          </button>
+        </div>
+
+        <div>
+          <div class="flex items-center justify-center w-20 h-20 mx-auto bg-red-100 rounded-full">
+            <svg class="w-10" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+            </svg>
+          </div>
+          <h3 class="mt-8 text-lg font-semibold text-black">Youtube</h3>
+          <button
+            class="h-12 px-8 py-2 text-xl font-medium bg-transparent border border-gray-900 rounded-lg lg:visible lg:mt-10 hover:bg-[#ee4a03] hover:text-white hover:border-[#ee4a03]">
+            1M+ Follows
+          </button>
         </div>
       </div>
     </div>
   </section>
   <!-- Community ENDS -->
 
-<!-- Latest Deals STARTS -->
-<section class="py-10 bg-bl sm:py-16 lg:py-18">
-  <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-    <div class="flex items-end justify-between">
-      <div class="flex-1 text-center lg:text-left">
-        <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-          Today's Popular Deals By Ravi Gupta
-        </h2>
+  <!-- Latest Deals STARTS -->
+  <section class="py-10 bg-bl sm:py-16 lg:py-18">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <div class="flex items-end justify-between">
+        <div class="flex-1 text-center lg:text-left">
+          <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+            Today's Popular Deals By Ravi Gupta
+          </h2>
+        </div>
+
+        <div class="hidden lg:flex lg:items-center lg:space-x-3">
+          <button
+            class="invisible h-12 px-8 py-2 text-xl font-medium bg-transparent border border-gray-900 rounded-lg lg:visible lg:mt-10 hover:bg-[#ee4a03] hover:text-white hover:border-[#ee4a03]">View
+            All Deals
+          </button>
+        </div>
       </div>
 
-      <div class="hidden lg:flex lg:items-center lg:space-x-3">
-        <button
-          class="invisible h-12 px-8 py-2 text-xl font-medium bg-transparent border border-gray-900 rounded-lg lg:visible lg:mt-10 hover:bg-[#ee4a03] hover:text-white hover:border-[#ee4a03]">View All Deals
+      <div class="grid max-w-md grid-cols-1 gap-6 mx-auto mt-8 lg:mt-16 lg:grid-cols-3 lg:max-w-full">
+        <div class="overflow-hidden bg-white rounded shadow">
+          <div class="p-5">
+            <div class="relative">
+              <a href="#" title="" class="block aspect-w-4 aspect-h-3">
+                <img class="object-cover w-full h-full"
+                  src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/2/blog-post-1.jpg" alt="" />
+              </a>
+            </div>
+            <p class="mt-5 text-2xl font-semibold">
+              <a href="#" title="" class="text-black">
+                How to build coffee inside your home in 5 minutes.
+              </a>
+            </p>
+            <div class="flex flex-row justify-between">
+              <button type="submit"
+                class="inline-flex items-center justify-center px-3 py-2 mt-3 font-semibold text-white transition-all duration-200 bg-[#ee4a03] rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                Get It Now
+              </button>
+              <a href="#" title=""
+                class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-[#ee4a03] transition-all duration-200 border-b-2 border-transparent hover:border-[#ee4a03] focus:border-[#ee4a03]">
+                Read More
+                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden bg-white rounded shadow">
+          <div class="p-5">
+            <div class="relative">
+              <a href="#" title="" class="block aspect-w-4 aspect-h-3">
+                <img class="object-cover w-full h-full"
+                  src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/2/blog-post-2.jpg" alt="" />
+              </a>
+            </div>
+
+            <p class="mt-5 text-2xl font-semibold">
+              <a href="#" title="" class="text-black">
+                Ho7 Tips to run your remote team faster and better.
+              </a>
+            </p>
+            <div class="flex flex-row justify-between">
+              <button type="submit"
+                class="inline-flex items-center justify-center px-3 py-2 mt-3 font-semibold text-white transition-all duration-200 bg-[#ee4a03] rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                Get It Now
+              </button>
+              <a href="#" title=""
+                class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-[#ee4a03] transition-all duration-200 border-b-2 border-transparent hover:border-[#ee4a03] focus:border-[#ee4a03]">
+                Read More
+                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden bg-white rounded shadow">
+          <div class="p-5">
+            <div class="relative">
+              <a href="#" title="" class="block aspect-w-4 aspect-h-3">
+                <img class="object-cover w-full h-full"
+                  src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/2/blog-post-3.jpg" alt="" />
+              </a>
+            </div>
+            <p class="mt-5 text-2xl font-semibold">
+              <a href="#" title="" class="text-black">
+                5 Productivity tips to write faster at morning.
+              </a>
+            </p>
+            <div class="flex flex-row justify-between">
+              <button type="submit"
+                class="inline-flex items-center justify-center px-3 py-2 mt-3 font-semibold text-white transition-all duration-200 bg-[#ee4a03] rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                Get It Now
+              </button>
+              <a href="#" title=""
+                class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-[#ee4a03] transition-all duration-200 border-b-2 border-transparent hover:border-orange-600 focus:border-[#ee4a03]">
+                Read More
+                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center mt-8 space-x-3 lg:hidden">
+        <button type="button"
+          class="flex items-center justify-center text-gray-400 transition-all duration-200 bg-transparent border border-gray-300 rounded w-9 h-9 hover:bg-[#ee4a03] hover:text-white focus:bg-#ee4a03 focus:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <button type="button"
+          class="flex items-center justify-center text-gray-400 transition-all duration-200 bg-transparent border border-gray-300 rounded w-9 h-9 hover:bg-[#ee4a03] hover:text-white focus:bg-[#ee4a03] focus:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
         </button>
       </div>
     </div>
+  </section>
+  <!-- Latest Deals ENDS -->
 
-    <div class="grid max-w-md grid-cols-1 gap-6 mx-auto mt-8 lg:mt-16 lg:grid-cols-3 lg:max-w-full">
-      <div class="overflow-hidden bg-white rounded shadow">
-        <div class="p-5">
-          <div class="relative">
-            <a href="#" title="" class="block aspect-w-4 aspect-h-3">
-              <img class="object-cover w-full h-full"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/2/blog-post-1.jpg" alt="" />
-            </a>
-          </div>
-          <p class="mt-5 text-2xl font-semibold">
-            <a href="#" title="" class="text-black">
-              How to build coffee inside your home in 5 minutes.
-            </a>
-          </p>
-          <div class="flex flex-row justify-between">
-            <button type="submit"
-              class="inline-flex items-center justify-center px-3 py-2 mt-3 font-semibold text-white transition-all duration-200 bg-[#ee4a03] rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
-              Get It Now
-            </button>
-          <a href="#" title=""
-            class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-[#ee4a03] transition-all duration-200 border-b-2 border-transparent hover:border-[#ee4a03] focus:border-[#ee4a03]">
-            Read More
-            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd" />
-            </svg>
+  <!-- Blogging STARTS-->
+  <section class="py-5 bg-gray-50 sm:py-16 lg:py-14">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <div class="visible mt-10 text-center lg:hidden lg:invisible">
+        <h1 class="m-5 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">Blogging</h1>
+        <button
+          class="w-auto px-4 py-2 font-sans text-lg font-medium text-gray-900 bg-gray-200 rounded hover:shadow-2xl"
+          id="menu-btn">Categories</button>
+
+        <div class="flex-col hidden w-auto p-2 mt-1 text-sm bg-gray-200 rounded" id="dropdown">
+          <a href="#"
+            class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">SEO</a>
+          <a href="#"
+            class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">Affiliate
+            Marketing</a>
+          <a href="#"
+            class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">WebHosting</a>
+          <a href="#"
+            class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 hover:bg-gray-100rounded">WordPress</a>
+          <a href="#"
+            class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">Deals</a>
+          <a href="#"
+            class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">SEO
+            Tools</a>
+          <a href="#"
+            class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">AI
+            tools</a>
+          <a href="#"
+            class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">Affiliate
+            Programs</a>
+          <a href="#"
+            class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">WordPress
+            Themes</a>
+          <a href="#"
+            class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">WordPress
+            Plugins</a>
+          <a href="#"
+            class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">Make
+            Money Online</a>
+          <a href="#"
+            class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">Net
+            Worth</a>
+        </div>
+      </div>
+      <div class="flex flex-row w-full">
+        <div class="invisible hidden px-5 my-10 lg:flex lg:flex-col bg-gray-50 lg:visible md:w-1/4 lg:w-1/4">
+          <a href="" class="p-2 hover:shadow-2xl elem">
+            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">Blogging</h3>
           </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="overflow-hidden bg-white rounded shadow">
-        <div class="p-5">
-          <div class="relative">
-            <a href="#" title="" class="block aspect-w-4 aspect-h-3">
-              <img class="object-cover w-full h-full"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/2/blog-post-2.jpg" alt="" />
-            </a>
-          </div>
-          
-          <p class="mt-5 text-2xl font-semibold">
-            <a href="#" title="" class="text-black">
-              Ho7 Tips to run your remote team faster and better.
-            </a>
-          </p>
-          <div class="flex flex-row justify-between">
-            <button type="submit"
-              class="inline-flex items-center justify-center px-3 py-2 mt-3 font-semibold text-white transition-all duration-200 bg-[#ee4a03] rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
-              Get It Now
-            </button>
-          <a href="#" title=""
-            class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-[#ee4a03] transition-all duration-200 border-b-2 border-transparent hover:border-[#ee4a03] focus:border-[#ee4a03]">
-            Read More
-            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd" />
-            </svg>
+          <a href="" class="p-2 hover:shadow-2xl elem">
+            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">SEO</h3>
           </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="overflow-hidden bg-white rounded shadow">
-        <div class="p-5">
-          <div class="relative">
-            <a href="#" title="" class="block aspect-w-4 aspect-h-3">
-              <img class="object-cover w-full h-full"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/2/blog-post-3.jpg" alt="" />
-            </a>
-          </div>
-          <p class="mt-5 text-2xl font-semibold">
-            <a href="#" title="" class="text-black">
-              5 Productivity tips to write faster at morning.
-            </a>
-          </p>
-          <div class="flex flex-row justify-between">
-            <button type="submit"
-              class="inline-flex items-center justify-center px-3 py-2 mt-3 font-semibold text-white transition-all duration-200 bg-[#ee4a03] rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
-              Get It Now
-            </button>
-          <a href="#" title=""
-            class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-[#ee4a03] transition-all duration-200 border-b-2 border-transparent hover:border-orange-600 focus:border-[#ee4a03]">
-            Read More
-            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd" />
-            </svg>
+          <a href="" class="p-2 hover:shadow-2xl elem">
+            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">Affiliate Marketing
+            </h3>
           </a>
+          <a href="" class="p-2 hover:shadow-2xl elem">
+            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">WebHosting</h3>
+          </a>
+          <a href="" class="p-2 hover:shadow-2xl elem">
+            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">WordPress</h3>
+          </a>
+          <a href="" class="p-2 hover:shadow-2xl elem">
+            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">Deals</h3>
+          </a>
+          <a href="" class="p-2 hover:shadow-2xl elem">
+            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">SEO Tools</h3>
+          </a>
+          <a href="" class="p-2 hover:shadow-2xl elem">
+            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">AI Tools</h3>
+          </a>
+          <a href="" class="p-2 hover:shadow-2xl elem">
+            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">Affiliate Programs
+            </h3>
+          </a>
+          <a href="" class="p-2 hover:shadow-2xl elem">
+            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">WordPress Themes
+            </h3>
+          </a>
+          <a href="" class="p-2 hover:shadow-2xl elem">
+            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">WordPress Plugins
+            </h3>
+          </a>
+          <a href="" class="p-2 hover:shadow-2xl elem">
+            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">Make Money Online
+            </h3>
+          </a>
+          <a href="" class="p-2 hover:shadow-2xl elem">
+            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">Net Worth
+            </h3>
+          </a>
+        </div>
+        <div class="grid w-full grid-cols-1 md:grid-cols-1">
+          <div class="flex flex-row justify-between invisible w-full lg:visible">
+            <h1 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl ">Blogging</h1>
+            <a href="" class="px-3 py-2 font-sans text-xl font-medium text-black border-0 rounded bg-gray-50">View
+              All <i class="fa-solid fa-arrow-right"></i></a>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="flex items-center justify-center mt-8 space-x-3 lg:hidden">
-      <button type="button"
-        class="flex items-center justify-center text-gray-400 transition-all duration-200 bg-transparent border border-gray-300 rounded w-9 h-9 hover:bg-[#ee4a03] hover:text-white focus:bg-#ee4a03 focus:text-white">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-
-      <button type="button"
-        class="flex items-center justify-center text-gray-400 transition-all duration-200 bg-transparent border border-gray-300 rounded w-9 h-9 hover:bg-[#ee4a03] hover:text-white focus:bg-[#ee4a03] focus:text-white">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
-    </div>
-  </div>
-</section>
-<!-- Latest Deals ENDS -->
-  
-<!-- Blogging STARTS-->
-<section class="py-5 bg-gray-50 sm:py-16 lg:py-14">
-  <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-    <div class="visible mt-10 text-center lg:hidden lg:invisible">
-      <h1 class="m-5 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">Blogging</h1>
-      <button
-        class="w-auto px-4 py-2 font-sans text-lg font-medium text-gray-900 bg-gray-200 rounded hover:shadow-2xl"
-        id="menu-btn">Categories</button>
-
-      <div class="flex-col hidden w-auto p-2 mt-1 text-sm bg-gray-200 rounded" id="dropdown">
-        <a href="#"
-          class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">SEO</a>
-        <a href="#"
-          class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">Affiliate
-          Marketing</a>
-        <a href="#"
-          class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">WebHosting</a>
-        <a href="#"
-          class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 hover:bg-gray-100rounded">WordPress</a>
-        <a href="#"
-          class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">Deals</a>
-        <a href="#"
-          class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">SEO
-          Tools</a>
-        <a href="#"
-          class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">AI
-          tools</a>
-        <a href="#"
-          class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">Affiliate
-          Programs</a>
-        <a href="#"
-          class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">WordPress
-          Themes</a>
-        <a href="#"
-          class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">WordPress
-          Plugins</a>
-        <a href="#"
-          class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">Make
-          Money Online</a>
-        <a href="#"
-          class="px-4 py-1 font-sans text-base font-normal text-left text-gray-900 rounded hover:bg-gray-100">Net
-          Worth</a>
-      </div>
-    </div>
-    <div class="flex flex-row w-full">
-      <div class="invisible hidden px-5 my-10 lg:flex lg:flex-col bg-gray-50 lg:visible md:w-1/4 lg:w-1/4">
-        <a href="" class="p-2 hover:shadow-2xl elem">
-          <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">Blogging</h3>
-        </a>
-        <a href="" class="p-2 hover:shadow-2xl elem">
-          <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">SEO</h3>
-        </a>
-        <a href="" class="p-2 hover:shadow-2xl elem">
-          <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">Affiliate Marketing
-          </h3>
-        </a>
-        <a href="" class="p-2 hover:shadow-2xl elem">
-          <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">WebHosting</h3>
-        </a>
-        <a href="" class="p-2 hover:shadow-2xl elem">
-          <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">WordPress</h3>
-        </a>
-        <a href="" class="p-2 hover:shadow-2xl elem">
-          <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">Deals</h3>
-        </a>
-        <a href="" class="p-2 hover:shadow-2xl elem">
-          <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">SEO Tools</h3>
-        </a>
-        <a href="" class="p-2 hover:shadow-2xl elem">
-          <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">AI Tools</h3>
-        </a>
-        <a href="" class="p-2 hover:shadow-2xl elem">
-          <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">Affiliate Programs
-          </h3>
-        </a>
-        <a href="" class="p-2 hover:shadow-2xl elem">
-          <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">WordPress Themes
-          </h3>
-        </a>
-        <a href="" class="p-2 hover:shadow-2xl elem">
-          <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">WordPress Plugins
-          </h3>
-        </a>
-        <a href="" class="p-2 hover:shadow-2xl elem">
-          <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">Make Money Online
-          </h3>
-        </a>
-        <a href="" class="p-2 hover:shadow-2xl elem">
-          <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-black">Net Worth
-          </h3>
-        </a>
-      </div>
-      <div class="grid w-full grid-cols-1 md:grid-cols-1">
-        <div class="flex flex-row justify-between invisible w-full lg:visible">
-          <h1 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl ">Blogging</h1>
-          <a href=""
-            class="px-3 py-2 font-sans text-xl font-medium text-black border-0 rounded bg-gray-50">View
-            All <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        <hr class="border md:mt-2 md:mb-5" />
-        <div class="grid w-full grid-cols-1 mt-5 md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-5 justify-items-center">
-          <div class="py-4">
-            <div class="h-auto overflow-hidden rounded shadow-lg">
-              <a href="" ><img src="https://bloggerspassion.com/wp-content/uploads/2023/03/chatgpt-statistics.webp" alt=""
-                class="w-auto"></a>
+          <hr class="border md:mt-2 md:mb-5" />
+          <div
+            class="grid w-full grid-cols-1 mt-5 md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-5 justify-items-center">
+            <div class="py-4">
+              <div class="h-auto overflow-hidden rounded shadow-lg">
+                <a href=""><img src="https://bloggerspassion.com/wp-content/uploads/2023/03/chatgpt-statistics.webp"
+                    alt="" class="w-auto"></a>
                 <div class="p-5 text-center md:text-left">
                   <p class="mt-2 text-2xl font-semibold">
                     <a href="#" title="" class="text-black">
@@ -795,12 +1004,12 @@
                     March 29, 2023
                   </p>
                 </div>
+              </div>
             </div>
-          </div>
-          <div class="py-4">
-            <div class="h-auto overflow-hidden rounded shadow-lg">
-              <a href="" ><img src="https://bloggerspassion.com/wp-content/uploads/2023/03/best-ai-chatbots.webp" alt=""
-                class="w-auto"></a>
+            <div class="py-4">
+              <div class="h-auto overflow-hidden rounded shadow-lg">
+                <a href=""><img src="https://bloggerspassion.com/wp-content/uploads/2023/03/best-ai-chatbots.webp"
+                    alt="" class="w-auto"></a>
                 <div class="p-5 text-center md:text-left">
                   <p class="mt-2 text-2xl font-semibold">
                     <a href="#" title="" class="text-black">
@@ -811,12 +1020,12 @@
                     March 21, 2023
                   </p>
                 </div>
+              </div>
             </div>
-          </div>
-          <div class="py-4">
-            <div class="overflow-hidden rounded shadow-lg">
-              <a href="" ><img src="https://bloggerspassion.com/wp-content/uploads/2023/03/spotify-stats-2.webp" alt=""
-                class="w-auto"></a>
+            <div class="py-4">
+              <div class="overflow-hidden rounded shadow-lg">
+                <a href=""><img src="https://bloggerspassion.com/wp-content/uploads/2023/03/spotify-stats-2.webp" alt=""
+                    class="w-auto"></a>
                 <div class="p-5 text-center md:text-left">
                   <p class="mt-2 text-2xl font-semibold">
                     <a href="#" title="" class="text-black">
@@ -827,12 +1036,12 @@
                     March 20, 2023
                   </p>
                 </div>
+              </div>
             </div>
-          </div>
-          <div class="py-4">
-            <div class="overflow-hidden rounded shadow-lg">
-              <a href="" ><img src="https://bloggerspassion.com/wp-content/uploads/2023/03/chatgpt-statistics.webp" alt=""
-                class="w-auto"></a>
+            <div class="py-4">
+              <div class="overflow-hidden rounded shadow-lg">
+                <a href=""><img src="https://bloggerspassion.com/wp-content/uploads/2023/03/chatgpt-statistics.webp"
+                    alt="" class="w-auto"></a>
                 <div class="p-5 text-center md:text-left">
                   <p class="mt-2 text-2xl font-semibold">
                     <a href="#" title="" class="text-black">
@@ -843,12 +1052,12 @@
                     March 29, 2023
                   </p>
                 </div>
+              </div>
             </div>
-          </div>
-          <div class="py-4">
-            <div class="overflow-hidden rounded shadow-lg">
-              <a href="" ><img src="https://bloggerspassion.com/wp-content/uploads/2023/03/chatgpt-statistics.webp" alt=""
-                class="w-auto"></a>
+            <div class="py-4">
+              <div class="overflow-hidden rounded shadow-lg">
+                <a href=""><img src="https://bloggerspassion.com/wp-content/uploads/2023/03/chatgpt-statistics.webp"
+                    alt="" class="w-auto"></a>
                 <div class="p-5 text-center md:text-left">
                   <p class="mt-2 text-2xl font-semibold">
                     <a href="#" title="" class="text-black">
@@ -859,12 +1068,12 @@
                     March 29, 2023
                   </p>
                 </div>
+              </div>
             </div>
-          </div>
-          <div class="py-4">
-            <div class="overflow-hidden rounded shadow-lg">
-              <a href="" ><img src="https://bloggerspassion.com/wp-content/uploads/2023/03/chatgpt-statistics.webp" alt=""
-                class="w-auto"></a>
+            <div class="py-4">
+              <div class="overflow-hidden rounded shadow-lg">
+                <a href=""><img src="https://bloggerspassion.com/wp-content/uploads/2023/03/chatgpt-statistics.webp"
+                    alt="" class="w-auto"></a>
                 <div class="p-5 text-center md:text-left">
                   <p class="mt-2 text-2xl font-semibold">
                     <a href="#" title="" class="text-black">
@@ -875,37 +1084,156 @@
                     March 29, 2023
                   </p>
                 </div>
+              </div>
             </div>
+            <a href=""
+              class="visible px-3 mt-4 font-sans text-xl font-medium text-black border-0 rounded md:hidden lg:invisible bg-gray-50">View
+              All <i class="fa-solid fa-arrow-right"></i></a>
           </div>
-          <a href=""
-            class="visible px-3 mt-4 font-sans text-xl font-medium text-black border-0 rounded md:hidden lg:invisible bg-gray-50">View
-            All <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
-    </div>
 
-  </div>
-</section>
- <!-- Blogging ENDS -->
- 
-<!-- Step 10 -->
-<section class="py-10 bg-gray-900 sm:py-16 lg:py-18">
-  <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 md:items-stretch md:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-10">
-      <div class="flex flex-col justify-between lg:py-5">
-        <div>
-          <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:leading-tight lg:text-5xl">
-            I am digital marketor Get More Traffic More Customers More Revenue With Digital Marketing ROI
-          </h2>
-          <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-white">
-            I create such a digital marketing strategy that will boost your More Traffic More Customers MoreRevenue With Digital Marketing ROI
-          </p>
-          <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-white">
-            7 Years | 400+ Clint | 3000+ Projects
-          </p>
+    </div>
+  </section>
+  <!-- Blogging ENDS -->
+
+  <!-- Step 10 -->
+  <section class="py-10 bg-gray-900 sm:py-16 lg:py-18">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:items-stretch md:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-10">
+        <div class="flex flex-col justify-between lg:py-5">
+          <div>
+            <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:leading-tight lg:text-5xl">
+              I am digital marketor Get More Traffic More Customers More Revenue With Digital Marketing ROI
+            </h2>
+            <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-white">
+              I create such a digital marketing strategy that will boost your More Traffic More Customers MoreRevenue
+              With Digital Marketing ROI
+            </p>
+            <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-white">
+              7 Years | 400+ Clint | 3000+ Projects
+            </p>
+          </div>
+
+          <div class="hidden md:mt-auto md:block">
+            <div class="flex items-center">
+              <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+
+            <blockquote class="mt-6">
+              <p class="text-lg leading-relaxed text-white">
+                The marketing team made it effortless. My brand's exposure is
+                now faster and easier to achieve than before. I just provide
+                input, they execute the strategy, and I see the results.
+              </p>
+            </blockquote>
+
+            <div class="flex items-center mt-8">
+              <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/avatar.jpg" alt="" />
+              <div class="ml-4">
+                <p class="text-base font-semibold text-white">
+                  Jenna Shyllit
+                </p>
+                <p class="mt-px text-sm text-gray-400">
+                  Ecommerce Store Owner
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="hidden md:mt-auto md:block">
+        <div class="lg:pl-12">
+          <div class="overflow-hidden bg-white rounded-md">
+            <div class="p-6 sm:p-10">
+              <h3 class="text-3xl font-semibold text-black">
+                Get a free quote
+              </h3>
+              <p class="mt-4 text-base text-gray-600">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </p>
+
+              <form action="#" method="POST" class="mt-4">
+                <div class="space-y-6">
+                  <div>
+                    <label for="" class="text-base font-medium text-gray-900">
+                      Your name
+                    </label>
+                    <div class="mt-2.5 relative">
+                      <input type="text" name="" id="" placeholder="Enter your full name"
+                        class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]" />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="" class="text-base font-medium text-gray-900">
+                      Email address
+                    </label>
+                    <div class="mt-2.5 relative">
+                      <input type="text" name="" id="" placeholder="Enter your full name"
+                        class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]" />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="" class="text-base font-medium text-gray-900">
+                      Phone number
+                    </label>
+                    <div class="mt-2.5 relative">
+                      <input type="text" name="" id="" placeholder="Enter your Phone number"
+                        class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03]0 focus:border-[#ee4a03] caret-[#ee4a03]" />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="" class="text-base font-medium text-gray-900">
+                      Project brief
+                    </label>
+                    <div class="mt-2.5 relative">
+                      <textarea name="" id="" placeholder="Enter your project brief"
+                        class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]"
+                        rows="4"></textarea>
+                    </div>
+                  </div>
+
+                  <div>
+                    <button type="submit"
+                      class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-[#ee4a03] border border-transparent rounded-md focus:outline-none hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                      Get Free Quote
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:hidden">
           <div class="flex items-center">
             <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
               fill="currentColor">
@@ -936,9 +1264,9 @@
 
           <blockquote class="mt-6">
             <p class="text-lg leading-relaxed text-white">
-              The marketing team made it effortless. My brand's exposure is
-              now faster and easier to achieve than before. I just provide
-              input, they execute the strategy, and I see the results.
+              You made it so simple. My new site is so much faster and easier
+              to work with than my old site. I just choose the page, make the
+              change and click save.
             </p>
           </blockquote>
 
@@ -946,136 +1274,18 @@
             <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
               src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/avatar.jpg" alt="" />
             <div class="ml-4">
-              <p class="text-base font-semibold text-white">
-                Jenna Shyllit
-              </p>
-              <p class="mt-px text-sm text-gray-400">
-                Ecommerce Store Owner
-              </p>
+              <p class="text-base font-semibold text-white">Jenny Wilson</p>
+              <p class="mt-px text-sm text-gray-400">Product Designer</p>
             </div>
           </div>
+
         </div>
-      </div>
-
-      <div class="lg:pl-12">
-        <div class="overflow-hidden bg-white rounded-md">
-          <div class="p-6 sm:p-10">
-            <h3 class="text-3xl font-semibold text-black">
-              Get a free quote
-            </h3>
-            <p class="mt-4 text-base text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint.
-            </p>
-
-            <form action="#" method="POST" class="mt-4">
-              <div class="space-y-6">
-                <div>
-                  <label for="" class="text-base font-medium text-gray-900">
-                    Your name
-                  </label>
-                  <div class="mt-2.5 relative">
-                    <input type="text" name="" id="" placeholder="Enter your full name"
-                      class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]" />
-                  </div>
-                </div>
-
-                <div>
-                  <label for="" class="text-base font-medium text-gray-900">
-                    Email address
-                  </label>
-                  <div class="mt-2.5 relative">
-                    <input type="text" name="" id="" placeholder="Enter your full name"
-                      class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]" />
-                  </div>
-                </div>
-
-                <div>
-                  <label for="" class="text-base font-medium text-gray-900">
-                    Phone number
-                  </label>
-                  <div class="mt-2.5 relative">
-                    <input type="text" name="" id="" placeholder="Enter your Phone number"
-                      class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03]0 focus:border-[#ee4a03] caret-[#ee4a03]" />
-                  </div>
-                </div>
-
-                <div>
-                  <label for="" class="text-base font-medium text-gray-900">
-                    Project brief
-                  </label>
-                  <div class="mt-2.5 relative">
-                    <textarea name="" id="" placeholder="Enter your project brief"
-                      class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]"
-                      rows="4"></textarea>
-                  </div>
-                </div>
-
-                <div>
-                  <button type="submit"
-                    class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-[#ee4a03] border border-transparent rounded-md focus:outline-none hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
-                    Get Free Quote
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <div class="md:hidden">
-        <div class="flex items-center">
-          <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-            fill="currentColor">
-            <path
-              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-          </svg>
-          <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-            fill="currentColor">
-            <path
-              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-          </svg>
-          <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-            fill="currentColor">
-            <path
-              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-          </svg>
-          <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-            fill="currentColor">
-            <path
-              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-          </svg>
-          <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-            fill="currentColor">
-            <path
-              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-          </svg>
-        </div>
-
-        <blockquote class="mt-6">
-          <p class="text-lg leading-relaxed text-white">
-            You made it so simple. My new site is so much faster and easier
-            to work with than my old site. I just choose the page, make the
-            change and click save.
-          </p>
-        </blockquote>
-
-        <div class="flex items-center mt-8">
-          <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
-            src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/avatar.jpg" alt="" />
-          <div class="ml-4">
-            <p class="text-base font-semibold text-white">Jenny Wilson</p>
-            <p class="mt-px text-sm text-gray-400">Product Designer</p>
-          </div>
-        </div>
-        
       </div>
     </div>
-  </div>
-</section>
-<!-- Step 10 ENDS -->
+  </section>
+  <!-- Step 10 ENDS -->
 
- 
+
 
 
   <!-- Try Section STARTS -->
@@ -1174,33 +1384,27 @@
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="grid items-center grid-cols-2 gap-10 sm:gap-y-16 sm:grid-cols-3 xl:grid-cols-6">
         <div>
-          <img class="object-contain w-auto mx-auto h-14"
-            src="./src/assest/dailyhunt-logo-white.png" alt="" />
+          <img class="object-contain w-auto mx-auto h-14" src="./src/assest/dailyhunt-logo-black.png" alt="" />
         </div>
 
         <div>
-          <img class="object-contain w-auto mx-auto h-14"
-            src="./src/assest/Deccan_Herald_logo.svg.png" alt="" />
+          <img class="object-contain w-auto mx-auto h-14" src="./src/assest/Deccan_Herald_logo.svg.png" alt="" />
         </div>
 
         <div>
-          <img class="object-contain w-auto mx-auto h-14"
-            src="./src/assest/Digital-Journal-Logo.png" alt="" />
+          <img class="object-contain w-auto mx-auto h-14" src="./src/assest/Digital-Journal-Logo.png" alt="" />
         </div>
 
         <div>
-          <img class="object-contain w-auto mx-auto h-14"
-            src="./src/assest/marketwatch-logo.png" alt="" />
+          <img class="object-contain w-auto mx-auto h-14" src="./src/assest/marketwatch-logo.png" alt="" />
         </div>
 
         <div>
-          <img class="object-contain w-auto mx-auto h-14"
-            src="./src/assest/midday.png" alt="" />
+          <img class="object-contain w-auto mx-auto h-14" src="./src/assest/midday.png" alt="" />
         </div>
 
         <div>
-          <img class="object-contain w-auto mx-auto h-14"
-            src="./src/assest/The_times_of_india.svg.png" alt="" />
+          <img class="object-contain w-auto mx-auto h-14" src="./src/assest/The_times_of_india.svg.png" alt="" />
         </div>
       </div>
     </div>
@@ -1370,14 +1574,14 @@
       <hr class="mt-16 mb-10 border-gray-200" />
 
       <p class="text-sm text-center text-gray-600">
-        © Copyright 2021, All Rights Reserved by WenCreatives
+        © 2008-2023: Gaurav Tiwari | Contact | Archives | Privacy Policy | Disclaimer & Legal
       </p>
     </div>
   </section>
   <!-- Footer Section ENDS -->
 
 
-  
+
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       const menuBtn = document.querySelector('#menu-btn')
@@ -1389,6 +1593,55 @@
       })
 
     })
+
+
+    var toggelbtn = document.getElementById('toggelbtn');
+    var dbox = document.getElementById('menudiv');
+    var closeicon = document.getElementById('closeicon');
+    var listicon = document.getElementById('listicon');
+
+    function showmenu() {
+      dbox.style.display = "flex";
+      dbox.style.flexDirection = 'col';
+      listicon.style.display = "none";
+      closeicon.style.display = "flex";
+    };
+
+    function hidemenu() {
+      dbox.style.display = "none";
+      listicon.style.display = "flex";
+      closeicon.style.display = "none";
+
+    }
+
+
+    var ebook = document.getElementById("ebook");
+    var courses = document.getElementById("courses");
+    var ebookbtn = document.getElementById("ebookbtn");
+    var coursesbtn = document.getElementById("coursesbtn");
+
+    function showebook(){
+      ebook.style.display = "block";
+      courses.style.display = "none";
+      ebookbtn.style.backgroundColor = "#ee4a03";
+      ebookbtn.style.borderColor = "#ee4a03";
+      ebookbtn.style.color = "white";
+      coursesbtn.style.backgroundColor = "white";
+      coursesbtn.style.borderColor = "black";
+      coursesbtn.style.color = "black";
+    }
+
+    function showcourses(){
+      ebook.style.display = "none";
+      courses.style.display = "block";
+      coursesbtn.style.backgroundColor = "#ee4a03";
+      coursesbtn.style.borderColor = "#ee4a03";
+      coursesbtn.style.color = "white";
+      ebookbtn.style.backgroundColor = "white";
+      ebookbtn.style.borderColor = "black";
+      ebookbtn.style.color = "black";
+    }
+
   </script>
 </body>
 
