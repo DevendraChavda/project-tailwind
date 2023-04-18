@@ -13,7 +13,7 @@
 <body>
 
   <header>
-    <div class="bg-white h-8 px-10 fixed w-full z-20 flex flex-row justify-between">
+    <div class="hidden lg:bg-white lg:h-8 lg:px-10 lg:fixed lg:w-full lg:z-20 lg:flex lg:flex-row lg:justify-between">
       <div>
         <div class="inline-block mr-10">
           <button type="submit"
@@ -47,10 +47,13 @@
 
 
     </div>
+
     <nav
-      class="flex items-center justify-between flex-wrap bg-[#ee4a03] p-6 fixed w-full z-20 top-8 left-0 border-b border-gray-200">
+      class="flex items-center justify-between flex-wrap bg-[#ee4a03] p-6 fixed w-full z-20 top-0 lg:top-8 left-0 border-b border-gray-200">
       <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <span class="font-semibold text-xl tracking-tight">Compnay LOGO</span>
+        <span class="font-semibold text-xl tracking-tight">
+          <img class="w-48" src="./src/assest/cropped-cropped-LOGO-1.png" alt="">
+        </span>
       </div>
       <div id="listicon" class="block lg:hidden">
         <button id="toggelbtn" onclick="showmenu()"
@@ -992,7 +995,7 @@
             class="grid w-full grid-cols-1 mt-5 md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-5 justify-items-center">
             <div class="py-4">
               <div class="h-auto overflow-hidden rounded shadow-lg">
-                <a href=""><img src="https://bloggerspassion.com/wp-content/uploads/2023/03/chatgpt-statistics.webp"
+                <a href=""><img src="./src/assest/Content-Creation-A-Checklist.webp"
                     alt="" class="w-auto"></a>
                 <div class="p-5 text-center md:text-left">
                   <p class="mt-2 text-2xl font-semibold">
@@ -1008,7 +1011,7 @@
             </div>
             <div class="py-4">
               <div class="h-auto overflow-hidden rounded shadow-lg">
-                <a href=""><img src="https://bloggerspassion.com/wp-content/uploads/2023/03/best-ai-chatbots.webp"
+                <a href=""><img src="./src/assest/Content-Creation-A-Checklist.webp"
                     alt="" class="w-auto"></a>
                 <div class="p-5 text-center md:text-left">
                   <p class="mt-2 text-2xl font-semibold">
@@ -1024,7 +1027,7 @@
             </div>
             <div class="py-4">
               <div class="overflow-hidden rounded shadow-lg">
-                <a href=""><img src="https://bloggerspassion.com/wp-content/uploads/2023/03/spotify-stats-2.webp" alt=""
+                <a href=""><img src="./src/assest/Content-Creation-A-Checklist.webp" alt=""
                     class="w-auto"></a>
                 <div class="p-5 text-center md:text-left">
                   <p class="mt-2 text-2xl font-semibold">
@@ -1040,7 +1043,7 @@
             </div>
             <div class="py-4">
               <div class="overflow-hidden rounded shadow-lg">
-                <a href=""><img src="https://bloggerspassion.com/wp-content/uploads/2023/03/chatgpt-statistics.webp"
+                <a href=""><img src="./src/assest/Content-Creation-A-Checklist.webp"
                     alt="" class="w-auto"></a>
                 <div class="p-5 text-center md:text-left">
                   <p class="mt-2 text-2xl font-semibold">
@@ -1056,7 +1059,7 @@
             </div>
             <div class="py-4">
               <div class="overflow-hidden rounded shadow-lg">
-                <a href=""><img src="https://bloggerspassion.com/wp-content/uploads/2023/03/chatgpt-statistics.webp"
+                <a href=""><img src="./src/assest/Content-Creation-A-Checklist.webp"
                     alt="" class="w-auto"></a>
                 <div class="p-5 text-center md:text-left">
                   <p class="mt-2 text-2xl font-semibold">
@@ -1072,7 +1075,7 @@
             </div>
             <div class="py-4">
               <div class="overflow-hidden rounded shadow-lg">
-                <a href=""><img src="https://bloggerspassion.com/wp-content/uploads/2023/03/chatgpt-statistics.webp"
+                <a href=""><img src="./src/assest/Content-Creation-A-Checklist.webp"
                     alt="" class="w-auto"></a>
                 <div class="p-5 text-center md:text-left">
                   <p class="mt-2 text-2xl font-semibold">
@@ -1285,7 +1288,55 @@
   </section>
   <!-- Step 10 ENDS -->
 
+  <!--adds banners----------->
+  <section class="pt-6 bg-gray-50 overflow-hidden w-full h-60">
+    <div>
+      
+      <img src="./src/assest/adds.png" alt="adds">
+    </div>
+  </section>
+  <!--adds banners  END-->
 
+  <!--news and media Section----->
+  <section class="py-10 bg-gray-50 sm:py-16 lg:py-24">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between">
+        <div class="flex-1 text-center lg:text-left">
+          <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+            On Youtube
+          </h2>
+        </div>
+
+        <div class="hidden lg:flex lg:items-center lg:space-x-3">
+          <button
+            class="invisible h-12 px-8 py-2 text-xl font-medium bg-transparent border border-gray-900 rounded-lg lg:visible lg:mt-10 hover:bg-[#ee4a03] hover:text-white hover:border-[#ee4a03]">
+            <i class="fa-brands fa-youtube"></i> View More
+          </button>
+        </div>
+      </div>
+
+      <div class="p-16 flex flex-grow justify-between border-gray-500 shadow-lg rounded-lg">
+        <div class="w-[50%]">
+          <h1 class="mt-2 text-2xl font-semibold">Affiliate Marketing Guide for Beginners [Free]
+          </h1>
+          <p>Explore this exclusive playlist to learn affiliate marketing for free. Do subscribe to stay updated with the latest digital marketing content.
+          </p>
+
+          <button
+            class="h-12 px-8 py-2 text-xl font-medium bg-transparent border border-gray-900 rounded-lg lg:visible lg:mt-10 hover:bg-[#ee4a03] hover:text-white hover:border-[#ee4a03]">
+            Subscribe
+          </button>
+
+        </div>
+        <div>
+          <iframe class="rounded-md" src="https://www.youtube.com/embed/wZ59ZgcuChY">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+  <!--news and media Section END----->
 
 
   <!-- Try Section STARTS -->
