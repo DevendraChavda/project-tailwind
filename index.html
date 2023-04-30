@@ -8,6 +8,66 @@
   <link rel="stylesheet" href="./src/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/05ffee228b.js" crossorigin="anonymous"></script>
+
+  <script type="text/tailwindcss">
+    * {
+      @apply box-border;
+    }
+    body {
+      font-family: Verdana, sans-serif;
+    }
+    .mySlides {
+      @apply hidden;
+    }
+    img {
+      @apply align-middle;
+    }
+    
+    /* Slideshow container */
+    .slideshow-container {
+      @apply max-w-[1000px] relative m-auto;
+    }
+    
+    /* Caption text */
+    .text {
+      @apply text-[#f2f2f2] text-[15px] absolute w-full text-center px-3 py-2 bottom-2;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      @apply text-[#f2f2f2] text-xs absolute px-3 py-2 top-0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      @apply h-[15px] w-[15px] bg-[#bbb] inline-block transition-[background-color] duration-[0.6s] ease-[ease] mx-0.5 my-0 rounded-[50%];
+    }
+    .active {
+      @apply bg-[#717171];
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    @keyframes fade {
+      from {
+        @apply opacity-40;
+      }
+      to {
+        @apply opacity-100;
+      }
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {
+        @apply text-[11px];
+      }
+    }
+    
+  </script>
 </head>
 
 <body>
@@ -689,7 +749,7 @@
             </svg>
           </div>
           <h3 class="mt-8 text-lg font-semibold text-black">Facebook</h3>
-          <button
+          <button onclick="window.location.href='https://www.facebook.com/raviguptaseo'"
             class="h-12 px-8 py-2 text-xl font-medium bg-transparent border border-gray-900 rounded-lg lg:visible lg:mt-10 hover:bg-[#ee4a03] hover:text-white hover:border-[#ee4a03]">
             1M+ Follows
           </button>
@@ -704,7 +764,7 @@
             </svg>
           </div>
           <h3 class="mt-8 text-lg font-semibold text-black">Instagram</h3>
-          <button
+          <button onclick="window.location.href='https://www.instagram.com/raviguptaseoexpert/'"
             class="h-12 px-8 py-2 text-xl font-medium bg-transparent border border-gray-900 rounded-lg lg:visible lg:mt-10 hover:bg-[#ee4a03] hover:text-white hover:border-[#ee4a03]">
             1M+ Follows
           </button>
@@ -719,7 +779,7 @@
             </svg>
           </div>
           <h3 class="mt-8 text-lg font-semibold text-black">Twitter</h3>
-          <button
+          <button onclick="window.location.href='https://twitter.com/Ravi_Gupta_seo'"
             class="h-12 px-8 py-2 text-xl font-medium bg-transparent border border-gray-900 rounded-lg lg:visible lg:mt-10 hover:bg-[#ee4a03] hover:text-white hover:border-[#ee4a03]">
             1M+ Follows
           </button>
@@ -734,7 +794,7 @@
             </svg>
           </div>
           <h3 class="mt-8 text-lg font-semibold text-black">LinkedIn</h3>
-          <button
+          <button onclick="window.location.href='https://www.linkedin.com/in/ravi-gupta-seo-expert/'"
             class="h-12 px-8 py-2 text-xl font-medium bg-transparent border border-gray-900 rounded-lg lg:visible lg:mt-10 hover:bg-[#ee4a03] hover:text-white hover:border-[#ee4a03]">
             1M+ Follows
           </button>
@@ -749,7 +809,7 @@
             </svg>
           </div>
           <h3 class="mt-8 text-lg font-semibold text-black">Youtube</h3>
-          <button
+          <button onclick="window.location.href='https://www.youtube.com/channel/UCFkiY1NEuNJYsr24DlVMpuw'"
             class="h-12 px-8 py-2 text-xl font-medium bg-transparent border border-gray-900 rounded-lg lg:visible lg:mt-10 hover:bg-[#ee4a03] hover:text-white hover:border-[#ee4a03]">
             1M+ Follows
           </button>
@@ -945,7 +1005,8 @@
             <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-[#ee4a03]">SEO</h3>
           </a>
           <a href="" class="p-2 hover:shadow-2xl elem">
-            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-[#ee4a03]">Affiliate Marketing
+            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-[#ee4a03]">Affiliate
+              Marketing
             </h3>
           </a>
           <a href="" class="p-2 hover:shadow-2xl elem">
@@ -964,7 +1025,8 @@
             <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-[#ee4a03]">AI Tools</h3>
           </a>
           <a href="" class="p-2 hover:shadow-2xl elem">
-            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-[#ee4a03]">Affiliate Programs
+            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-[#ee4a03]">Affiliate
+              Programs
             </h3>
           </a>
           <a href="" class="p-2 hover:shadow-2xl elem">
@@ -972,11 +1034,13 @@
             </h3>
           </a>
           <a href="" class="p-2 hover:shadow-2xl elem">
-            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-[#ee4a03]">WordPress Plugins
+            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-[#ee4a03]">WordPress
+              Plugins
             </h3>
           </a>
           <a href="" class="p-2 hover:shadow-2xl elem">
-            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-[#ee4a03]">Make Money Online
+            <h3 class="pl-5 font-sans text-lg font-medium text-left text-gray-800 hover:text-[#ee4a03]">Make Money
+              Online
             </h3>
           </a>
           <a href="" class="p-2 hover:shadow-2xl elem">
@@ -987,7 +1051,8 @@
         <div class="grid w-full grid-cols-1 md:grid-cols-1">
           <div class="flex flex-row justify-between invisible w-full lg:visible">
             <h1 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl ">Blogging</h1>
-            <a href="/services/blog.html" class="px-3 py-2 font-sans text-xl font-medium text-black border-0 rounded bg-gray-50">View
+            <a href="/services/blog.html"
+              class="px-3 py-2 font-sans text-xl font-medium text-black border-0 rounded bg-gray-50">View
               All <i class="fa-solid fa-arrow-right"></i></a>
           </div>
           <hr class="border md:mt-2 md:mb-5" />
@@ -1141,27 +1206,100 @@
               </svg>
             </div>
 
-            <blockquote class="mt-6">
-              <p class="text-lg leading-relaxed text-white">
-                The marketing team made it effortless. My brand's exposure is
-                now faster and easier to achieve than before. I just provide
-                input, they execute the strategy, and I see the results.
-              </p>
-            </blockquote>
 
-            <div class="flex items-center mt-8">
-              <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/avatar.jpg" alt="" />
-              <div class="ml-4">
-                <p class="text-base font-semibold text-white">
-                  Jenna Shyllit
-                </p>
-                <p class="mt-px text-sm text-gray-400">
-                  Ecommerce Store Owner
-                </p>
+            <div>
+              <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext  text-white">1 / 3</div>
+                  <div>
+                    <blockquote class="mt-6">
+                      <p class="text-lg leading-relaxed text-white">
+                        The marketing team made it effortless. My brand's exposure is
+                        now faster and easier to achieve than before. I just provide
+                        input, they execute the strategy, and I see the results.
+                      </p>
+                    </blockquote>
+    
+                    <div class="flex items-center mt-8">
+                      <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                        src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/avatar.jpg" alt="" />
+                      <div class="ml-4">
+                        <p class="text-base font-semibold text-white">
+                          Jenna Shyllit
+                        </p>
+                        <p class="mt-px text-sm text-gray-400">
+                          Ecommerce Store Owner
+                        </p>
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+  
+                <div class="mySlides fade">
+                  <div class="numbertext  text-white">2 / 3</div>
+                  <div>
+                    <blockquote class="mt-6">
+                      <p class="text-lg leading-relaxed text-white">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis iusto natus ea! Quia aut dolor atque alias exercitationem repellat.
+                      </p>
+                    </blockquote>
+    
+                    <div class="flex items-center mt-8">
+                      <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                        src="" alt="" />
+                      <div class="ml-4">
+                        <p class="text-base font-semibold text-white">
+                          Devendra Chavda
+                        </p>
+                        <p class="mt-px text-sm text-gray-400">
+                          Ecommerce Store Owner
+                        </p>
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+  
+                <div class="mySlides fade">
+                  <div class="numbertext text-white">3 / 3</div>
+                  <div>
+                    <blockquote class="mt-6">
+                      <p class="text-lg leading-relaxed text-white">
+                        The marketing team made it effortless. My brand's exposure is
+                        now faster and easier to achieve than before. I just provide
+                        input, they execute the strategy, and I see the results.
+                      </p>
+                    </blockquote>
+    
+                    <div class="flex items-center mt-8">
+                      <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                        src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/avatar.jpg" alt="" />
+                      <div class="ml-4">
+                        <p class="text-base font-semibold text-white">
+                          miss puja
+                        </p>
+                        <p class="mt-px text-sm text-gray-400">
+                          Ecommerce Store Owner
+                        </p>
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+  
+              </div>
+              <br>
+  
+              <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
               </div>
             </div>
           </div>
+
         </div>
 
         <div class="lg:pl-12">
@@ -1259,23 +1397,99 @@
             </svg>
           </div>
 
-          <blockquote class="mt-6">
-            <p class="text-lg leading-relaxed text-white">
-              You made it so simple. My new site is so much faster and easier
-              to work with than my old site. I just choose the page, make the
-              change and click save.
-            </p>
-          </blockquote>
+          
 
-          <div class="flex items-center mt-8">
-            <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/avatar.jpg" alt="" />
-            <div class="ml-4">
-              <p class="text-base font-semibold text-white">Jenny Wilson</p>
-              <p class="mt-px text-sm text-gray-400">Product Designer</p>
+        </div>
+        <div>
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext  text-white">1 / 3</div>
+              <div>
+                <blockquote class="mt-6">
+                  <p class="text-lg leading-relaxed text-white">
+                    The marketing team made it effortless. My brand's exposure is
+                    now faster and easier to achieve than before. I just provide
+                    input, they execute the strategy, and I see the results.
+                  </p>
+                </blockquote>
+
+                <div class="flex items-center mt-8">
+                  <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                    src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/avatar.jpg" alt="" />
+                  <div class="ml-4">
+                    <p class="text-base font-semibold text-white">
+                      Jenna Shyllit
+                    </p>
+                    <p class="mt-px text-sm text-gray-400">
+                      Ecommerce Store Owner
+                    </p>
+                  </div>
+                </div>
+
+              </div>
             </div>
-          </div>
 
+            <div class="mySlides fade">
+              <div class="numbertext  text-white">2 / 3</div>
+              <div>
+                <blockquote class="mt-6">
+                  <p class="text-lg leading-relaxed text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis iusto natus ea! Quia aut dolor atque alias exercitationem repellat.
+                  </p>
+                </blockquote>
+
+                <div class="flex items-center mt-8">
+                  <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                    src="" alt="" />
+                  <div class="ml-4">
+                    <p class="text-base font-semibold text-white">
+                      Devendra Chavda
+                    </p>
+                    <p class="mt-px text-sm text-gray-400">
+                      Ecommerce Store Owner
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext text-white">3 / 3</div>
+              <div>
+                <blockquote class="mt-6">
+                  <p class="text-lg leading-relaxed text-white">
+                    The marketing team made it effortless. My brand's exposure is
+                    now faster and easier to achieve than before. I just provide
+                    input, they execute the strategy, and I see the results.
+                  </p>
+                </blockquote>
+
+                <div class="flex items-center mt-8">
+                  <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                    src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/avatar.jpg" alt="" />
+                  <div class="ml-4">
+                    <p class="text-base font-semibold text-white">
+                      miss puja
+                    </p>
+                    <p class="mt-px text-sm text-gray-400">
+                      Ecommerce Store Owner
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <br>
+
+          <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
         </div>
       </div>
     </div>
@@ -1629,6 +1843,28 @@
 
 
   <script>
+
+
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
     window.addEventListener('DOMContentLoaded', () => {
       const menuBtn = document.querySelector('#menu-btn')
       const dropdown = document.querySelector('#dropdown')
