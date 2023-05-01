@@ -19,14 +19,7 @@
     .mySlides {
       @apply hidden;
     }
-    img {
-      @apply align-middle;
-    }
     
-    /* Slideshow container */
-    .slideshow-container {
-      @apply max-w-[1000px] relative m-auto;
-    }
     
     /* Caption text */
     .text {
@@ -70,96 +63,122 @@
   </script>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
 
-  <header>
-    <div class="hidden lg:bg-white lg:h-8 lg:px-10 lg:fixed lg:w-full lg:z-20 lg:flex lg:flex-row lg:justify-between">
-      <div>
-        <div class="inline-block mr-10">
-          <button type="submit"
-            class="inline-block text-sm px-4 py-1 leading-none border rounded text-white border-transparent bg-[#ee4a03] hover:border-[#ee4a03] hover:text-[#ee4a03] hover:bg-white mt-4 lg:mt-0">
-            Login
-          </button>
-        </div>
-        <div class="inline-block">
-          <button type="submit"
-            class="inline-block text-sm px-4 py-1 leading-none border rounded text-white border-transparent bg-[#ee4a03] hover:border-[#ee4a03] hover:text-[#ee4a03] hover:bg-white mt-4 lg:mt-0">
-            Login
-          </button>
+  <div class="hidden lg:bg-white  px-8  w-full z-20 lg:flex flex-row justify-between items-center py-4">
+    <div class="flex items-center gap-6">
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0" stroke="currentColor" class="w-9 h-9 fill-[#ee4a03] stroke-[#ee4a03]">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+        </svg>
+        <div >
+              <p class="text-xs ">Total Traffic Boosted</p>
+              <p class="text-lg font-bold leading-tight">209,348,0394</p>
         </div>
       </div>
-      <div>
-        <div class="inline-block pr-5 pt-0.5">
-          <input type="text" name="srearch" id="email" placeholder="  &#xF002; Search"
-            style="font-family:Arial, FontAwesome"
-            class="text-black placeholder-gray-500 transition-all duration-200 bg-white border rounded-md focus:outline-none border-orange-600 caret-[#ee4a03]" />
-
-        </div>
-        <div class="inline-block">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 text-orange-600 inline-block"
-            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-            <path
-              d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z" />
+      <div class="inline-block">
+        <a href = '#'
+          class="flex items-center gap-2 text-xs xl:text-sm  font-medium uppercase px-4 py-2 leading-none border rounded-md border-gray-300  text-gray-500 hover:border-[#ee4a03] hover:text-[#ee4a03] hover:bg-white mt-4 lg:mt-0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 stroke-current xl:w-6 xl:h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
           </svg>
-          <h1 class="text-black inline-block pl-5">9016488128</h1>
-        </div>
+
+         Client Login
+        </a>
       </div>
-
-
+    </div>
+    <div class="flex items-center">
+      <div class="relative mx-auto text-gray-600 mr-5 xl:mr-10">
+        <input class="border border-gray-300 bg-white h-10 px-5 pr-16 rounded-md text-base focus:outline-none"
+          type="search" name="search" placeholder="Search">
+        <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+          <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+            viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
+            width="512px" height="512px">
+            <path
+              d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-row items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-5 text-orange-600 xl:w-7"
+          viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z" />
+        </svg>
+        <h1 class=" pl-2 text-black text-xl font-bold xl:text-2xl xl:pl-4">9016488128</h1>
+      </div>
     </div>
 
+
+  </div>
+  <header class="sticky top-0 left-0 z-50 w-full">
+
+
     <nav
-      class="flex items-center justify-between flex-wrap bg-white p-6 fixed w-full z-20 top-0 lg:top-8 left-0 border-b border-gray-200 shadow-lg">
-      <div class="flex items-center flex-shrink-0 text-black mr-6">
-        <span class="font-semibold text-xl tracking-tight">
-          <img class="w-48" src="./src/assest/cropped-cropped-LOGO-1.png" alt="">
+      class="  flex flex-wrap items-center justify-between w-full p-6 py-3 bg-white shadow-lg  lg:px-8 lg:py-5">
+      <div class="flex items-center flex-shrink-0 mr-6 text-black">
+        <span class="text-xl font-semibold tracking-tight">
+          <img class="w-32 xl:w-48" src="./src/assest/cropped-cropped-LOGO-1.png" alt="">
         </span>
       </div>
       <div id="listicon" class="block lg:hidden">
-        <button id="toggelbtn" onclick="showmenu()"
-          class="flex items-center px-3 py-2 border rounded text-black border-[#ee4a03] hover:text-[#ee4a03] hover:border-[#ee4a03]">
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
+        <button id="toggelbtn"  onclick="showmenu()"
+          class="flex items-center  border rounded text-black border-black hover:text-[#ee4a03] hover:border-[#ee4a03] aspect-square w-8 p-1">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-full block">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>          
         </button>
       </div>
-      <div id="closeicon" class="hidden">
-        <button id="toggelbtn" onclick="hidemenu()"
-          class="flex items-center px-3 border rounded text-black text-xl border-[#ee4a03] hover:text-[#ee4a03] hover:border-[#ee4a03]">x
+      <div id="closeicon" class="hidden lg:hidden">
+        <button id="toggelbtn"  onclick="hidemenu()"
+          class="flex items-center  border rounded text-black text-xl border-black hover:text-[#ee4a03] hover:border-[#ee4a03] aspect-square w-8 p-1">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-full block">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>          
         </button>
       </div>
-      <div id="menudiv" class="hidden flex-col lg:flex lg:flex-row lg:items-center lg:w-auto w-full ">
-        <div class="text-sm lg:flex-grow pr-10">
-          <a href="" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-[#ee4a03] mr-4">
-            SEO & Lead Generation
-          </a>
-          <a href="" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-[#ee4a03] mr-4">
+      <div id="menudiv" class=" pointer-events-none opacity-0 translate-y-10 transition-all duration-150 ease-in-out absolute bg-white left-0 top-full w-full lg:flex lg:flex-row lg:items-center lg:w-auto shadow-lg lg:relative lg:transform-none lg:opacity-100 lg:shadow-none lg:p-0 lg:pointer-events-auto">
+        <div class="p-6  text-sm lg:flex-grow lg:p-0 xl:text-base flex flex-col lg:flex-row gap-4 xl:gap-6 lg:items-center">
+          <div tabindex="0"  class="drop-down-container group block w-full lg:inline-block lg:mt-0 lg:w-fit text-black  mr-4 cursor-pointer">
+             <span class="drop-down-btn">
+                Services
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-auto inline-block">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+             </span>
+            <div  class="overflow-hidden drop-down h-0 pointer-events-none transition-all duration-150 ease-in-out lg:drop-shadow-md  lg:absolute lg:h-auto lg:translate-y-5 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 lg:group-hover:pointer-events-auto ">
+              <div class="flex flex-col p-4 mt-2 bg-gray-50 lg:border-gray-100 rounded-md   lg:border  lg:border-solid lg:px-2 min-w-[150px]">
+                <a href="#" class="p-2 py-1 hover:bg-gray-100 ronded-md">service 1 </a>
+                <a href="#" class="p-2 py-1 hover:bg-gray-100 ronded-md">service 2</a>
+                <a href="#" class="p-2 py-1 hover:bg-gray-100 ronded-md">service 3</a>
+                <a href="#" class="p-2 py-1 hover:bg-gray-100 ronded-md">service 4</a>
+                <a href="#" class="p-2 py-1 hover:bg-gray-100 ronded-md">service 5</a>
+              </div>
+            </div>
+          </div>
+          <a href="" class="block  lg:inline-block lg:mt-0 text-black hover:text-[#ee4a03] mr-4">
             Ecommerce
           </a>
-          <a href="" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-[#ee4a03] mr-4">
+          <a href="" class="block  lg:inline-block lg:mt-0 text-black hover:text-[#ee4a03] mr-4">
             UX & Interactive
           </a>
-          <a href="" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-[#ee4a03] mr-4">
+          <a href="" class="block  lg:inline-block lg:mt-0 text-black hover:text-[#ee4a03] mr-4">
             Our Technology
           </a>
-        </div>
-        <div>
-          <button type="submit"
-            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-transparent bg-[#ee4a03] hover:border-[#ee4a03] hover:text-[#ee4a03] hover:bg-white mt-4 lg:mt-0">
+          <a href = '#'
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-transparent bg-[#ee4a03] hover:border-[#ee4a03] hover:text-[#ee4a03] hover:bg-white w-fit lg:mt-0">
             Login
-          </button>
+          </a>
           <a href=""
-            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-transparent bg-[#ee4a03] hover:border-[#ee4a03] hover:text-[#ee4a03] hover:bg-white mt-4 lg:mt-0">Get
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-transparent bg-[#ee4a03] hover:border-[#ee4a03] hover:text-[#ee4a03] hover:bg-white w-fit lg:mt-0">Get
             a Proposal</a>
-        </div>
+          </div>
       </div>
 
 
     </nav>
-
-
-
 
   </header>
   <!-- Intro Section STARTS -->
@@ -519,7 +538,7 @@
           <img src="https://www.shoutmeloud.com/wp-content/uploads/2022/07/about.png" alt="" class="w-auto">
         </div>
         <div class="mt-10 md:m-10">
-          <h1 class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">Man Behind ShoutMeLoud​
+          <h1 class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">Man Behind <br>Ravi-Gupta
           </h1>
           <p class="mt-4 text-lg leading-relaxed text-gray-600">
             Hey Digital marketers, welcome to the Ravi-Gupta.com
@@ -735,7 +754,7 @@
   <!-- Community STARTS -->
   <section class="py-10 bg-white sm:py-16 lg:py-24">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <h2 class="mb-10 text-3xl font-bold leading-tight text-center text-black sm:text-4xl lg:text-5xl">
+      <h2 class="mb-20 text-3xl font-bold leading-tight text-center text-black sm:text-4xl lg:text-5xl">
         Join Our Community
       </h2>
       <div class="grid grid-cols-1 mx-auto mt-4 text-center sm:grid-cols-2 gap-y-6 lg:grid-cols-5 sm:gap-12">
@@ -1177,128 +1196,7 @@
             </p>
           </div>
 
-          <div class="hidden md:mt-auto md:block">
-            <div class="flex items-center">
-              <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                fill="currentColor">
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-              <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                fill="currentColor">
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-              <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                fill="currentColor">
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-              <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                fill="currentColor">
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-              <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                fill="currentColor">
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-            </div>
-
-
-            <div>
-              <div class="slideshow-container">
-
-                <div class="mySlides fade">
-                  <div class="numbertext  text-white">1 / 3</div>
-                  <div>
-                    <blockquote class="mt-6">
-                      <p class="text-lg leading-relaxed text-white">
-                        The marketing team made it effortless. My brand's exposure is
-                        now faster and easier to achieve than before. I just provide
-                        input, they execute the strategy, and I see the results.
-                      </p>
-                    </blockquote>
-    
-                    <div class="flex items-center mt-8">
-                      <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
-                        src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/avatar.jpg" alt="" />
-                      <div class="ml-4">
-                        <p class="text-base font-semibold text-white">
-                          Jenna Shyllit
-                        </p>
-                        <p class="mt-px text-sm text-gray-400">
-                          Ecommerce Store Owner
-                        </p>
-                      </div>
-                    </div>
-    
-                  </div>
-                </div>
-  
-                <div class="mySlides fade">
-                  <div class="numbertext  text-white">2 / 3</div>
-                  <div>
-                    <blockquote class="mt-6">
-                      <p class="text-lg leading-relaxed text-white">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis iusto natus ea! Quia aut dolor atque alias exercitationem repellat.
-                      </p>
-                    </blockquote>
-    
-                    <div class="flex items-center mt-8">
-                      <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
-                        src="" alt="" />
-                      <div class="ml-4">
-                        <p class="text-base font-semibold text-white">
-                          Devendra Chavda
-                        </p>
-                        <p class="mt-px text-sm text-gray-400">
-                          Ecommerce Store Owner
-                        </p>
-                      </div>
-                    </div>
-    
-                  </div>
-                </div>
-  
-                <div class="mySlides fade">
-                  <div class="numbertext text-white">3 / 3</div>
-                  <div>
-                    <blockquote class="mt-6">
-                      <p class="text-lg leading-relaxed text-white">
-                        The marketing team made it effortless. My brand's exposure is
-                        now faster and easier to achieve than before. I just provide
-                        input, they execute the strategy, and I see the results.
-                      </p>
-                    </blockquote>
-    
-                    <div class="flex items-center mt-8">
-                      <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
-                        src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/avatar.jpg" alt="" />
-                      <div class="ml-4">
-                        <p class="text-base font-semibold text-white">
-                          miss puja
-                        </p>
-                        <p class="mt-px text-sm text-gray-400">
-                          Ecommerce Store Owner
-                        </p>
-                      </div>
-                    </div>
-    
-                  </div>
-                </div>
-  
-              </div>
-              <br>
-  
-              <div style="text-align:center">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-              </div>
-            </div>
-          </div>
+          
 
         </div>
 
@@ -1368,7 +1266,7 @@
           </div>
         </div>
 
-        <div class="md:hidden">
+        <div class="md:-mt-44 lg:-mt-64">
           <div class="flex items-center">
             <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
               fill="currentColor">
@@ -1397,107 +1295,107 @@
             </svg>
           </div>
 
-          
+          <div>
+            <div class="slideshow-container">
+  
+              <div class="mySlides fade">
+                <div class="numbertext  text-white">1 / 3</div>
+                <div>
+                  <blockquote class="mt-6">
+                    <p class="text-lg leading-relaxed text-white">
+                      The marketing team made it effortless. My brand's exposure is
+                      now faster and easier to achieve than before. I just provide
+                      input, they execute the strategy, and I see the results.
+                    </p>
+                  </blockquote>
+  
+                  <div class="flex items-center mt-8">
+                    <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                      src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/avatar.jpg" alt="" />
+                    <div class="ml-4">
+                      <p class="text-base font-semibold text-white">
+                        Jenna Shyllit
+                      </p>
+                      <p class="mt-px text-sm text-gray-400">
+                        Ecommerce Store Owner
+                      </p>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+              <div class="mySlides fade">
+                <div class="numbertext  text-white">2 / 3</div>
+                <div>
+                  <blockquote class="mt-6">
+                    <p class="text-lg leading-relaxed text-white">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis iusto natus ea! Quia aut dolor atque alias exercitationem repellat.
+                    </p>
+                  </blockquote>
+  
+                  <div class="flex items-center mt-8">
+                    <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                      src="" alt="" />
+                    <div class="ml-4">
+                      <p class="text-base font-semibold text-white">
+                        Devendra Chavda
+                      </p>
+                      <p class="mt-px text-sm text-gray-400">
+                        Ecommerce Store Owner
+                      </p>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+              <div class="mySlides fade">
+                <div class="numbertext text-white">3 / 3</div>
+                <div>
+                  <blockquote class="mt-6">
+                    <p class="text-lg leading-relaxed text-white">
+                      The marketing team made it effortless. My brand's exposure is
+                      now faster and easier to achieve than before. I just provide
+                      input, they execute the strategy, and I see the results.
+                    </p>
+                  </blockquote>
+  
+                  <div class="flex items-center mt-8">
+                    <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                      src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/avatar.jpg" alt="" />
+                    <div class="ml-4">
+                      <p class="text-base font-semibold text-white">
+                        miss puja
+                      </p>
+                      <p class="mt-px text-sm text-gray-400">
+                        Ecommerce Store Owner
+                      </p>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+            </div>
+            <br>
+  
+            <div style="text-align:center">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
 
         </div>
-        <div>
-          <div class="slideshow-container">
-
-            <div class="mySlides fade">
-              <div class="numbertext  text-white">1 / 3</div>
-              <div>
-                <blockquote class="mt-6">
-                  <p class="text-lg leading-relaxed text-white">
-                    The marketing team made it effortless. My brand's exposure is
-                    now faster and easier to achieve than before. I just provide
-                    input, they execute the strategy, and I see the results.
-                  </p>
-                </blockquote>
-
-                <div class="flex items-center mt-8">
-                  <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
-                    src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/avatar.jpg" alt="" />
-                  <div class="ml-4">
-                    <p class="text-base font-semibold text-white">
-                      Jenna Shyllit
-                    </p>
-                    <p class="mt-px text-sm text-gray-400">
-                      Ecommerce Store Owner
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="mySlides fade">
-              <div class="numbertext  text-white">2 / 3</div>
-              <div>
-                <blockquote class="mt-6">
-                  <p class="text-lg leading-relaxed text-white">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis iusto natus ea! Quia aut dolor atque alias exercitationem repellat.
-                  </p>
-                </blockquote>
-
-                <div class="flex items-center mt-8">
-                  <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
-                    src="" alt="" />
-                  <div class="ml-4">
-                    <p class="text-base font-semibold text-white">
-                      Devendra Chavda
-                    </p>
-                    <p class="mt-px text-sm text-gray-400">
-                      Ecommerce Store Owner
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="mySlides fade">
-              <div class="numbertext text-white">3 / 3</div>
-              <div>
-                <blockquote class="mt-6">
-                  <p class="text-lg leading-relaxed text-white">
-                    The marketing team made it effortless. My brand's exposure is
-                    now faster and easier to achieve than before. I just provide
-                    input, they execute the strategy, and I see the results.
-                  </p>
-                </blockquote>
-
-                <div class="flex items-center mt-8">
-                  <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
-                    src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/avatar.jpg" alt="" />
-                  <div class="ml-4">
-                    <p class="text-base font-semibold text-white">
-                      miss puja
-                    </p>
-                    <p class="mt-px text-sm text-gray-400">
-                      Ecommerce Store Owner
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-          <br>
-
-          <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-        </div>
+        
       </div>
     </div>
   </section>
   <!-- Step 10 ENDS -->
 
   <!--adds banners----------->
-  <section class="pt-6 bg-gray-50 overflow-hidden w-full h-60">
+  <section class="w-full pt-6 overflow-hidden bg-gray-50 h-60">
     <div>
 
       <img src="./src/assest/adds.png" alt="adds">
@@ -1508,7 +1406,7 @@
   <!--news and media Section----->
   <section class="py-10 bg-gray-50 sm:py-16 lg:py-24">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="flex items-end justify-between">
+      <div class="flex items-end justify-between mb-20">
         <div class="flex-1 text-center lg:text-left">
           <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
             On Youtube
@@ -1523,7 +1421,7 @@
         </div>
       </div>
 
-      <div class="p-16 flex flex-col md:flex-row lg:flex-row justify-between border-gray-500 shadow-lg rounded-lg">
+      <div class="flex flex-col justify-between p-16 px-8 border-gray-500 rounded-lg shadow-lg md:flex-row lg:flex-row lg:px-16">
         <div class="md:w-[50%] lg:w-[50%]">
           <h1 class="mt-2 text-2xl font-semibold">Affiliate Marketing Guide for Beginners [Free]
           </h1>
@@ -1538,7 +1436,7 @@
 
         </div>
         <div class="pt-10 md:pt-0 lg:pt-0">
-          <iframe class="rounded-md" src="https://www.youtube.com/embed/wZ59ZgcuChY">
+          <iframe class="rounded-md block w-full" src="https://www.youtube.com/embed/wZ59ZgcuChY">
           </iframe>
         </div>
       </div>
@@ -1640,7 +1538,7 @@
   <!-- Try Section ENDS -->
 
   <!-- Clients Section STARTS -->
-  <section class="py-10 bg-gray-200 sm:py-16 lg:py-14">
+  <section class="py-10  sm:py-16 lg:py-14">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="grid items-center grid-cols-2 gap-10 sm:gap-y-16 sm:grid-cols-3 xl:grid-cols-6">
         <div>
@@ -1883,18 +1781,41 @@
     var listicon = document.getElementById('listicon');
 
     function showmenu() {
-      dbox.style.display = "flex";
-      dbox.style.flexDirection = 'col';
+      dbox.classList.toggle('pointer-events-none')
+      dbox.classList.toggle('translate-y-10')
+      dbox.classList.toggle('opacity-0')
       listicon.style.display = "none";
       closeicon.style.display = "flex";
     };
 
     function hidemenu() {
-      dbox.style.display = "none";
+      dbox.classList.toggle('pointer-events-none')
+      dbox.classList.toggle('translate-y-10')
+      dbox.classList.toggle('opacity-0')
       listicon.style.display = "flex";
       closeicon.style.display = "none";
-
+      ebookbtn.style.color = "black";
     }
+
+    const ddContainer = document.querySelectorAll('.drop-down-container')
+    ddContainer.forEach(item =>{
+      const dd = item.querySelector('.drop-down') 
+      const h = dd.scrollHeight
+      const svg = item.querySelector('svg')
+      const ddbtn = item.querySelector('.drop-down-btn')
+       ddbtn.addEventListener('click', (e) =>{
+        e.stopPropagation()
+          if(window.innerWidth < 1024){
+             if(dd.style.height){
+              dd.style.height =  null
+             }else{
+              dd.style.height = h + 'px'
+             }
+             svg.classList.toggle('rotate-180')
+             dd.classList.toggle('pointer-events-none')
+          }
+       })
+    })
 
 
     var ebook = document.getElementById("ebook");
