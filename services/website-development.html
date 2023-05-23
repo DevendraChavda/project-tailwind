@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Development</title>
+  <link href="./../dist/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/f3db2cd17f.js" crossorigin="anonymous"></script>
+  
+  <style>
+    @media screen and (max-width: 460px) {
+      .Y {
+        padding: 14px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--Header....starts-->
+  <div class="z-20 hidden w-full  lg:bg-white lg:block">
+    <div class="max-w-screen-xl mx-auto px-8 py-4 flex flex-row items-center justify-between">
+      <div class="flex items-center gap-6">
+        <div class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0" stroke="currentColor"
+            class="w-9 h-9 fill-[#ee4a03] stroke-[#ee4a03]">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+          </svg>
+          <div>
+            <p class="text-xs ">Total Traffic Boosted</p>
+            <p class="text-lg font-bold leading-tight">209,348,0394</p>
+          </div>
+        </div>
+        <div class="inline-block">
+          <a href='#'
+            class="flex items-center gap-2 text-xs xl:text-sm  font-medium uppercase px-4 py-2 leading-none border rounded-md border-gray-300  text-gray-500 hover:border-[#ee4a03] hover:text-[#ee4a03] hover:bg-white mt-4 lg:mt-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+              class="w-4 h-4 stroke-current xl:w-6 xl:h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+            </svg>
+
+            SEO audit Report
+          </a>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <div class="relative mx-auto mr-5 text-gray-600 xl:mr-10">
+          <input class="h-10 px-5 pr-16 text-base bg-white border border-gray-300 rounded-md focus:outline-none"
+            type="search" name="search" placeholder="Search">
+          <button type="submit" class="absolute top-0 right-0 mt-3 mr-4">
+            <svg class="w-4 h-4 text-gray-600 fill-current" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+              viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
+              width="512px" height="512px">
+              <path
+                d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+            </svg>
+
+          </button>
+        </div>
+        <div class="flex flex-row items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-5 text-orange-600 xl:w-7"
+            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z" />
+          </svg>
+          <h1 class="pl-2 text-xl font-bold text-black xl:text-2xl xl:pl-4">9016488128</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="sticky top-0 left-0 z-50 w-full bg-white shadow-lg">
+
+
+    <nav class="flex flex-wrap items-center justify-between w-full p-6 py-3 lg:px-8 lg:py-5 max-w-screen-xl mx-auto">
+      <div class="flex items-center flex-shrink-0 mr-6 text-black">
+        <span class="text-xl font-semibold tracking-tight">
+          <img class="w-32 xl:w-48" src="../src/assest/cropped-cropped-LOGO-1.png" alt="">
+        </span>
+      </div>
+      <div id="listicon" class="block lg:hidden">
+        <button id="toggelbtn" onclick="showmenu()"
+          class="flex items-center  border rounded text-black border-black hover:text-[#ee4a03] hover:border-[#ee4a03] aspect-square w-8 p-1">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="block w-full">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+
+          </svg>
+        </button>
+      </div>
+      <div id="closeicon" class="hidden lg:hidden">
+        <button id="toggelbtn" onclick="hidemenu()"
+          class="flex items-center  border rounded text-black text-xl border-black hover:text-[#ee4a03] hover:border-[#ee4a03] aspect-square w-8 p-1">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="block w-full">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <div id="menudiv"
+        class="absolute left-0 w-full transition-all duration-150 ease-in-out translate-y-10 bg-white shadow-lg opacity-0 pointer-events-none top-full lg:flex lg:flex-row lg:items-center lg:w-auto lg:relative lg:transform-none lg:opacity-100 lg:shadow-none lg:p-0 lg:pointer-events-auto">
+       
+        
+        <div
+          class="flex flex-col gap-4 p-6 ml-5 text-sm lg:flex-grow lg:p-0 xl:text-base lg:flex-row lg:gap-2 xl:gap-6 lg:items-center">
+          <a href="../index.html" class="block  lg:inline-block lg:mt-0 text-black hover:text-[#ee4a03] mr-4">
+            Home
+          </a>
+          <div tabindex="0"
+            class="block w-full mr-4 text-black cursor-pointer drop-down-container group lg:inline-block lg:mt-0 lg:w-fit">
+            
+            <span class="drop-down-btn">
+              Services
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="inline-block w-4 h-4 ml-auto">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </span>
+            <div
+              class="h-0 overflow-hidden transition-all duration-150 ease-in-out pointer-events-none drop-down lg:drop-shadow-md lg:absolute lg:h-auto lg:translate-y-5 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 lg:group-hover:pointer-events-auto ">
+              <div
+                class="flex flex-col p-4 mt-2 bg-gray-50 lg:border-gray-100 rounded-md   lg:border  lg:border-solid lg:px-2 min-w-[150px]">
+                <a href="./search-engine-optimization.html" class="p-2 py-1 hover:bg-[#ee4a03] hover:text-white rounded-md">Search Engine Optimization </a>
+                <a href="./digital-marketing.html" class="p-2 py-1 hover:bg-[#ee4a03] hover:text-white rounded-md">Digital Marketing</a>
+                <a href="./social-media-marketing.html" class="p-2 py-1 hover:bg-[#ee4a03] hover:text-white rounded-md">Social Media Marketing</a>
+                <a href="./website-design.html" class="p-2 py-1 hover:bg-[#ee4a03] hover:text-white rounded-md">Website Design</a>
+                <a href="./website-development.html" class="p-2 py-1 hover:bg-[#ee4a03] hover:text-white rounded-md">Website Development</a>
+              </div>
+            </div>
+          </div>
+          <div tabindex="0" class="block w-full mr-4 text-black cursor-pointer drop-down-container group lg:inline-block lg:mt-0 lg:w-fit">
+            
+            <span class="drop-down-btn">
+              Resources
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-4 h-4 ml-auto">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+              </svg>
+            </span>
+            <div class="h-0 overflow-hidden transition-all duration-150 ease-in-out pointer-events-none drop-down lg:drop-shadow-md lg:absolute lg:h-auto lg:translate-y-5 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 lg:group-hover:pointer-events-auto ">
+              <div class="flex flex-col p-4 mt-2 bg-gray-50 lg:border-gray-100 rounded-md   lg:border  lg:border-solid lg:px-2 min-w-[150px]">
+                <a href="../ebooks.html" class="p-2 py-1 hover:bg-[#ee4a03] hover:text-white rounded-md">Ebooks </a>
+                <a href="../courses.html" class="p-2 py-1 hover:bg-[#ee4a03] hover:text-white rounded-md">Courses</a>
+                
+              </div>
+            </div>
+          </div>
+          <a href="../blog.html" class="block  lg:inline-block lg:mt-0 text-black hover:text-[#ee4a03] mr-4">
+            Our Blog
+          </a>
+          
+          <a href="../contact-us.html" class="block  lg:inline-block lg:mt-0 text-black hover:text-[#ee4a03] mr-4">
+            Contact Us
+          </a>
+          <a href="../about.html" class="block  lg:inline-block lg:mt-0 text-black hover:text-[#ee4a03] mr-4">
+            About
+          </a>
+          <a href='#'
+            class=" text-sm px-6 self-stretch flex items-center py-2 leading-none border rounded text-white border-transparent bg-[#ee4a03] hover:border-[#ee4a03] hover:text-[#ee4a03] hover:bg-white w-fit lg:mt-0">
+            Write for us
+          </a>
+          <!-- <a href=""
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-transparent bg-[#ee4a03] hover:border-[#ee4a03] hover:text-[#ee4a03] hover:bg-white w-fit lg:mt-0">Get
+            a Proposal</a> -->
+            <a href="#_" class="rounded px-3.5 py-2  overflow-hidden relative group cursor-pointer border-2 font-medium border-[#ee4a03] text-white">
+              <span class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-[#ee4a03] top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+              <span class="relative text-[#ee4a03] transition duration-300 group-hover:text-white ease">Get a proposal</span>
+            </a>
+            
+        </div>
+      </div>
+
+
+    </nav>
+
+  </header>
+  <!--Header....end-->
+
+  <!-- Banner Section Starts -->
+  <section class="flex items-center justify-around pt-5 pb-20 bg-black bg-right bg-no-repeat bg-cover" style="
+        background-image: url('https://www.webfx.com/wp-content/themes/fx/assets/img/blocks/general/text-stats-image-messages-logos/bg-r.png');
+      ">
+    <div class="w-full lg:w-[78%] min-h-screen flex justify-center align-middle flex-col">
+      <div class="flex flex-col justify-center ml-5 mr-5 align-middle lg:ml-40 lg:mr-40">
+        <div>
+          <span class="py-2 text-[18px] sm:text-[22px] font-sans text-[#ffffff6b] text-left">
+              <a class="text-[#ee4a03]" href="../index.html">HOME</a> / <a class="text-[#ee4a03]"
+                  href="./search-engine-optimization.html">WEB DEVELOPMENT</a>
+          </span>
+        </div>
+        <h1
+          class="text-[40px] sm:text-[40px] md:text-[56px] leading-[50px] font-bold text-white sm:leading-[64px] text-center lg:text-left">
+          Web Development Services: We Speak Your Language
+        </h1>
+
+        <p class="mt-3 text-[16px] sm:text-[21px] text-center lg:text-left"
+          style="font-family: sans-serif; color: #ffffff6b">
+          WebFX is the best SEO services company in the world and we have the
+          track record to prove it. With our search engine optimization
+          services, you get a custom strategy, world-class technology, and an
+          elite SEO team. We focus on driving revenue for our clients, and we
+          provide all of the services and technology your business needs to
+          grow with SEO.
+        </p>
+
+        <div class="flex flex-col items-center justify-center w-full mt-5 lg:justify-start lg:flex-row">
+          <input placeholder="Enter your website" name="website" type="text" required=""
+            class="border-2 w-[80%] sm:w-[60%] lg:w-[300px] bg-white text-black outline-none p-4" />
+          <button type="submit"
+            class="bg-black border hover:bg-[#ee4a03] pt-4 pb-4 mt-3 lg:mt-0 text-white text-[14px] w-[70%] sm:w-[40%] lg:w-[200px] ml-5"
+            style="font-family: sans-serif">
+            Send Me a Proposal<i class="pl-2 fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-[32%] hidden lg:block">
+      <div class="">
+        <div class="flex justify-center pt-3 pb-3 pl-5 pr-5 mb-4" style="background-color: #ee4a03">
+          <span class="flex justify-center">
+            <img loading="lazy" width="80" height="80" src="../src/assest/funnel-icon.png" class="pr-2" alt="" />
+          </span>
+          <div class="indicator-details">
+            <h5 class="text-[16px] text-white pl-3 font-bold">
+              Access the data-fueled plans behind
+            </h5>
+            <p class="pl-2 text-3xl font-bold text-white">$3,021,182,299</p>
+            <p class="text-[#CED4DA] pl-2">IN CLIENT REVENUE</p>
+          </div>
+        </div>
+
+        <div class="flex justify-center pt-3 pb-3 pl-5 pr-5 mb-4" style="background-color: #ee4a03">
+          <span class="flex justify-center">
+            <img loading="lazy" width="80" height="80" src="../src/assest/list-icon.svg" class="pr-2"
+              alt="users on page icon" />
+          </span>
+          <div class="indicator-details">
+            <h5 class="text-[16px] text-white pl-3 font-bold">
+              Use the expert-led tactics behind
+            </h5>
+            <p class="pl-2 text-3xl font-bold text-white">7,839,684</p>
+            <p class="text-[#CED4DA] pl-2">IN LEADS FOR OUR CLIENTS</p>
+          </div>
+        </div>
+
+        <div class="flex justify-center pt-3 pb-3 pl-5 pr-5 mb-4" style="background-color: #ee4a03">
+          <span class="flex justify-center">
+            <img loading="lazy" width="80" height="80" src="../src/assest/user-icon.png" class="pr-2" alt="" />
+          </span>
+          <div class="indicator-details">
+            <h5 class="text-[16px] text-white pl-3 font-bold">
+              Unlock do-it-for-me marketing with
+            </h5>
+            <p class="pl-2 text-3xl font-bold text-white">500</p>
+            <p class="text-[#CED4DA] pl-2">DIGITAL MARKETING EXPERTS</p>
+          </div>
+        </div>
+
+        <div class="flex justify-center pt-3 pb-3 pl-5 pr-5 mb-4" style="background-color: #ee4a03">
+          <span class="flex justify-center">
+            <img loading="lazy" width="80" height="60" src="../src/assest/cloud-icon.png" class="pr-2" alt="" />
+          </span>
+          <div class="indicator-details">
+            <h5 class="text-[16px] text-white pl-3 font-bold">
+              Accelerate ROI with
+            </h5>
+            <p class="pl-2 text-3xl font-bold text-white">1+ BILLION</p>
+            <p class="text-[#CED4DA] pl-4">
+              DATA POINTS FROM MARKETINGCLOUDFX
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Banner Section Ends -->
+
+  <!-- Partners Section Starts -->
+  <section class="py-10 bg-gray-50 sm:py-16 lg:py-14">
+    <div class="px-10 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="grid items-center grid-cols-2 gap-10 sm:gap-y-16 sm:grid-cols-3 xl:grid-cols-6">
+        <div>
+          <img class="object-contain w-auto mx-auto h-14"
+            src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/1/logo-1.png" alt="" />
+        </div>
+
+        <div>
+          <img class="object-contain w-auto mx-auto h-14"
+            src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/1/logo-2.png" alt="" />
+        </div>
+
+        <div>
+          <img class="object-contain w-auto mx-auto h-14"
+            src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/1/logo-3.png" alt="" />
+        </div>
+
+        <div>
+          <img class="object-contain w-auto mx-auto h-14"
+            src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/1/logo-4.png" alt="" />
+        </div>
+
+        <div>
+          <img class="object-contain w-auto mx-auto h-14"
+            src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/1/logo-5.png" alt="" />
+        </div>
+
+        <div>
+          <img class="object-contain w-auto mx-auto h-14"
+            src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/1/logo-6.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Partners Section Ends -->
+
+  <!--vice president of marketing start-->
+  <section class="flex justify-center w-full min-h-screen bg-gray-100 pt-12 pb-10 align-top">
+    <div
+      class="w-[90%] px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl sm:w-[80%] flex align-middle flex-col justify-center md:flex-row md:justify-between">
+      <div class="md:w-[45%] ">
+        <div>
+          <div>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-left text-gray-500">
+              “The web design, usability, and technical expertise of WebFX allowed us to achieve our design goals of
+              elegance and ease of use. We would gladly recommend them to others. (Well, maybe not to our competitors.)”
+            </p>
+          </div>
+          <div>
+            <h1 class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Vice President of Marketing
+            </h1>
+          </div>
+          <div>
+            <h1 class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><b>PUBLISHING COMPANY</b>
+            </h1>
+          </div>
+        </div>
+        <div class="pt-5">
+          <button
+            class="p-2 text-[18px] sm:text-[22px] font-sans text-center text-white rounded-md bg-[#ee4a03] hover:bg-orange-500 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ...">
+            See 1000+ Happy Clients’ Testimonials
+          </button>
+        </div>
+      </div>
+      <div class="md:w-[45%] pt-10 md:pt-0 lg:pt-0">
+        <iframe class="lg:w-full lg:h-[60%] rounded-md" src="https://www.youtube.com/embed/wZ59ZgcuChY">
+        </iframe>
+      </div>
+    </div>
+  </section>
+  <!--vice president of marketing end-->
+
+  <section class="py-10 sm:py-16 lg:py-24 relative">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <div class="mx-auto text-left flex flex-col justify-center">
+        <div class="p-10">
+          <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">
+            At WebFX, we bring more 25 years of experience to web design and web development, which is why we offer
+            several web development services, including:.</p>
+          <ul
+            class="list-disc py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left seo-management-services">
+            <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">
+              <a href="" class="hover:border-b-2 hover:border-orange-400">Responsive web design</a>
+            </li>
+            <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">
+              <a href="" class="hover:border-b-2 hover:border-orange-400">Ecommerce web development</a>
+            </li>
+            <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">
+              <a href="" class="hover:border-b-2 hover:border-orange-400">Magento web development</a>
+            </li>
+            <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">
+              <a href="" class="hover:border-b-2 hover:border-orange-400">CMS development</a>
+            </li>
+            <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">
+              <a href="" class="hover:border-b-2 hover:border-orange-400">Website maintenance</a>
+            </li>
+          </ul>
+          <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Learn more about partnering with
+            our seasoned team of developers, designers, and project managers by contacting us online or calling
+            888-601-5359!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Web Development Services Section Starts -->
+  <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+    <div class="w-[90%] px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 items-center">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
+          Our Web Development Services
+        </h2>
+      </div>
+      <div>
+        <h2 class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-center">Explore our web development
+          services below.</h2>
+      </div>
+
+      <div
+        class="grid max-w-xl grid-cols-1 mx-auto mt-8 text-center lg:max-w-full sm:mt-12 lg:mt-20 lg:grid-cols-3 gap-x-6 xl:gap-x-12 gap-y-6">
+        <div class="overflow-hidden rounded-md shadow group bg-white">
+          <div class="px-8 py-12">
+            <div class="h-[180px] relative">
+              <div class="mx-auto group-hover:h-0">
+                <h1 class="text-2xl font-bold leading-tight text-gray-800 text-left sm:text-3xl lg:text-4xl">
+                  Responsive Website Development</h1>
+              </div>
+              <div class="border-t-2 border-gray-300 bg-slate-300">
+                <div class="hidden group-hover:block absolute">
+                  <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left bg-white/90">Reach user
+                    on every devices possible with a fully responsive website.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-block">
+              <button
+                class="w-[150px] items-center justify-center px-3 py-2 mt-2 font-semibold text-[#ee4a03] transition-all duration-200 border-2 border-[#ee4a03] bg-white hover:text-white rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-md shadow group bg-white border-2 border-gray-400 hover:border-none hover:shadow-2xl">
+          <div class="px-8 py-12">
+            <div class="h-[180px] relative">
+              <div class="mx-auto group-hover:h-0">
+                <h1 class="text-2xl font-bold leading-tight text-gray-800 text-left sm:text-3xl lg:text-4xl">
+                  Responsive Website Development</h1>
+              </div>
+              <div class="border-t-2 border-gray-300 bg-slate-300">
+                <div class="hidden group-hover:block absolute">
+                  <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left bg-white/90">Reach user
+                    on every devices possible with a fully responsive website.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-block">
+              <button
+                class="w-[150px] items-center justify-center px-3 py-2 mt-2 font-semibold text-[#ee4a03] transition-all duration-200 border-2 border-[#ee4a03] bg-white hover:text-white rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-md shadow group bg-white border-2 border-gray-400 hover:border-none hover:shadow-2xl">
+          <div class="px-8 py-12">
+            <div class="h-[180px] relative">
+              <div class="mx-auto group-hover:h-0">
+                <h1 class="text-2xl font-bold leading-tight text-gray-800 text-left sm:text-3xl lg:text-4xl">
+                  Responsive Website Development</h1>
+              </div>
+              <div class="border-t-2 border-gray-300 bg-slate-300">
+                <div class="hidden group-hover:block absolute">
+                  <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left bg-white/90">Reach user
+                    on every devices possible with a fully responsive website.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-block">
+              <button
+                class="w-[150px] items-center justify-center px-3 py-2 mt-2 font-semibold text-[#ee4a03] transition-all duration-200 border-2 border-[#ee4a03] bg-white hover:text-white rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-md shadow group bg-white border-2 border-gray-400 hover:border-none hover:shadow-2xl">
+          <div class="px-8 py-12">
+            <div class="h-[180px] relative">
+              <div class="mx-auto group-hover:h-0">
+                <h1 class="text-2xl font-bold leading-tight text-gray-800 text-left sm:text-3xl lg:text-4xl">
+                  ECOMMERCE DEVELOPMENT</h1>
+              </div>
+              <div class="border-t-2 border-gray-300 bg-slate-300">
+                <div class="hidden group-hover:block absolute">
+                  <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left bg-white/90">Reach user
+                    on every devices possible with a fully responsive website.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-block">
+              <button
+                class="w-[150px] items-center justify-center px-3 py-2 mt-2 font-semibold text-[#ee4a03] transition-all duration-200 border-2 border-[#ee4a03] bg-white hover:text-white rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-md shadow group bg-white border-2 border-gray-400 hover:border-none hover:shadow-2xl">
+          <div class="px-8 py-12">
+            <div class="h-[180px] relative">
+              <div class="mx-auto group-hover:h-0">
+                <h1 class="text-2xl font-bold leading-tight text-gray-800 text-left sm:text-3xl lg:text-4xl">
+                  MAGENTO WEBDEVELOPMENT</h1>
+              </div>
+              <div class="border-t-2 border-gray-300 bg-slate-300">
+                <div class="hidden group-hover:block absolute">
+                  <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left bg-white/90">Reach user
+                    on every devices possible with a fully responsive website.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-block">
+              <button
+                class="w-[150px] items-center justify-center px-3 py-2 mt-2 font-semibold text-[#ee4a03] transition-all duration-200 border-2 border-[#ee4a03] bg-white hover:text-white rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-md shadow group bg-white border-2 border-gray-400 hover:border-none hover:shadow-2xl">
+          <div class="px-8 py-12">
+            <div class="h-[180px] relative">
+              <div class="mx-auto group-hover:h-0">
+                <h1 class="text-2xl font-bold leading-tight text-gray-800 text-left sm:text-3xl lg:text-4xl">
+                  WEBSITE CALL TRACKING</h1>
+              </div>
+              <div class="border-t-2 border-gray-300 bg-slate-300">
+                <div class="hidden group-hover:block absolute">
+                  <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left bg-white/90">Reach user
+                    on every devices possible with a fully responsive website.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-block">
+              <button
+                class="w-[150px] items-center justify-center px-3 py-2 mt-2 font-semibold text-[#ee4a03] transition-all duration-200 border-2 border-[#ee4a03] bg-white hover:text-white rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-md shadow group bg-white border-2 border-gray-400 hover:border-none hover:shadow-2xl">
+          <div class="px-8 py-12">
+            <div class="h-[180px] relative">
+              <div class="mx-auto group-hover:h-0">
+                <h1 class="text-2xl font-bold leading-tight text-gray-800 text-left sm:text-3xl lg:text-4xl">
+                  MOBILE APP Development</h1>
+              </div>
+              <div class="border-t-2 border-gray-300 bg-slate-300">
+                <div class="hidden group-hover:block absolute">
+                  <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left bg-white/90">Reach user
+                    on every devices possible with a fully responsive website.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-block">
+              <button
+                class="w-[150px] items-center justify-center px-3 py-2 mt-2 font-semibold text-[#ee4a03] transition-all duration-200 border-2 border-[#ee4a03] bg-white hover:text-white rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-md shadow group bg-white border-2 border-gray-400 hover:border-none hover:shadow-2xl">
+          <div class="px-8 py-12">
+            <div class="h-[180px] relative">
+              <div class="mx-auto group-hover:h-0">
+                <h1 class="text-2xl font-bold leading-tight text-gray-800 text-left sm:text-3xl lg:text-4xl">
+                  GOOGLE ANALYTICS CONSULTING</h1>
+              </div>
+              <div class="border-t-2 border-gray-300 bg-slate-300">
+                <div class="hidden group-hover:block absolute">
+                  <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left bg-white/90">Reach user
+                    on every devices possible with a fully responsive website.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-block">
+              <button
+                class="w-[150px] items-center justify-center px-3 py-2 mt-2 font-semibold text-[#ee4a03] transition-all duration-200 border-2 border-[#ee4a03] bg-white hover:text-white rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-md shadow group bg-white border-2 border-gray-400 hover:border-none hover:shadow-2xl">
+          <div class="px-8 py-12">
+            <div class="h-[180px] relative">
+              <div class="mx-auto group-hover:h-0">
+                <h1 class="text-2xl font-bold leading-tight text-gray-800 text-left sm:text-3xl lg:text-4xl">
+                  CMS DEVELOPMENT</h1>
+              </div>
+              <div class="border-t-2 border-gray-300 bg-slate-300">
+                <div class="hidden group-hover:block absolute">
+                  <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left bg-white/90">Reach user
+                    on every devices possible with a fully responsive website.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-block">
+              <button
+                class="w-[150px] items-center justify-center px-3 py-2 mt-2 font-semibold text-[#ee4a03] transition-all duration-200 border-2 border-[#ee4a03] bg-white hover:text-white rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-md shadow group bg-white border-2 border-gray-400 hover:border-none hover:shadow-2xl">
+          <div class="px-8 py-12">
+            <div class="h-[180px] relative">
+              <div class="mx-auto group-hover:h-0">
+                <h1 class="text-2xl font-bold leading-tight text-gray-800 text-left sm:text-3xl lg:text-4xl">
+                  COMPANY TARGETING</h1>
+              </div>
+              <div class="border-t-2 border-gray-300 bg-slate-300">
+                <div class="hidden group-hover:block absolute">
+                  <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left bg-white/90">Reach user
+                    on every devices possible with a fully responsive website.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-block">
+              <button
+                class="w-[150px] items-center justify-center px-3 py-2 mt-2 font-semibold text-[#ee4a03] transition-all duration-200 border-2 border-[#ee4a03] bg-white hover:text-white rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-md shadow group bg-white border-2 border-gray-400 hover:border-none hover:shadow-2xl">
+          <div class="px-8 py-12">
+            <div class="h-[180px] relative">
+              <div class="mx-auto group-hover:h-0">
+                <h1 class="text-2xl font-bold leading-tight text-gray-800 text-left sm:text-3xl lg:text-4xl">
+                  MARKETING AUTOMATION</h1>
+              </div>
+              <div class="border-t-2 border-gray-300 bg-slate-300">
+                <div class="hidden group-hover:block absolute">
+                  <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left bg-white/90">Reach user
+                    on every devices possible with a fully responsive website.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-block">
+              <button
+                class="w-[150px] items-center justify-center px-3 py-2 mt-2 font-semibold text-[#ee4a03] transition-all duration-200 border-2 border-[#ee4a03] bg-white hover:text-white rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-md shadow group bg-white border-2 border-gray-400 hover:border-none hover:shadow-2xl">
+          <div class="px-8 py-12">
+            <div class="h-[180px] relative">
+              <div class="mx-auto group-hover:h-0">
+                <h1 class="text-2xl font-bold leading-tight text-gray-800 text-left sm:text-3xl lg:text-4xl">
+                  MARKETING AUTOMATION</h1>
+              </div>
+              <div class="border-t-2 border-gray-300 bg-slate-300">
+                <div class="hidden group-hover:block absolute">
+                  <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left bg-white/90">Reach user
+                    on every devices possible with a fully responsive website.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-block">
+              <button
+                class="w-[150px] items-center justify-center px-3 py-2 mt-2 font-semibold text-[#ee4a03] transition-all duration-200 border-2 border-[#ee4a03] bg-white hover:text-white rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-md shadow group bg-white border-2 border-gray-400 hover:border-none hover:shadow-2xl">
+          <div class="px-8 py-12">
+            <div class="h-[180px] relative">
+              <div class="mx-auto group-hover:h-0">
+                <h1 class="text-2xl font-bold leading-tight text-gray-800 text-left sm:text-3xl lg:text-4xl">
+                  FACEBOOK APPLICATION DEVELOPMENT</h1>
+              </div>
+              <div class="border-t-2 border-gray-300 bg-slate-300">
+                <div class="hidden group-hover:block absolute">
+                  <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left bg-white/90">Reach user
+                    on every devices possible with a fully responsive website.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-block">
+              <button
+                class="w-[150px] items-center justify-center px-3 py-2 mt-2 font-semibold text-[#ee4a03] transition-all duration-200 border-2 border-[#ee4a03] bg-white hover:text-white rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-md shadow group bg-white border-2 border-gray-400 hover:border-none hover:shadow-2xl">
+          <div class="px-8 py-12">
+            <div class="h-[180px] relative">
+              <div class="mx-auto group-hover:h-0">
+                <h1 class="text-2xl font-bold leading-tight text-gray-800 text-left sm:text-3xl lg:text-4xl">
+                  WEBSITE SECURITY AUDITS</h1>
+              </div>
+              <div class="border-t-2 border-gray-300 bg-slate-300">
+                <div class="hidden group-hover:block absolute">
+                  <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left bg-white/90">Reach user
+                    on every devices possible with a fully responsive website.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-block">
+              <button
+                class="w-[150px] items-center justify-center px-3 py-2 mt-2 font-semibold text-[#ee4a03] transition-all duration-200 border-2 border-[#ee4a03] bg-white hover:text-white rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-md shadow group bg-white border-2 border-gray-400 hover:border-none hover:shadow-2xl">
+          <div class="px-8 py-12">
+            <div class="h-[180px] relative">
+              <div class="mx-auto group-hover:h-0">
+                <h1 class="text-2xl font-bold leading-tight text-gray-800 text-left sm:text-3xl lg:text-4xl">
+                  WEBSITE MAINTENANCE</h1>
+              </div>
+              <div class="border-t-2 border-gray-300 bg-slate-300">
+                <div class="hidden group-hover:block absolute">
+                  <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left bg-white/90">Reach user
+                    on every devices possible with a fully responsive website.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-block">
+              <button
+                class="w-[150px] items-center justify-center px-3 py-2 mt-2 font-semibold text-[#ee4a03] transition-all duration-200 border-2 border-[#ee4a03] bg-white hover:text-white rounded-md hover:bg-[#ee4a03] focus:bg-[#ee4a03]">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- Our Web Development Services Section Ends -->
+
+
+  <section class="py-10 sm:py-16 lg:py-24 pb-20 relative">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <div class="mx-auto text-left flex flex-col justify-center">
+        <div class="md:flex md:flex-wrap md:justify-between">
+          <div class="p-10 md:w-[67%]">
+            <div class="">
+              <h2 class="text-2xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+                WebFX: Cutting-edge web development from an experienced team
+              </h2>
+            </div>
+
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Our skilled web development staff has the technical expertise to work with both open source technologies, such as PHP and mySQL. They’re also skilled with Microsoft technologies, such as ASP, .Net, and Microsoft SQL Server.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">As a leading web development company, we’ve also worked with a large variety of content management systems including Magento, WordPress, sugarCRM, Joomla, PHPnuke, OS Commerce, Microsoft SharePoint Portal, BEA Aqua Logic Web Portal, and X-Cart.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Altogether, that means we have one of the most experienced and skilled teams of web developers in the industry!</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">No matter what you need, we can work with it — and we’ll use it to create a custom development project you’ll love. Contact us today for a fast, easy quote.</p>
+
+            <div class="py-10">
+              <h2 class="text-2xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+                Our web development philosophy
+              </h2>
+            </div>
+            
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">As you can see from our list of web development services above, WebFX web developers have worked in virtually every aspect of development. They’ve coded, created, and worked hand-in-hand with our clients to make sure they get the best results for their investment — no matter how big that investment may be.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Our developers understand that core functionality is critical to the success of any Internet marketing campaign. If you want to create a website that continually draws traffic, engages visitors, and generates paying customers, then your site simply needs to work.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">At WebFX, our web development team understands that because we’ve done it for ourselves and so many clients already.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Whether you want us to create custom-coded content or templated pages, we can craft them, implement them, and test them to make sure they’re as efficient as possible.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">We’ll also stress test the functional parts of your site to make sure they can handle large traffic loads while simultaneously removing any bugs that we discover along the way</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Our web developers know what they’re doing — and they know you expect excellence for your dollar. When you partner with us, we believe your success is our success, and that’s why we’ll work hard for you.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">We provide development services to clients from New York to California and everywhere in between.</p>
+            <div class="py-10">
+              <h2 class="text-2xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+                How our web developers create
+              </h2>
+            </div>
+            
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Our team of web developers is dedicated to staying at the top of the Internet marketing industry. They regularly practice, refine, and update their skills to make sure they can always offer our clients the best results possible.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">In practice, that means learning and implementing ideas through a variety of coding languages.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Our developers work with HTML, PHP, Java, JavaScript, Ruby, Python, and other programming languages. They’ve created both web and desktop applications from scratch to solve major problems for our clients.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Those applications include MarketingCloudFX, SEO Checker, and a variety of other SEO tools that our clients use every day.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Those are just the tools we’ve created for ourselves, too. Our development team has made countless other applications that help our clients achieve their goals. Whether you want to generate leads, traffic, or solutions for your customers, we’ll figure out a way to make it happen.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">To start, you just have to tell us your idea.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">And speaking of which…</p>
+
+            <div class="py-10">
+              <h2 class="text-2xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+                Our developers are idea machines
+              </h2>
+            </div>
+            
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Our developers are so experienced that they can suggest new ways for your business to succeed online, implement them, and fine-tune them to perfection.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">In development terms, that means every member of our team is an active participant in your overall marketing strategy. They can tell you what’s worked in the past, what could work for you now, and what may work for you in the future.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">That active involvement is a major part of your partnership with WebFX. We firmly believe that we’re here to provide you with the absolute best website development solution for your business. Our developers will pull from their experience and expertise to make sure that happens.</p>
+
+            <div class="py-10">
+              <h2 class="text-2xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+                The scope of our developers’ skills
+              </h2>
+            </div>
+            
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">At WebFX, our developers know that efficiency counts when it comes to coding website functionality. They understand that every bit of code they create has to perform effectively in order for a website to operate like a fine-tuned machine.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">We understand that because we’re more than a web development company — we’re a full-service Internet marketing agency. That means our web developers understand search engine optimization (SEO), user experience (UX), responsive design, and other essential skills that a development-only agency wouldn’t incorporate.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">With that knowledge, our development team will create website solutions for your business that last for years and continually pay dividends. We don’t just create for the here-and-now — we create for the future so your business can continue to succeed online, no matter how much the Internet changes.</p>
+
+            <div class="py-10">
+              <h2 class="text-2xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+                Developing industry solutions
+              </h2>
+            </div>
+            
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">We have a variety of clients, which means our developers face a variety of needs. That’s given them insight into the inner-workings of practically every industry online — including the most lucrative.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">To start, there’s ecommerce. WebFX developers have created custom ecommerce solutions for our clients for years, ensuring our clients can earn more traffic, sell more product, and grow their revenue day after day.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">But we also understand lead generation. As the core principle behind service-oriented companies, online lead generation is a key part of web development. Our developers have created lead generation services that deliver as much customer information as possible to our clients so they can turn their leads into paying customers.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">We’ve helped businesses sell to institutions. We’ve helped medical providers reach new patients. We’ve even helped old-school companies join the modern era by introducing them to the power of Internet marketing for the first time.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">And we’ve done it all through our web development team.</p>
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">The web development solutions we provide empower our clients, no matter how they do business. From actively-engaged marketing tactics to passive customer acquisition, our developers can do it all. Not sure if you need website design or website development? We can help you decide.</p>
+
+            <div class="py-10">
+              <h2 class="text-2xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+                Get your ideal web development solution today
+              </h2>
+            </div>
+            
+            <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Are you ready to grow your business to new levels through the Internet? We’d love to hear from you!</p>
+
+          </div>
+          <div class="md:w-[30%] relative">
+            <div class="border rounded-md border-gray-200 sticky top-32">
+              <div>
+                <div class="rounded-t-md bg-gray-200 my-2" id="tablebtn1" onclick="toggleElement('list1','flip1')">
+                  <h1 class="px-10 py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left hover:text-[#ee4a03]">
+                    Table of Contents 
+                    <svg id="flip1" xmlns="http://www.w3.org/2000/svg" class="w-[18px] inline-block" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M246.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 402.7 361.4 265.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-160 160zm160-352l-160 160c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 210.7 361.4 73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3z"/></svg>
+                  </h1>
+                </div>
+                <div class="m-10 hidden" id="list1" >
+                  <ul class="list-disc">
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">WebFX: Cutting-edge web development from an experienced team</a></li>
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">Our web development philosophy</a></li>
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">How our web developers create</a></li>
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">Our developers are idea machines
+                        management company</a></li>
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">The scope of our developers’ skills
+                        management services help your business grow?</a></li>
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">Developing industry solutions</a></li>
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">Get your ideal web development solution today</a></li>
+                  </ul>
+                </div>
+  
+              </div>
+
+
+              <div>
+                <div class="rounded-t-md bg-gray-200 my-2" id="tablebtn2" onclick="toggleElement('list2','flip2')">
+                  <h1 class="px-10 py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left hover:text-[#ee4a03]">
+                    Related Resources
+                    <svg id="flip2" xmlns="http://www.w3.org/2000/svg" class="w-[18px] inline-block" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M246.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 402.7 361.4 265.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-160 160zm160-352l-160 160c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 210.7 361.4 73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3z"/></svg>
+                  </h1>
+                </div>
+                <div class="m-10 hidden" id="list2">
+                  <ul class="list-disc">
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">Questions to Ask Web Developer</a></li>
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">Ecommerce Web Application Development Optimized for the Best Conversions</a></li>
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">Questions to Ask a Web Developer Before Hiring</a></li>
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">Web Development Pricing</a></li>
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">SMB Web Development Agency</a></li>
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">B2C Web Development Pricing</a></li>
+                  </ul>
+                </div>
+  
+              </div>
+
+
+              <div>
+                <div class="rounded-t-md bg-gray-200 my-2" id="tablebtn3" onclick="toggleElement('list3','flip3')">
+                  <h1 class="px-10 py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left hover:text-[#ee4a03]">
+                    Additional Reading
+                    <svg id="flip3" xmlns="http://www.w3.org/2000/svg" class="w-[18px] inline-block" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M246.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 402.7 361.4 265.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-160 160zm160-352l-160 160c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 210.7 361.4 73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3z"/></svg>
+                  </h1>
+                </div>
+                <div class="m-10 hidden" id="list3">
+                  <ul class="list-disc">
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">A Website Management Agency You Can Trust</a></li>
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">Our web development philosophy</a></li>
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">How our web developers create</a></li>
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">Our developers are idea machines
+                        management company</a></li>
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">The scope of our developers’ skills
+                        management services help your business grow?</a></li>
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">Developing industry solutions</a></li>
+                    <li class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left"><a href=""
+                        class="hover:text-orange-400 hover:border-b-2 hover:border-orange-400">Get your ideal web development solution today</a></li>
+                  </ul>
+                </div>
+  
+              </div>
+  
+              
+            </div>
+            
+            
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+<!--web design services start-->
+  <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+    <div class="w-[90%] px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div
+            class="grid max-w-xl grid-cols-1 mx-auto mt-8 text-center lg:max-w-full sm:mt-12 lg:mt-20 lg:grid-cols-3 gap-x-6 xl:gap-x-12 gap-y-6">
+            <div class="bg-white rounded-md shadow-md hover:shadow-2xl">
+                <div class="px-8 py-12">
+                    <h2 class="text-1xl font-bold leading-tight text-black text-left sm:text-2xl lg:text-3xl">
+                      Web Design Services
+                    </h2>
+                    <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Professional SEO Services That Drive Results</p>
+                    <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Local SEO Services</p>
+                    <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">SEO Content Writing Services</p>
+                    <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Enterprise SEO Services</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-md shadow-md hover:shadow-2xl">
+                <div class="px-8 py-12">
+                    <h2 class="text-1xl font-bold leading-tight text-black text-left sm:text-2xl lg:text-3xl">
+                      Digital Marketing Site Services
+                    </h2>
+                    <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Landing Page Design</p>
+                    <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Web Video Production</p>
+                    <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Ecommerce Web Design Packges</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-md shadow-md hover:shadow-2xl">
+                <div class="px-8 py-12">
+                    <h2 class="text-1xl font-bold leading-tight text-black text-left sm:text-2xl lg:text-3xl">
+                      Learn More
+                    </h2>
+                    <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">How Much Does Ecommerce SEO Cost?</p>
+                    <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">Ecommerce SEO Agency</p>
+                    <p class="py-2 text-[18px] sm:text-[22px] font-sans text-[#222222] text-left">SEO for the Ecommerce industry</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--web design services end-->
+
+  <!-- CTA Section Starts -->
+  <section class="py-10  sm:py-16 lg:py-24 flex flex-col items-center justify-start lg:flex-row" style="background-color: #111827">
+    <div class="w-full lg:w-[65%] min-h-screen flex justify-center items-center flex-col">
+      <div class="flex flex-col items-center justify-center w-full sm:flex-row sm:mt-10">
+        <div class="flex flex-col justify-center align-middle">
+          <img loading="lazy" src="https://www.webfx.com/wp-content/themes/fx/assets/img/footer/footer-roket.png"
+            alt="Sapce Img" width="180px" />
+        </div>
+        <div class="w-[90%] flex justify-center ml-5 sm:w-[80%] items-center sm:items-start flex-col">
+          <h4 class="my-5 text-3xl font-bold text-white">
+            We’ve driven over
+          </h4>
+          <div class="w-[426px] flex justify-evenly items-center mt-4">
+            <span class="bg-white text-[28px] rounded-[5px] text-white font-bold sm:text-4xl lg:text-7xl Y" style="
+                  background: linear-gradient(
+                    180deg,
+                    #ee4a03 55.15%,
+                    #ee4a03 59.84%
+                  );
+                  padding: 20px;
+                  margin-right: 7px;
+                ">7</span>
+            <span class="bg-whit text-[28px] rounded-[5px] text-white font-bold sm:text-4xl lg:text-7xl Y" style="
+                  background: linear-gradient(
+                    180deg,
+                    #ee4a03 55.15%,
+                    #ee4a03 59.84%
+                  );
+                  padding: 20px;
+                  margin-right: 7px;
+                ">8</span>
+            <span class="bg-whit text-[28px] rounded-[5px] text-white font-bold sm:text-4xl lg:text-7xl Y" style="
+                  background: linear-gradient(
+                    180deg,
+                    #ee4a03 55.15%,
+                    #ee4a03 59.84%
+                  );
+                  padding: 20px;
+                  margin-right: 7px;
+                ">3</span>
+            <span class="bg-whit text-[28px] rounded-[5px] text-white font-bold sm:text-4xl lg:text-7xl Y" style="
+                  background: linear-gradient(
+                    180deg,
+                    #ee4a03 55.15%,
+                    #ee4a03 59.84%
+                  );
+                  padding: 20px;
+                  margin-right: 7px;
+                ">9</span>
+            <span class="bg-whit text-[28px] rounded-[5px] text-white font-bold sm:text-4xl lg:text-7xl Y" style="
+                  background: linear-gradient(
+                    180deg,
+                    #ee4a03 55.15%,
+                    #ee4a03 59.84%
+                  );
+                  padding: 20px;
+                  margin-right: 7px;
+                ">6</span>
+            <span class="bg-whit text-[28px] rounded-[5px] text-white font-bold sm:text-4xl lg:text-7xl Y" style="
+                  background: linear-gradient(
+                    180deg,
+                    #ee4a03 55.15%,
+                    #ee4a03 59.84%
+                  );
+                  padding: 20px;
+                  margin-right: 7px;
+                ">8</span>
+            <span class="bg-whit text-[28px] rounded-[5px] text-white font-bold sm:text-4xl lg:text-7xl Y" style="
+                  background: linear-gradient(
+                    180deg,
+                    #ee4a03 55.15%,
+                    #ee4a03 59.84%
+                  );
+                  padding: 20px;
+                  margin-right: 7px;
+                ">4</span>
+          </div>
+          <h4 class="text-[24px] font-bold text-white my-5">
+            leads for clients.
+          </h4>
+        </div>
+      </div>
+      <h4 class="text-white bold text-[24px] w-11/12 text-center md:text-left sm:ml-7 font-bold mt-5">
+        Discover how we can help your business grow
+      </h4>
+      <!-- <div class="w-[70%]sm:w-[70%] mt-5 py-20">
+        <div
+          class="flex justify-around align-middle w-[50] border bg-white rounded-8 flex-nowrap flex-col sm:flex-row rounded-[5px]">
+          <input placeholder="Enter your website" name="website" type="text" required=""
+            class="block w-[70%] px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500" />
+          <button type="submit"
+            class="w-[10%] sm:w-[10%]  text-white rounded sm:text-[16px] mt-4 sm:mt-0 text-[16px] p-10 sm:p-1" style="background-color: #f97316;"  >
+            Send Me a Proposal
+          </button>
+        </div>
+      </div> -->
+      <div class="flex flex-row w-full pt-10 pb-10 ps justify-aroun">
+        <div class="w-[80%] flex flex-row justify-around pl-10 rounded-md">
+          <input type="text" name="website" required=""
+            class="inline-block w-full px-3 py-1 bg-white border-0 placeholder-slate-400 border-hidden focus:border-hidden"
+            style="border-radius: 10px 0px 0px 10px" placeholder="Enter your website" />
+          <button type="submit" class="inline-block px-3 py-1 text-lg text-white sm:mt-0" style="
+                background-color: #ee4a03;
+                border-radius: 0px 10px 10px 0px;
+              ">
+            Send Me a Proposal ->
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="lg:w-[35%] w-full min-h-[50.3vh] lg:min-h-screen flex justify-center align-middle pl-3 flex-col md:mt-0 relative overflow-hidden">
+      <div class="absolute w-full pr-4 text-right transition-all duration-200 ease-in-out slide text-slide">
+        <h1 class="text-white text-[25px] md:text-[32px] font-bold text-right mr-5 top-[30%] w-full pr-3" id="text"
+          style="
+              font-family: 'Sanchez', serif;
+              font-weight: 400;
+              line-height: 42px;
+              letter-spacing: -0.03em;
+              color: #fff;
+            ">
+          ARIZONA GARAGE DOOR SUPPLIER The entire staff at WebFX has been
+          phenomenal. They are quick with their replies and incredibly
+          helpful.
+        </h1>
+        <h3 class="text[8px] font-bold pl-5 text-white mt-8">
+          Marketing Specialist
+        </h3>
+        <h3 class="pl-5 mb-8 font-bold text-white" style="font-size: 15px">
+          CABLE COMPANY IN PA
+        </h3>
+      </div>
+
+      <div class="absolute w-full pr-4 text-right transition-all duration-200 ease-in-out slide text-slide">
+        <h1 class="text-white text-[25px] md:text-[32px] font-bold text-right mr-5 top-[30%] w-full pr-3" id="text"
+          style="
+              font-family: 'Sanchez', serif;
+              font-weight: 400;
+
+              line-height: 42px;
+              letter-spacing: -0.03em;
+              color: #fff;
+            ">
+          ARIZONA GARAGE DOOR SUPPLIER The entire staff at WebFX has been
+          phenomenal. They are quick with their replies and incredibly
+          helpful.
+        </h1>
+        <h3 class="text[8px] font-bold pl-5 mb-0 pb-0 text-white mt-8">
+          Marketing Specialist
+        </h3>
+        <h3 class="pl-5 mb-8 font-bold text-white" style="font-size: 15px">
+          CABLE COMPANY IN PA
+        </h3>
+      </div>
+      <div class="absolute w-full pr-4 text-right transition-all duration-200 ease-in-out slide text-slide">
+        <h1 class="text-white text-[25px] md:text-[32px] font-bold text-right mr-5 top-[30%] w-full pr-3" id="text"
+          style="
+              font-family: 'Sanchez', serif;
+              font-weight: 400;
+
+              line-height: 42px;
+              letter-spacing: -0.03em;
+              color: #fff;
+            ">
+          ARIZONA GARAGE DOOR SUPPLIER The entire staff at WebFX has been
+          phenomenal. They are quick with their replies and incredibly
+          helpful.
+        </h1>
+        <h3 class="text[8px] font-bold pl-5 text-white mt-8">
+          Marketing Specialist
+        </h3>
+        <h3 class="pl-5 mb-8 font-bold text-white" style="font-size: 15px">
+          CABLE COMPANY IN PA
+        </h3>
+      </div>
+
+      <div class="absolute right-0 w-full pr-4 text-right transition-all duration-200 ease-in-out slide text-slide">
+        <h1 class="text-white text-[25px] md:text-[32px] font-bold text-right mr-5 top-[30%] w-full pr-3" id="text"
+          style="
+              font-family: 'Sanchez', serif;
+              font-weight: 400;
+
+              line-height: 42px;
+              letter-spacing: -0.03em;
+              color: #fff;
+            ">
+          ARIZONA GARAGE DOOR SUPPLIER The entire staff at WebFX has been
+          phenomenal. They are quick with their replies and incredibly
+          helpful.
+        </h1>
+        <h3 class="text[8px] font-bold pl-5 text-white mt-8">
+          Marketing Specialist
+        </h3>
+        <h3 class="pl-5 mb-8 font-bold text-white" style="font-size: 15px">
+          CABLE COMPANY IN PA
+        </h3>
+      </div>
+
+      <div class="relative mt-60 lg:mt-80">
+        <i class="fa-solid fa-circle-left text-3xl ml-5 mr-5 cursor-pointer z-10 text-[#ffffffb0] absolute right-0"
+          id="prev" onclick="goprev()" style="right: 0px"></i>
+
+        <i class="fa-solid fa-circle-right text-3xl cursor-pointer z-10 text-[#ffffffb0] absolute" id="next"
+          onclick="gonext()" style="right: 63px"></i>
+      </div>
+    </div>
+  </section>
+  <!-- CTA Section Ends -->
+
+  <script src="./../src/slider.js"></script>
+
+  <script>
+    //header
+    var toggelbtn = document.getElementById('toggelbtn');
+    var dbox = document.getElementById('menudiv');
+    var closeicon = document.getElementById('closeicon');
+    var listicon = document.getElementById('listicon');
+
+    function showmenu() {
+      dbox.classList.toggle('pointer-events-none')
+      dbox.classList.toggle('translate-y-10')
+      dbox.classList.toggle('opacity-0')
+      listicon.style.display = "none";
+      closeicon.style.display = "flex";
+    };
+
+    function hidemenu() {
+      dbox.classList.toggle('pointer-events-none')
+      dbox.classList.toggle('translate-y-10')
+      dbox.classList.toggle('opacity-0')
+      listicon.style.display = "flex";
+      closeicon.style.display = "none";
+      ebookbtn.style.color = "black";
+    }
+
+    const ddContainer = document.querySelectorAll('.drop-down-container')
+    ddContainer.forEach(item => {
+      const dd = item.querySelector('.drop-down')
+      const h = dd.scrollHeight
+      const svg = item.querySelector('svg')
+      const ddbtn = item.querySelector('.drop-down-btn')
+      ddbtn.addEventListener('click', (e) => {
+        e.stopPropagation()
+        if (window.innerWidth < 1024) {
+          if (dd.style.height) {
+            dd.style.height = null
+          } else {
+            dd.style.height = h + 'px'
+          }
+          svg.classList.toggle('rotate-180')
+          dd.classList.toggle('pointer-events-none')
+        }
+      })
+    });
+
+    const toggleButton1 = document.getElementById('tablebtn1');
+    const section1 = document.getElementById('tablelist1');
+
+    toggleButton1.addEventListener('click', () => {
+      section1.classList.toggle('hidden');
+    });
+
+
+    const toggleButton2 = document.getElementById('tablebtn2');
+    const section2 = document.getElementById('tablelist2');
+
+    toggleButton2.addEventListener('click', () => {
+      section2.classList.toggle('hidden');
+    });
+
+
+    const toggleButton3 = document.getElementById('tablebtn3');
+    const section3 = document.getElementById('tablelist3');
+
+    toggleButton3.addEventListener('click', () => {
+      section3.classList.toggle('hidden');
+    });
+
+
+    function toggleElement(elementId1,elementId2) {
+      const element1 = document.getElementById(elementId1);
+      const element2 = document.getElementById(elementId2);
+      element1.classList.toggle('hidden');
+      element2.classList.toggle('scale-y-[-1]');
+    }
+
+  </script>
+</body>
+
+</html>
