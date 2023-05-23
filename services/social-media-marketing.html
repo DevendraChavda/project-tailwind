@@ -622,7 +622,7 @@
   <!--manager section Ends-->
 
   <!-- Table Section Starts -->
-  <section class="flex justify-center w-full min-h-screen pt-12 pb-10 align-top">
+  <section class="flex justify-center w-full min-h-screen pt-12 pb-10 align-top overflow-hidden">
     <div class="w-[90%] px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl sm:w-[80%] flex align-middle items-center flex-col">
       <h2 class="text-2xl font-bold text-[26px] sm:text-[32px] pb-10 text-center">
         Explore social media marketing services plans
@@ -637,7 +637,9 @@
         Standard consultation and reporting plans (Monthly)
       </h2>
       <div class="overflow-x-scroll">
-        <table class="mt-8 mb-8 border-2" style="font-size: 15px" style="font-family: sans-serif; color: #4b5563">
+        <table class="mt-8 mb-8 border-2 relative" style="font-size: 15px"
+        style="font-family: sans-serif; color: #4b5563">
+        <thead class="sticky top-0 z-10">
           <th class="w-[16%] min-w-[100px] border-2 pt-8 pb-8 text-[#000000DE] text-[12px] sm:text-[16px]"
             style="background-color: #8f8c8c29">
             Features
@@ -659,7 +661,8 @@
           <th class="w-[16%] min-w-[100px] border-2 pt-8 pb-8 text-[#000000DE] text-[12px] sm:text-[16px]">
             Enterprise
           </th>
-
+        </thead>
+        <tbody class="overflow-y-auto">
           <tr class="border-2">
             <td class="text-[14px] sm:text-[18px] pt-8 pb-8 pl-8 pr-8" style="background-color: #8f8c8c29">
               Number of keyphrases optimized (Keyphrases with less than 1M
@@ -680,6 +683,8 @@
             </td>
             <td class="pt-8 pb-8 text-center border-2">Custom</td>
           </tr>
+        </tbody>
+          
         </table>
       </div>
 
@@ -1755,7 +1760,7 @@
           <h4 class="my-5 text-3xl font-bold text-white">
             We’ve driven over
           </h4>
-          <div class="w-[426px] flex justify-evenly items-center mt-4">
+          <div class="w-[60%] flex justify-evenly items-center mt-4">
             <span class="bg-white text-[28px] rounded-[5px] text-white font-bold sm:text-4xl lg:text-7xl Y" style="
                   background: linear-gradient(
                     180deg,
