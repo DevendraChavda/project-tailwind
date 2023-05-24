@@ -869,7 +869,7 @@
   </section>
   <!--Market your business...... end-->
 
-  <!--Inside our 93% client satisfaction rate.... start-->
+  <!--Explore social media marketing services plans.... start-->
   <section class="flex justify-center w-full pt-12 pb-10 align-top">
     <div
       class="w-[90%] px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl sm:w-[80%] flex align-middle flex-col justify-center md:flex-row md:justify-between">
@@ -925,7 +925,7 @@
       </div>
     </div>
   </section>
-  <!--Inside our 93% client satisfaction rate.... end-->
+  <!--Explore social media marketing services plans.... end-->
 
   <!--marketing services... start-->
   <section class="py-10 sm:py-16 lg:py-24 pb-20 relative">
@@ -2040,21 +2040,6 @@
       }
     }
 
-    const toggleButton1 = document.getElementById('tablebtn1');
-    const section1 = document.getElementById('tablelist1');
-
-    toggleButton1.addEventListener('click', () => {
-      section1.classList.toggle('hidden');
-    });
-
-
-    const toggleButton3 = document.getElementById('tablebtn3');
-    const section3 = document.getElementById('tablelist3');
-
-    toggleButton3.addEventListener('click', () => {
-      section3.classList.toggle('hidden');
-    });
-
 
     let slideIndex = 0;
     showSlides();
@@ -2067,6 +2052,7 @@
         slides[i].style.display = "none";
       }
       slideIndex++;
+      console.log(slideIndex);
       if (slideIndex > slides.length) { slideIndex = 1 }
       for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
