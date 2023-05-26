@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Development</title>
+    <title>SEO</title>
     <link href="./../dist/main.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -204,8 +204,15 @@
     </header>
     <!--Header....end-->
 
+    <!--Scroll top start-->
+    <div id="scrollToTopButton" class="hidden fixed p-2 top-40 right-2 md:right-6 lg:right-14 w-[100px] h-[50px] bg-white rounded-[20px] border-2 border-gray-400 transform -rotate-90 hover:shadow-2xl hover:border-gray-500">
+        <span class="">TO TOP <svg class="inline-block w-[18px] sm:w-[22px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+        </span>
+    </div>
+    <!--Scroll top end-->
+
     <!-- Banner Section Starts -->
-    <section class="flex items-center justify-around pt-5 pb-20 bg-black bg-right bg-no-repeat bg-cover" style="
+    <section id="banner" class="flex items-center justify-around pt-5 pb-20 bg-black bg-right bg-no-repeat bg-cover" style="
         background-image: url('https://www.webfx.com/wp-content/themes/fx/assets/img/blocks/general/text-stats-image-messages-logos/bg-r.png');
       ">
         <div class="w-full lg:w-[78%] min-h-screen flex justify-center align-middle flex-col">
@@ -3057,6 +3064,27 @@
             element1.classList.toggle('hidden');
             element2.classList.toggle('scale-y-[-1]');
         }
+        
+        //scroll button
+        window.addEventListener("scroll", function() {
+            var button = document.getElementById("scrollToTopButton");
+            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollPosition > 200) {
+                button.classList.remove("hidden");
+            } else {
+                button.classList.add("hidden");
+            }
+        });
+
+        var scrollToTopButton = document.getElementById("scrollToTopButton");
+        scrollToTopButton.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
     </script>
 </body>
 
