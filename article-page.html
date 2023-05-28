@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link href="../dist/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../src/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/05ffee228b.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-100">
+    <!--Header....starts-->
+    <div class="z-20 hidden w-full  lg:bg-white lg:block">
+        <div class="max-w-screen-xl mx-auto px-8 py-4 flex flex-row items-center justify-between">
+            <div class="flex items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0"
+                        stroke="currentColor" class="w-9 h-9 fill-[#ee4a03] stroke-[#ee4a03]">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                    </svg>
+                    <div>
+                        <p class="text-xs ">Total Traffic Boosted</p>
+                        <p class="text-lg font-bold leading-tight">209,348,0394</p>
+                    </div>
+                </div>
+                <div class="inline-block">
+                    <a href='#'
+                        class="flex items-center gap-2 text-xs xl:text-sm  font-medium uppercase px-4 py-2 leading-none border rounded-md border-gray-300  text-gray-500 hover:border-[#ee4a03] hover:text-[#ee4a03] hover:bg-white mt-4 lg:mt-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-4 h-4 stroke-current xl:w-6 xl:h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                        </svg>
+
+                        SEO audit Report
+                    </a>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <div class="relative mx-auto mr-5 text-gray-600 xl:mr-10">
+                    <input
+                        class="h-10 px-5 pr-16 text-base bg-white border border-gray-300 rounded-md focus:outline-none"
+                        type="search" name="search" placeholder="Search">
+                    <button type="submit" class="absolute top-0 right-0 mt-3 mr-4">
+                        <svg class="w-4 h-4 text-gray-600 fill-current" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                            viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
+                            xml:space="preserve" width="512px" height="512px">
+                            <path
+                                d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                        </svg>
+
+                    </button>
+                </div>
+                <div class="flex flex-row items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-5 text-orange-600 xl:w-7"
+                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z" />
+                    </svg>
+                    <h1 class="pl-2 text-xl font-bold text-black xl:text-2xl xl:pl-4">9016488128</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="sticky top-0 left-0 z-50 w-full bg-white shadow-lg">
+
+
+        <nav
+            class="flex flex-wrap items-center justify-between w-full p-6 py-3 lg:px-8 lg:py-5 max-w-screen-xl mx-auto">
+            <div class="flex items-center flex-shrink-0 mr-6 text-black">
+                <span class="text-xl font-semibold tracking-tight">
+                    <img class="w-32 xl:w-48" src="../src/assest/cropped-cropped-LOGO-1.png" alt="">
+                </span>
+            </div>
+            <div id="listicon" class="block lg:hidden">
+                <button id="toggelbtn" onclick="showmenu()"
+                    class="flex items-center  border rounded text-black border-black hover:text-[#ee4a03] hover:border-[#ee4a03] aspect-square w-8 p-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="block w-full">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+
+                    </svg>
+                </button>
+            </div>
+            <div id="closeicon" class="hidden lg:hidden">
+                <button id="toggelbtn" onclick="hidemenu()"
+                    class="flex items-center  border rounded text-black text-xl border-black hover:text-[#ee4a03] hover:border-[#ee4a03] aspect-square w-8 p-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="block w-full">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="menudiv"
+                class="absolute left-0 w-full transition-all duration-150 ease-in-out translate-y-10 bg-white shadow-lg opacity-0 pointer-events-none top-full lg:flex lg:flex-row lg:items-center lg:w-auto lg:relative lg:transform-none lg:opacity-100 lg:shadow-none lg:p-0 lg:pointer-events-auto">
+
+
+                <div
+                    class="flex flex-col gap-4 p-6 ml-5 text-sm lg:flex-grow lg:p-0 xl:text-base lg:flex-row lg:gap-2 xl:gap-6 lg:items-center">
+                    <a href="./index.html" class="block  lg:inline-block lg:mt-0 text-black hover:text-[#ee4a03] mr-4">
+                        Home
+                    </a>
+                    <div tabindex="0"
+                        class="block w-full mr-4 text-black cursor-pointer drop-down-container group lg:inline-block lg:mt-0 lg:w-fit">
+
+                        <span class="drop-down-btn">
+                            Services
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="inline-block w-4 h-4 ml-auto">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </span>
+                        <div
+                            class="h-0 overflow-hidden transition-all duration-150 ease-in-out pointer-events-none drop-down lg:drop-shadow-md lg:absolute lg:h-auto lg:translate-y-5 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 lg:group-hover:pointer-events-auto ">
+                            <div
+                                class="flex flex-col p-4 mt-2 bg-gray-50 lg:border-gray-100 rounded-md   lg:border  lg:border-solid lg:px-2 min-w-[150px]">
+                                <a href="./services/search-engine-optimization.html"
+                                    class="p-2 py-1 hover:bg-[#ee4a03] hover:text-white rounded-md">Search Engine
+                                    Optimization </a>
+                                <a href="./services/digital-marketing.html"
+                                    class="p-2 py-1 hover:bg-[#ee4a03] hover:text-white rounded-md">Digital
+                                    Marketing</a>
+                                <a href="./services/social-media-marketing.html"
+                                    class="p-2 py-1 hover:bg-[#ee4a03] hover:text-white rounded-md">Social Media
+                                    Marketing</a>
+                                <a href="./services/website-design.html"
+                                    class="p-2 py-1 hover:bg-[#ee4a03] hover:text-white rounded-md">Website Design</a>
+                                <a href="./services/website-development.html"
+                                    class="p-2 py-1 hover:bg-[#ee4a03] hover:text-white rounded-md">Website
+                                    Development</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div tabindex="0"
+                        class="block w-full mr-4 text-black cursor-pointer drop-down-container group lg:inline-block lg:mt-0 lg:w-fit">
+
+                        <span class="drop-down-btn">
+                            Resources
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="inline-block w-4 h-4 ml-auto">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5">
+                                </path>
+                            </svg>
+                        </span>
+                        <div
+                            class="h-0 overflow-hidden transition-all duration-150 ease-in-out pointer-events-none drop-down lg:drop-shadow-md lg:absolute lg:h-auto lg:translate-y-5 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 lg:group-hover:pointer-events-auto ">
+                            <div
+                                class="flex flex-col p-4 mt-2 bg-gray-50 lg:border-gray-100 rounded-md   lg:border  lg:border-solid lg:px-2 min-w-[150px]">
+                                <a href="./ebooks.html"
+                                    class="p-2 py-1 hover:bg-[#ee4a03] hover:text-white rounded-md">Ebooks </a>
+                                <a href="./courses.html"
+                                    class="p-2 py-1 hover:bg-[#ee4a03] hover:text-white rounded-md">Courses</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a href="./blog.html" class="block  lg:inline-block lg:mt-0 text-black hover:text-[#ee4a03] mr-4">
+                        Our Blog
+                    </a>
+
+                    <a href="./contact-us.html"
+                        class="block  lg:inline-block lg:mt-0 text-black hover:text-[#ee4a03] mr-4">
+                        Contact Us
+                    </a>
+                    <a href="./about.html" class="block  lg:inline-block lg:mt-0 text-black hover:text-[#ee4a03] mr-4">
+                        About
+                    </a>
+                    <a href='#'
+                        class=" text-sm px-6 self-stretch flex items-center py-2 leading-none border rounded text-white border-transparent bg-[#ee4a03] hover:border-[#ee4a03] hover:text-[#ee4a03] hover:bg-white w-fit lg:mt-0">
+                        Write for us
+                    </a>
+                    <!-- <a href=""
+          class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-transparent bg-[#ee4a03] hover:border-[#ee4a03] hover:text-[#ee4a03] hover:bg-white w-fit lg:mt-0">Get
+          a Proposal</a> -->
+                    <a href="#_"
+                        class="rounded px-3.5 py-2  overflow-hidden relative group cursor-pointer border-2 font-medium border-[#ee4a03] text-white">
+                        <span
+                            class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-[#ee4a03] top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+                        <span class="relative text-[#ee4a03] transition duration-300 group-hover:text-white ease">Get a
+                            proposal</span>
+                    </a>
+
+                </div>
+            </div>
+
+
+        </nav>
+
+    </header>
+    <!--Header....end-->
+
+    <!--Scroll top start-->
+    <div id="scrollToTopButton" class="hidden fixed top-40 right-0 md:right-2 lg:right-6 transform -rotate-90">
+        <a href='#'
+            class=" text-md px-6 self-stretch flex items-center leading-none border rounded-2xl text-white border-transparent bg-[#ee4a03] group hover:border-[#ee4a03] hover:text-[#ee4a03] hover:bg-white w-fit lg:mt-0">
+            TO TOP
+            <svg class="m-2 inline-block w-[18px] sm:w-[22px] fill-white group-hover:fill-[#ee4a03]"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+            </svg>
+        </a>
+    </div>
+    <!--Scroll top end-->
+
+
+    <div class="flex justify-center">
+        <div class="w-[80%] flex flex-col md:flex-row justify-around pt-10">
+            <div class="w-full md:w-[75%] bg-white mt-2 md:my-5 rounded-xl">
+
+                <!--title section  start-->
+                <div class="flex flex-col justify-center pt-8 pb-8 md:pt-16 mx-5 align-middle md:mx-20">
+                    <div>
+                        <span class="py-2 text-lg md:text-sm font-sans text-left">
+                            <a class="text-[#ee4a03]" href="../index.html">Home</a> / <a class="text-[#ee4a03]"
+                                href="./blog.html">Blog</a> / <a class="text-[#ee4a03]" href="">How to Display ...</a>
+                        </span>
+                    </div>
+                    <h1 class="pt-5 text-2xl md:text-4xl font-bold text-center lg:text-left">
+                        How to Display Your Facebook Page Reviews in WordPress
+                    </h1>
+
+                    <p class="mt-3 text-center lg:text-left py-2 text-sm md:text-base font-sans">
+                        Last updated on February 23rd, 2023 by <b class="text-[#ee4a03]">Editorial Staff</b> | Reader
+                        Disclosure</p>
+
+                    <div class="flex flex-col items-center justify-center w-full mt-5 lg:justify-start lg:flex-row">
+                        <div class="flex flex-row justify-between gap-2 md:gap-5">
+                            <div class="w-[50px] h-[50px] flex flex-wrap items-center rounded-lg text-gray-700">
+                                <h1 class="">135</h1>
+                                <h3 class="text-xs">SHARES</h3>
+                            </div>
+                            <div
+                                class="w-[40px] h-[40px] md:w-[50px] md:h-[50px] bg-blue-900 flex justify-center rounded-lg">
+                                <svg class="w-[50%] fill-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" />
+                                </svg></div>
+                            <div
+                                class="w-[40px] h-[40px] md:w-[50px] md:h-[50px] bg-cyan-500 flex justify-center rounded-lg">
+                                <svg class="w-[50%] fill-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                </svg></div>
+                            <div
+                                class="w-[40px] h-[40px] md:w-[50px] md:h-[50px] bg-sky-700 flex justify-center rounded-lg">
+                                <svg class="w-[50%] fill-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                </svg></div>
+                            <div
+                                class="w-[40px] h-[40px] md:w-[50px] md:h-[50px] bg-blue-500 flex justify-center rounded-lg">
+                                <svg class="w-[50%] fill-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M256.55 8C116.52 8 8 110.34 8 248.57c0 72.3 29.71 134.78 78.07 177.94 8.35 7.51 6.63 11.86 8.05 58.23A19.92 19.92 0 0 0 122 502.31c52.91-23.3 53.59-25.14 62.56-22.7C337.85 521.8 504 423.7 504 248.57 504 110.34 396.59 8 256.55 8zm149.24 185.13l-73 115.57a37.37 37.37 0 0 1-53.91 9.93l-58.08-43.47a15 15 0 0 0-18 0l-78.37 59.44c-10.46 7.93-24.16-4.6-17.11-15.67l73-115.57a37.36 37.36 0 0 1 53.91-9.93l58.06 43.46a15 15 0 0 0 18 0l78.41-59.38c10.44-7.98 24.14 4.54 17.09 15.62z" />
+                                </svg></div>
+                            <div
+                                class="w-[40px] h-[40px] md:w-[50px] md:h-[50px] bg-green-400 flex justify-center rounded-lg">
+                                <svg class="w-[50%] fill-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+                <!--title section  end-->
+
+                <!--content start-->
+                <section class="border-t-2 border-gray-200 pt-8 pb-8 md:pt-16 mx-5 align-middle md:mx-20">
+                    <p class="mt-5 text-gray-700 py-2 font-sans text-left">Do you want to display Facebook page reviews
+                        in WordPress?</p>
+                    <p class="mt-5 text-gray-700 py-2 font-sans text-left">Reviews and ratings can help you gain the
+                        trust of potential customers and encourage them to buy from your website. If you have a Facebook
+                        page, then you may already have lots of reviews that you can easily embed in your WordPress
+                        website.</p>
+                    <p class="mt-5 text-gray-700 py-2 font-sans text-left">In this article, we’ll show how to display
+                        your Facebook page reviews and ratings on your WordPress website.</p>
+
+                    <h1 class="pt-5 text-xl md:text-2xl font-bold text-left text-[#ee4a03]">
+                        How to Display Your Facebook Page Reviews in WordPress
+                    </h1>
+                    <p class="mt-5 text-gray-700 py-2 font-sans text-left">Reviews can help you build social proof and
+                        gain the trust of your visitors, which means more sales for your business.</p>
+                    <p class="mt-5 text-gray-700 py-2 font-sans text-left">There are lots of ways to collect reviews,
+                        including using the best customer review plugins for WordPress or the best customer testimonial
+                        plugins.</p>
+                    <p class="mt-5 text-gray-700 py-2 font-sans text-left">However, Facebook has its own built-in review
+                        system. If you already have a Facebook page, then followers can review your products and
+                        services on that platform. This is great for helping you build an engaging and trusted Facebook
+                        page.</p>
+                    <p class="mt-5 text-gray-700 py-2 font-sans text-left">But it’s also a good idea to show these
+                        reviews on your WordPress website. That way, people can see all your positive reviews, even if
+                        they don’t visit your Facebook page.</p>
+                    <p class="mt-5 text-gray-700 py-2 font-sans text-left">The reviews can also highlight benefits and
+                        features that you missed in your website’s text and are great for improving your WordPress SEO.
+                    </p>
+                    <p class="mt-5 text-gray-700 py-2 font-sans text-left">After embedding the review feed on your site,
+                        new reviews will appear on your site automatically. This means visitors will always see the
+                        latest reviews without you having to add them to your site manually.</p>
+                    <p class="mt-5 text-gray-700 py-2 font-sans text-left">With that in mind, let’s see how to display
+                        your Facebook page reviews in WordPress.</p>
+
+
+                    <h1 class="pt-5 text-xl md:text-2xl font-bold text-left text-[#ee4a03]">
+                        How to Install a Facebook Page Reviews Plugin
+                    </h1>
+                    <p class="mt-5 text-gray-700 py-2 font-sans text-left">The best way to display your Facebook reviews
+                        in WordPress is by using the Smash Balloon Custom Facebook Feed plugin with the Reviews
+                        extension.</p>
+                    <p class="mt-5 text-gray-700 py-2 font-sans text-left">To restrict Smash Balloon’s access to your
+                        Facebook page, simply click any of the switches to turn it from ‘Yes’ to ‘No.’ Just be aware
+                        that this may affect the content that you can show on your WordPress blog or website.</p>
+                    <p class="mt-5 text-gray-700 py-2 font-sans text-left">After that, you’ll need to select the
+                        Facebook page where you’ll get the reviews from.</p>
+                    <p class="mt-5 text-gray-700 py-2 font-sans text-left">You’ll now see a popup with the Facebook page
+                        you connected to your WordPress website. Simply select the radio button next to your page and
+                        then click on the ‘Add’ button.</p>
+                </section>
+                <!--content end-->
+
+                <!--element section start-->
+                <section class="border-t-2 border-gray-200 pt-8 pb-8 md:pt-16 mx-5 align-middle md:mx-20">
+                    <div class="flex flex-col items-center justify-center w-full mt-5 lg:justify-start lg:flex-row">
+                        <div class="flex flex-row justify-between gap-2 md:gap-5">
+                            <div class="w-[50px] h-[50px] flex flex-wrap items-center rounded-lg text-gray-700">
+                                <h1 class="">135</h1>
+                                <h3 class="text-xs">SHARES</h3>
+                            </div>
+                            <div
+                                class="w-[40px] h-[40px] md:w-[50px] md:h-[50px] bg-blue-900 flex justify-center rounded-lg">
+                                <svg class="w-[50%] fill-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" />
+                                </svg></div>
+                            <div
+                                class="w-[40px] h-[40px] md:w-[50px] md:h-[50px] bg-cyan-500 flex justify-center rounded-lg">
+                                <svg class="w-[50%] fill-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                </svg></div>
+                            <div
+                                class="w-[40px] h-[40px] md:w-[50px] md:h-[50px] bg-sky-700 flex justify-center rounded-lg">
+                                <svg class="w-[50%] fill-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                </svg></div>
+                            <div
+                                class="w-[40px] h-[40px] md:w-[50px] md:h-[50px] bg-blue-500 flex justify-center rounded-lg">
+                                <svg class="w-[50%] fill-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M256.55 8C116.52 8 8 110.34 8 248.57c0 72.3 29.71 134.78 78.07 177.94 8.35 7.51 6.63 11.86 8.05 58.23A19.92 19.92 0 0 0 122 502.31c52.91-23.3 53.59-25.14 62.56-22.7C337.85 521.8 504 423.7 504 248.57 504 110.34 396.59 8 256.55 8zm149.24 185.13l-73 115.57a37.37 37.37 0 0 1-53.91 9.93l-58.08-43.47a15 15 0 0 0-18 0l-78.37 59.44c-10.46 7.93-24.16-4.6-17.11-15.67l73-115.57a37.36 37.36 0 0 1 53.91-9.93l58.06 43.46a15 15 0 0 0 18 0l78.41-59.38c10.44-7.98 24.14 4.54 17.09 15.62z" />
+                                </svg></div>
+                            <div
+                                class="w-[40px] h-[40px] md:w-[50px] md:h-[50px] bg-green-400 flex justify-center rounded-lg">
+                                <svg class="w-[50%] fill-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                                </svg></div>
+                        </div>
+                    </div>
+
+                    <h1 class="pt-5 text-2xl md:text-4xl font-bold text-center lg:text-left">
+                        Popular on WPBeginner Right Now!
+                    </h1>
+
+                    <div class="mt-5 flex flex-wrap">
+                        <div class="w-full md:w-[45%] flex flex-row justify-between">
+                            <img class="p-2 w-[100px] h-[100px]"
+                                src="./src/assest/fixdatabaseconnectionerror-th-150x150.png" alt="">
+                            <div class="text-gray-700 p-2 font-sans text-left text-sm lg:text-base">
+                                How to Fix the Error Establishing a Database Connection in WordPress
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-[45%] flex flex-row justify-between">
+                            <img class="p-2 w-[100px] h-[100px]"
+                                src="./src/assest/fixdatabaseconnectionerror-th-150x150.png" alt="">
+                            <div class="text-gray-700 p-2 font-sans text-left text-sm lg:text-base">
+                                How to Fix the Error Establishing a Database Connection in WordPress
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-[45%] flex flex-row justify-between">
+                            <img class="p-2 w-[100px] h-[100px]"
+                                src="./src/assest/fixdatabaseconnectionerror-th-150x150.png" alt="">
+                            <div class="text-gray-700 p-2 font-sans text-left text-sm lg:text-base">
+                                How to Fix the Error Establishing a Database Connection in WordPress
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-[45%] flex flex-row justify-between">
+                            <img class="p-2 w-[100px] h-[100px]"
+                                src="./src/assest/fixdatabaseconnectionerror-th-150x150.png" alt="">
+                            <div class="text-gray-700 p-2 font-sans text-left text-sm lg:text-base">
+                                How to Fix the Error Establishing a Database Connection in WordPress
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="mt-5 text-gray-500 py-2 font-sans text-left border-t-2 border-gray-200"><b>Disclosure:</b>
+                        Our content is reader-supported. This means if you click on some of our links, then we may earn
+                        a commission. See how WPBeginner is funded, why it matters, and how you can support us.</p>
+
+                    <div class="flex flex-row">
+                        <img class="p-2 w-[100px] h-[100px] mt-5 hidden lg:block"
+                            src="./src/assest/wpbeginner-icon-96x96.png" alt="">
+                        <div class="px-5">
+                            <div
+                                class="pt-5 text-xl md:text-2xl font-bold text-left text-[#ee4a03] flex flex-row justify-between">
+                                <img class="p-2 w-[80px] h-[80px] lg:hidden inline-block"
+                                    src="./src/assest/wpbeginner-icon-96x96.png" alt="">
+                                <h1 class="inline-block">How to Install a Facebook Page Reviews Plugin</h1>
+                            </div>
+                            <p class="mt-5 text-gray-700 py-2 font-sans text-left">Editorial Staff at WPBeginner is a
+                                team of WordPress experts led by Syed Balkhi with over 16 years of experience building
+                                WordPress websites. We have been creating WordPress tutorials since 2009, and WPBeginner
+                                has become the largest free WordPress resource site in the industry.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-900 text-white rounded-md p-5 mt-5 align-middle items-center flex flex-col">
+                        <h1 class="pt-5 text-2xl md:text-4xl font-bold text-center">The Ultimate <b>WordPress
+                                Toolkit</b> </h1>
+                        <p class="mt-5 py-2 px-5 lg:px-10 font-san text-center">Get FREE access to our toolkit – a
+                            collection of WordPress related products and resources that every professional should have!
+                        </p>
+                        <a href="#" title=""
+                            class="inline-flex items-center justify-center w-[200px] px-4 py-4 mt-8 font-semibold text-white transition-all duration-200 bg-[#ee4a03] rounded-md group-hover:bg-gray-800 hover:bg-gray-600 focus:bg-gray-600"
+                            role="button">
+                            Download
+                        </a>
+                    </div>
+                </section>
+                <!--element section end-->
+
+                <!--comment section start-->
+                <section class="border-t-2 border-gray-200 pt-8 pb-8 md:pt-16 mx-5 align-middle md:mx-20">
+                    <div class="flex flex-row justify-between">
+                        <div>
+                            <h1 class="pt-5 text-2xl md:text-4xl font-bold text-left"><svg class="w-[40px] inline-block"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M123.6 391.3c12.9-9.4 29.6-11.8 44.6-6.4c26.5 9.6 56.2 15.1 87.8 15.1c124.7 0 208-80.5 208-160s-83.3-160-208-160S48 160.5 48 240c0 32 12.4 62.8 35.7 89.2c8.6 9.7 12.8 22.5 11.8 35.5c-1.4 18.1-5.7 34.7-11.3 49.4c17-7.9 31.1-16.7 39.4-22.7zM21.2 431.9c1.8-2.7 3.5-5.4 5.1-8.1c10-16.6 19.5-38.4 21.4-62.9C17.7 326.8 0 285.1 0 240C0 125.1 114.6 32 256 32s256 93.1 256 208s-114.6 208-256 208c-37.1 0-72.3-6.4-104.1-17.9c-11.9 8.7-31.3 20.6-54.3 30.6c-15.1 6.6-32.3 12.6-50.1 16.1c-.8 .2-1.6 .3-2.4 .5c-4.4 .8-8.7 1.5-13.2 1.9c-.2 0-.5 .1-.7 .1c-5.1 .5-10.2 .8-15.3 .8c-6.5 0-12.3-3.9-14.8-9.9c-2.5-6-1.1-12.8 3.4-17.4c4.1-4.2 7.8-8.7 11.3-13.5c1.7-2.3 3.3-4.6 4.8-6.9c.1-.2 .2-.3 .3-.5z" />
+                                </svg> 3 Comments</h1>
+                        </div>
+                        <div>
+                            <a href="#" title="" 
+                                class="inline-flex items-center justify-center px-2 py-2 mt-4 font-semibold text-gray-700 transition-all duration-200 rounded-lg border-2 border-gray-700 bg-gray-100 hover:text-[#ee4a03]"
+                                role="button">
+                                Leave a Reply
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pt-5">
+                        <div>
+                            <h1 class="pt-5 text-xl md:text-2xl font-bold text-left">Kelly</h1>
+                            <p class="py-2 font-san text-left">Jun 6, 2019 at 9:48 pm</p>
+                            <div class="p-5 rounded-lg border-2 border-gray-300">
+                                <p class="py-2 font-san text-left">I have installed and activated the plug-in, put it in
+                                    the side bar and logged in to FB (choosing my nominated page) however none of the
+                                    Review & Slider Options came up, only the Facebook details, Title, Pagination,
+                                    Characters before ‘ read more’ link, Widget Width etc.</p>
+                                <a  title="" onclick="reply('comment1')"
+                                    class=" px-2 py-2 mt-4 font-semibold text-gray-700 transition-all duration-200 group hover:text-[#ee4a03]"
+                                    role="button">
+                                    Reply <svg
+                                        class="w-[20px] fill-gray-700 group-hover:fill-[#ee4a03] inline-block pt-3"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M32 64C14.3 64 0 49.7 0 32S14.3 0 32 0l96 0c53 0 96 43 96 96l0 306.7 73.4-73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-128 128c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 402.7 160 96c0-17.7-14.3-32-32-32L32 64z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div id="comment1" class="hidden mt-5 lg:mt-8 border-t-2 border-gray-200 pt-5 lg:pt-10">
+                                <div class="flex flex-row justify-between">
+                                    <div>
+                                        <h1 class="text-xl md:text-2xl font-bold text-left">Reply to Kelly</h1>
+                                    </div>
+                                    <div class="">
+                                        <a title="" onclick="reply('comment1')"
+                                            class=" px-2 py-2 mt-4 font-semibold text-gray-700 transition-all duration-200 group hover:text-[#ee4a03]"
+                                            role="button">
+                                            Cancel Reply
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="py-2 font-san text-left">Thanks for choosing to leave a comment. Please keep
+                                    in mind that all comments are moderated according to our comment policy, and your
+                                    email address will NOT be published. Please Do NOT use keywords in the name field.
+                                    Let's have a personal and meaningful conversation.</p>
+                                <input type="text" name="" id="" placeholder="Enter your name"
+                                    class="block w-full md:w-[60%] my-5 px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]" />
+                                <input type="email" name="" id="" placeholder="Email Address"
+                                    class="block w-full md:w-[60%] my-5 px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]" />
+                                <input type="checkbox" name="" id="" placeholder="Email Address" class="my-5" /> Save my
+                                name, email, and website in this browser for the next time I comment.
+                                <textarea name="" id="" rows="10"
+                                    class="block w-full md:w-[60%] my-5 px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]"></textarea>
+                                <select name="" id=""
+                                    class="block my-5 px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]">
+                                    <option value="">Don't subscribe</option>
+                                    <option value="">All</option>
+                                    <option value="">Replies to my comments</option>
+                                </select> Notify me of followup comments via e-mail. You can also subscribe without
+                                commenting.
+                                <a href="#" title=""
+                                    class="inline-flex items-center justify-center w-[200px] px-4 py-4 mt-8 font-semibold text-white transition-all duration-200 bg-[#ee4a03] rounded-md group-hover:bg-gray-800 hover:bg-gray-600 focus:bg-gray-600"
+                                    role="button">
+                                    Submit Comment
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 ml-5 lg:mt-8 lg:ml-10 pt-5 lg:pt-10">
+                            <div class="flex flex-row justify-between">
+                                <div>
+                                    <h1 class="text-xl md:text-2xl font-bold text-left">WPBeginner Support</h1>
+                                    <p class="py-2 font-san text-left">Jun 6, 2019 at 9:48 pm</p>
+                                </div>
+                                <div class="">
+                                    <a href="#" title=""
+                                        class="inline-flex items-center justify-center px-4 py-4 font-semibold text-white transition-all duration-200 bg-[#ee4a03] rounded-md group-hover:bg-gray-800 hover:bg-gray-600 focus:bg-gray-600"
+                                        role="button">
+                                        ADMIN
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-5 rounded-lg border-2 border-gray-300">
+                                <p class="py-2 font-san text-left">I have installed and activated the plug-in, put it in
+                                    the side bar and logged in to FB (choosing my nominated page) however none of the
+                                    Review & Slider Options came up, only the Facebook details, Title, Pagination,
+                                    Characters before ‘ read more’ link, Widget Width etc.</p>
+                                <a title="" onclick="reply('comment2')"
+                                    class=" px-2 py-2 mt-4 font-semibold text-gray-700 transition-all duration-200 group hover:text-[#ee4a03]"
+                                    role="button">
+                                    Reply <svg
+                                        class="w-[20px] fill-gray-700 group-hover:fill-[#ee4a03] inline-block pt-3"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M32 64C14.3 64 0 49.7 0 32S14.3 0 32 0l96 0c53 0 96 43 96 96l0 306.7 73.4-73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-128 128c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 402.7 160 96c0-17.7-14.3-32-32-32L32 64z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div id="comment2" class="hidden mt-5 lg:mt-8 border-t-2 border-gray-200 pt-5 lg:pt-10">
+                                <div class="flex flex-row justify-between">
+                                    <div>
+                                        <h1 class="text-xl md:text-2xl font-bold text-left">Reply to WPBeginner Support
+                                        </h1>
+                                    </div>
+                                    <div class="">
+                                        <a title="" onclick="reply('comment2')"
+                                            class=" px-2 py-2 mt-4 font-semibold text-gray-700 transition-all duration-200 group hover:text-[#ee4a03]"
+                                            role="button">
+                                            Cancel Reply
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="py-2 font-san text-left">Thanks for choosing to leave a comment. Please keep
+                                    in mind that all comments are moderated according to our comment policy, and your
+                                    email address will NOT be published. Please Do NOT use keywords in the name field.
+                                    Let's have a personal and meaningful conversation.</p>
+                                <input type="text" name="" id="" placeholder="Enter your name"
+                                    class="block w-full md:w-[60%] my-5 px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]" />
+                                <input type="email" name="" id="" placeholder="Email Address"
+                                    class="block w-full md:w-[60%] my-5 px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]" />
+                                <input type="checkbox" name="" id="" placeholder="Email Address" class="my-5" /> Save my
+                                name, email, and website in this browser for the next time I comment.
+                                <textarea name="" id="" rows="10"
+                                    class="block w-full md:w-[60%] my-5 px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]"></textarea>
+                                <select name="" id=""
+                                    class="block my-5 px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]">
+                                    <option value="">Don't subscribe</option>
+                                    <option value="">All</option>
+                                    <option value="">Replies to my comments</option>
+                                </select> Notify me of followup comments via e-mail. You can also subscribe without
+                                commenting.
+                                <a href="#" title=""
+                                    class="inline-flex items-center justify-center w-[200px] px-4 py-4 mt-8 font-semibold text-white transition-all duration-200 bg-[#ee4a03] rounded-md group-hover:bg-gray-800 hover:bg-gray-600 focus:bg-gray-600"
+                                    role="button">
+                                    Submit Comment
+                                </a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h1 class="pt-5 text-xl md:text-2xl font-bold text-left">ashika gowde</h1>
+                            <p class="py-2 font-san text-left">May 21, 2018 at 7:53 am</p>
+                            <div class="p-5 rounded-lg border-2 border-gray-300">
+                                <p class="py-2 font-san text-left">Today I learned new technic from this Blog.
+                                    Thanks.</p>
+                                <a title="" onclick="reply('comment3')"
+                                    class=" px-2 py-2 mt-4 font-semibold text-gray-700 transition-all duration-200 group hover:text-[#ee4a03]"
+                                    role="button">
+                                    Reply <svg
+                                        class="w-[20px] fill-gray-700 group-hover:fill-[#ee4a03] inline-block pt-3"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M32 64C14.3 64 0 49.7 0 32S14.3 0 32 0l96 0c53 0 96 43 96 96l0 306.7 73.4-73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-128 128c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 402.7 160 96c0-17.7-14.3-32-32-32L32 64z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div id="comment3" class="hidden mt-5 lg:mt-8 border-t-2 border-gray-200 pt-5 lg:pt-10">
+                                <div class="flex flex-row justify-between">
+                                    <div>
+                                        <h1 class="text-xl md:text-2xl font-bold text-left">Reply to ashika gowde</h1>
+                                    </div>
+                                    <div class="">
+                                        <a title="" onclick="reply('comment3')"
+                                            class=" px-2 py-2 mt-4 font-semibold text-gray-700 transition-all duration-200 group hover:text-[#ee4a03]"
+                                            role="button">
+                                            Cancel Reply
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="py-2 font-san text-left">Thanks for choosing to leave a comment. Please keep
+                                    in mind that all comments are moderated according to our comment policy, and your
+                                    email address will NOT be published. Please Do NOT use keywords in the name field.
+                                    Let's have a personal and meaningful conversation.</p>
+                                <input type="text" name="" id="" placeholder="Enter your name"
+                                    class="block w-full md:w-[60%] my-5 px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]" />
+                                <input type="email" name="" id="" placeholder="Email Address"
+                                    class="block w-full md:w-[60%] my-5 px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]" />
+                                <input type="checkbox" name="" id="" placeholder="Email Address" class="my-5" /> Save my
+                                name, email, and website in this browser for the next time I comment.
+                                <textarea name="" id="" rows="10"
+                                    class="block w-full md:w-[60%] my-5 px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]"></textarea>
+                                <select name="" id=""
+                                    class="block my-5 px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]">
+                                    <option value="">Don't subscribe</option>
+                                    <option value="">All</option>
+                                    <option value="">Replies to my comments</option>
+                                </select> Notify me of followup comments via e-mail. You can also subscribe without
+                                commenting.
+                                <a href="#" title=""
+                                    class="inline-flex items-center justify-center w-[200px] px-4 py-4 mt-8 font-semibold text-white transition-all duration-200 bg-[#ee4a03] rounded-md group-hover:bg-gray-800 hover:bg-gray-600 focus:bg-gray-600"
+                                    role="button">
+                                    Submit Comment
+                                </a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div id="comment" class="mt-5 lg:mt-8 border-t-2 border-gray-200 pt-5 lg:pt-10">
+                                <div class="flex flex-row justify-between">
+                                    <div>
+                                        <h1 class="text-xl md:text-2xl font-bold text-left">Leave A Reply</h1>
+                                    </div>
+                                </div>
+                                <p class="py-2 font-san text-left">Thanks for choosing to leave a comment. Please keep
+                                    in mind that all comments are moderated according to our comment policy, and your
+                                    email address will NOT be published. Please Do NOT use keywords in the name field.
+                                    Let's have a personal and meaningful conversation.</p>
+                                <input type="text" name="" id="" placeholder="Enter your name"
+                                    class="block w-full md:w-[60%] my-5 px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]" />
+                                <input type="email" name="" id="" placeholder="Email Address"
+                                    class="block w-full md:w-[60%] my-5 px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]" />
+                                <input type="checkbox" name="" id="" placeholder="Email Address" class="my-5" /> Save my
+                                name, email, and website in this browser for the next time I comment.
+                                <textarea name="" id="" rows="10"
+                                    class="block w-full md:w-[60%] my-5 px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]"></textarea>
+                                <select name="" id=""
+                                    class="block my-5 px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-[#ee4a03] focus:border-[#ee4a03] caret-[#ee4a03]">
+                                    <option value="">Don't subscribe</option>
+                                    <option value="">All</option>
+                                    <option value="">Replies to my comments</option>
+                                </select> Notify me of followup comments via e-mail. You can also subscribe without
+                                commenting.
+                                <a href="#" title=""
+                                    class="inline-flex items-center justify-center w-[200px] px-4 py-4 mt-8 font-semibold text-white transition-all duration-200 bg-[#ee4a03] rounded-md group-hover:bg-gray-800 hover:bg-gray-600 focus:bg-gray-600"
+                                    role="button">
+                                    Submit Comment
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!--comment section end-->
+
+
+            </div>
+
+
+            <div class="w-full md:w-[20%] bg-gray-100 my-5 flex flex-col gap-4 lg:gap-8">
+
+                <div class="p-5 w-full bg-white rounded-md">
+                    <h1 class="pt-5 text-2xl md:text-lg font-bold text-center lg:text-left">Over 1,320,000+ Readers</h1>
+                    <p>Get fresh content from WPBeginner</p>
+                    <div class="grid grid-cols-4 p-2 gap-5">
+                        <svg class="w-[30px] fill-blue-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                        <svg class="w-[30px] fill-cyan-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                        <svg class="w-[30px] fill-red-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                        <svg class="w-[30px] fill-pink-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                        <svg class="w-[30px] fill-blue-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z"/></svg>
+                        <svg class="w-[30px] fill-red-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+                        <svg class="w-[30px] fill-sky-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                        <svg class="w-[30px] fill-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+                    </div>
+                </div>
+                <div class="p-5 w-full bg-white rounded-md">
+                    <h1 class="pt-5 text-2xl md:text-lg font-bold text-center lg:text-left">Featured WordPress Plugin</h1>
+                    <div class="w-full flex flex-row justify-between">
+                        <img class="p-2 w-[100px] h-[100px]"
+                            src="./src/assest/fixdatabaseconnectionerror-th-150x150.png" alt="">
+                        <div class="text-gray-700 font-sans text-left text-[13px] lg:text-base">
+                            <h1 class="text-base lg:text-[14px] font-bold">All in One SEO</h1>
+                            <p class="text-sm lg:text-[12px]">Improve website SEO rankings with AIOSEO plugin.</p>
+                            <a href="" class="text-[#ee4a03] text-sm lg:text-[12px] hover:border-b-1 hover:border-[#ee4a03]">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-purple-900 text-white rounded-md align-middle items-center flex flex-col py-2">
+                    <h1 class="pt-5 text-2xl font-bold text-center">The Ultimate <b>WordPress
+                            Toolkit</b> </h1>
+                    <p class="mt-5 py-2 px-5 font-san text-center">Get FREE access to our toolkit – a
+                        collection of WordPress related products and resources that every professional should have!
+                    </p>
+                    <a href="#" title=""
+                        class="inline-flex items-center justify-center w-[200px] px-4 py-4 mt-8 font-semibold text-white transition-all duration-200 bg-[#ee4a03] rounded-md group-hover:bg-gray-800 hover:bg-gray-600 focus:bg-gray-600"
+                        role="button">
+                        Download
+                    </a>
+                </div>
+                <div class="p-5 w-full bg-white rounded-md">
+                    <h1 class="pt-5 text-2xl md:text-lg font-bold text-center lg:text-left">Useful WordPress Guides</h1>
+                    <p class="text-sm lg:text-[12px] pt-2">24 Must Have WordPress Plugins for Business Websites in 2023</p>
+                    <p class="text-sm lg:text-[12px] pt-2">24 Must Have WordPress Plugins for Business Websites in 2023</p>
+                    <p class="text-sm lg:text-[12px] pt-2">24 Must Have WordPress Plugins for Business Websites in 2023</p>
+                    <p class="text-sm lg:text-[12px] pt-2">24 Must Have WordPress Plugins for Business Websites in 2023</p>
+                    <p class="text-sm lg:text-[12px] pt-2">24 Must Have WordPress Plugins for Business Websites in 2023</p>
+                    <p class="text-sm lg:text-[12px] pt-2">24 Must Have WordPress Plugins for Business Websites in 2023</p>
+                </div>
+                <div class="p-5 w-full bg-white rounded-md">
+                    <h1 class="pt-5 text-2xl md:text-lg font-bold text-center lg:text-left">Deals & Coupons (view all)</h1>
+                    <div class="w-full flex flex-row justify-between">
+                        <img class="p-2 w-[100px] h-[100px]"
+                            src="./src/assest/fixdatabaseconnectionerror-th-150x150.png" alt="">
+                        <div class="text-gray-700 font-sans text-left text-[13px] lg:text-base">
+                            <h1 class="text-base lg:text-[14px] font-bold">Gator Website Builder Coupon</h1>
+                            <p class="text-sm lg:text-[12px]">Get 55% OFF on Gator Drag & Drop Website Builder by HostGator.</p>
+                        </div>
+                    </div>
+                    <div class="w-full flex flex-row justify-between">
+                        <img class="p-2 w-[100px] h-[100px]"
+                            src="./src/assest/fixdatabaseconnectionerror-th-150x150.png" alt="">
+                        <div class="text-gray-700 font-sans text-left text-[13px] lg:text-base">
+                            <h1 class="text-base lg:text-[14px] font-bold">ShowThemes CouponO</h1>
+                            <p class="text-sm lg:text-[12px]">Get 20% off on ShowThemes beautiful WordPress themes for event websites.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        //header
+        var toggelbtn = document.getElementById('toggelbtn');
+        var dbox = document.getElementById('menudiv');
+        var closeicon = document.getElementById('closeicon');
+        var listicon = document.getElementById('listicon');
+
+        function showmenu() {
+            dbox.classList.toggle('pointer-events-none')
+            dbox.classList.toggle('translate-y-10')
+            dbox.classList.toggle('opacity-0')
+            listicon.style.display = "none";
+            closeicon.style.display = "flex";
+        };
+
+        function hidemenu() {
+            dbox.classList.toggle('pointer-events-none')
+            dbox.classList.toggle('translate-y-10')
+            dbox.classList.toggle('opacity-0')
+            listicon.style.display = "flex";
+            closeicon.style.display = "none";
+            ebookbtn.style.color = "black";
+        }
+
+        const ddContainer = document.querySelectorAll('.drop-down-container')
+        ddContainer.forEach(item => {
+            const dd = item.querySelector('.drop-down')
+            const h = dd.scrollHeight
+            const svg = item.querySelector('svg')
+            const ddbtn = item.querySelector('.drop-down-btn')
+            ddbtn.addEventListener('click', (e) => {
+                e.stopPropagation()
+                if (window.innerWidth < 1024) {
+                    if (dd.style.height) {
+                        dd.style.height = null
+                    } else {
+                        dd.style.height = h + 'px'
+                    }
+                    svg.classList.toggle('rotate-180')
+                    dd.classList.toggle('pointer-events-none')
+                }
+            })
+        });
+
+        //blog pages
+        btn1 = document.getElementById("btn1");
+        btn2 = document.getElementById("btn2");
+        blog1 = document.getElementById("blog1");
+        blog2 = document.getElementById("blog2");
+        btn1.addEventListener('click', () => {
+            btn2.classList.remove('bg-[#ee4a03]');
+            btn2.classList.add('bg-gray-600');
+
+            btn1.classList.remove('bg-gray-600');
+            btn1.classList.add('bg-[#ee4a03]');
+
+            blog1.classList.remove('hidden');
+            blog1.classList.add('grid');
+
+            blog2.classList.remove('grid');
+            blog2.classList.add('hidden');
+        });
+
+        btn2.addEventListener('click', () => {
+            btn1.classList.remove('bg-[#ee4a03]');
+            btn1.classList.add('bg-gray-600');
+
+            btn2.classList.remove('bg-gray-600');
+            btn2.classList.add('bg-[#ee4a03]');
+
+            blog2.classList.remove('hidden');
+            blog2.classList.add('grid');
+
+            blog1.classList.remove('grid');
+            blog1.classList.add('hidden');
+        });
+
+        //scroll button
+        window.addEventListener("scroll", function () {
+            var button = document.getElementById("scrollToTopButton");
+            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollPosition > 200) {
+                button.classList.remove("hidden");
+            } else {
+                button.classList.add("hidden");
+            }
+        });
+
+        var scrollToTopButton = document.getElementById("scrollToTopButton");
+        scrollToTopButton.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+        function reply(elementId){
+            var commentBox = document.getElementById(elementId);
+            commentBox.classList.toggle('hidden');
+        }
+
+        function leaveComment(){
+            var targetSection = getElementById('comment');
+            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        }
+
+    </script>
+</body>
+
+</html>
