@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eBooks</title>
-    <link href="../dist/main.css" rel="stylesheet" />
+    <link href="./dist/main.css" rel="stylesheet" />
     <link rel="stylesheet" href="../src/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/05ffee228b.js" crossorigin="anonymous"></script>
@@ -197,6 +197,14 @@
 
     </header>
     <!--Header....end-->
+
+    <!--Scroll top start-->
+  <div id="scrollToTopButton" class="hidden fixed bottom-20 right-0 z-10 md:right-2 lg:right-6 transform -rotate-90">
+    <a href='#'
+        class="w-[50px] h-[50px] px-2 text-md text-center self-stretch flex items-center justify-center leading-none border rounded-[25px] text-white border-transparent bg-[#ee4a03] group hover:border-[#ee4a03] hover:text-[#ee4a03] hover:bg-white lg:mt-0">
+        <svg class="m-2 inline-block w-[18px] sm:w-[22px] fill-white group-hover:fill-[#ee4a03]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+  </div>
+<!--Scroll top end-->
 
     <section class="flex justify-center">
         <div id="courses" class="w-[80%] py-10">
@@ -803,83 +811,8 @@
         </div>
       </section>
   <!-- Footer Section ENDS -->
-    <script>
-        //header
-        var toggelbtn = document.getElementById('toggelbtn');
-        var dbox = document.getElementById('menudiv');
-        var closeicon = document.getElementById('closeicon');
-        var listicon = document.getElementById('listicon');
-
-        function showmenu() {
-            dbox.classList.toggle('pointer-events-none')
-            dbox.classList.toggle('translate-y-10')
-            dbox.classList.toggle('opacity-0')
-            listicon.style.display = "none";
-            closeicon.style.display = "flex";
-        };
-
-        function hidemenu() {
-            dbox.classList.toggle('pointer-events-none')
-            dbox.classList.toggle('translate-y-10')
-            dbox.classList.toggle('opacity-0')
-            listicon.style.display = "flex";
-            closeicon.style.display = "none";
-            ebookbtn.style.color = "black";
-        }
-
-        const ddContainer = document.querySelectorAll('.drop-down-container')
-        ddContainer.forEach(item => {
-            const dd = item.querySelector('.drop-down')
-            const h = dd.scrollHeight
-            const svg = item.querySelector('svg')
-            const ddbtn = item.querySelector('.drop-down-btn')
-            ddbtn.addEventListener('click', (e) => {
-                e.stopPropagation()
-                if (window.innerWidth < 1024) {
-                    if (dd.style.height) {
-                        dd.style.height = null
-                    } else {
-                        dd.style.height = h + 'px'
-                    }
-                    svg.classList.toggle('rotate-180')
-                    dd.classList.toggle('pointer-events-none')
-                }
-            })
-        });
-
-        //pages
-        btn1 = document.getElementById("btn1");
-        btn2 = document.getElementById("btn2");
-        blog1 = document.getElementById("blog1");
-        blog2 = document.getElementById("blog2");
-        btn1.addEventListener('click',()=>{
-          btn2.classList.remove('bg-[#ee4a03]');
-          btn2.classList.add('bg-gray-600');
-
-          btn1.classList.remove('bg-gray-600');
-          btn1.classList.add('bg-[#ee4a03]');
-
-          blog1.classList.remove('hidden');
-          blog1.classList.add('grid');
-
-          blog2.classList.remove('grid');
-          blog2.classList.add('hidden');
-        });
-
-        btn2.addEventListener('click',()=>{
-          btn1.classList.remove('bg-[#ee4a03]');
-          btn1.classList.add('bg-gray-600');
-
-          btn2.classList.remove('bg-gray-600');
-          btn2.classList.add('bg-[#ee4a03]');
-
-          blog2.classList.remove('hidden');
-          blog2.classList.add('grid');
-
-          blog1.classList.remove('grid');
-          blog1.classList.add('hidden');
-        });
-    </script>
+  <script src="./src/header.js"></script>
+  <script src="./src/blog_js.js"></script>
 </body>
 
 </html>

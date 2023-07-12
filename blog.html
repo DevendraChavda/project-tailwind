@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs</title>
-    <link href="../dist/main.css" rel="stylesheet" />
+    <link href="./dist/main.css" rel="stylesheet" />
     <link rel="stylesheet" href="../src/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/05ffee228b.js" crossorigin="anonymous"></script>
@@ -2336,147 +2336,8 @@
   <!-- Footer Section ENDS -->
 
 
-    <script>
-      //header
-      var toggelbtn = document.getElementById('toggelbtn');
-        var dbox = document.getElementById('menudiv');
-        var closeicon = document.getElementById('closeicon');
-        var listicon = document.getElementById('listicon');
-
-        function showmenu() {
-            dbox.classList.toggle('pointer-events-none')
-            dbox.classList.toggle('translate-y-10')
-            dbox.classList.toggle('opacity-0')
-            listicon.style.display = "none";
-            closeicon.style.display = "flex";
-        };
-
-        function hidemenu() {
-            dbox.classList.toggle('pointer-events-none')
-            dbox.classList.toggle('translate-y-10')
-            dbox.classList.toggle('opacity-0')
-            listicon.style.display = "flex";
-            closeicon.style.display = "none";
-            ebookbtn.style.color = "black";
-        }
-
-        const ddContainer = document.querySelectorAll('.drop-down-container')
-        ddContainer.forEach(item => {
-            const dd = item.querySelector('.drop-down')
-            const h = dd.scrollHeight
-            const svg = item.querySelector('svg')
-            const ddbtn = item.querySelector('.drop-down-btn')
-            ddbtn.addEventListener('click', (e) => {
-                e.stopPropagation()
-                if (window.innerWidth < 1024) {
-                    if (dd.style.height) {
-                        dd.style.height = null
-                    } else {
-                        dd.style.height = h + 'px'
-                    }
-                    svg.classList.toggle('rotate-180')
-                    dd.classList.toggle('pointer-events-none')
-                }
-            })
-        });
-
-        //blog pages
-        btn1 = document.getElementById("btn1");
-        btn2 = document.getElementById("btn2");
-        blog1 = document.getElementById("blog1");
-        blog2 = document.getElementById("blog2");
-        btn1.addEventListener('click',()=>{
-          btn2.classList.remove('bg-[#ee4a03]');
-          btn2.classList.add('bg-gray-600');
-
-          btn1.classList.remove('bg-gray-600');
-          btn1.classList.add('bg-[#ee4a03]');
-
-          blog1.classList.remove('hidden');
-          blog1.classList.add('grid');
-
-          blog2.classList.remove('grid');
-          blog2.classList.add('hidden');
-        });
-
-        btn2.addEventListener('click',()=>{
-          btn1.classList.remove('bg-[#ee4a03]');
-          btn1.classList.add('bg-gray-600');
-
-          btn2.classList.remove('bg-gray-600');
-          btn2.classList.add('bg-[#ee4a03]');
-
-          blog2.classList.remove('hidden');
-          blog2.classList.add('grid');
-
-          blog1.classList.remove('grid');
-          blog1.classList.add('hidden');
-        });
-
-        //scroll button
-        window.addEventListener("scroll", function() {
-            var button = document.getElementById("scrollToTopButton");
-            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (scrollPosition > 200) {
-                button.classList.remove("hidden");
-            } else {
-                button.classList.add("hidden");
-            }
-        });
-
-        var scrollToTopButton = document.getElementById("scrollToTopButton");
-        scrollToTopButton.addEventListener("click", function() {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        });
-
-        //
-        window.addEventListener('DOMContentLoaded', () => {
-      const menuBtn = document.querySelector('#menu-btn')
-      const dropdown = document.querySelector('#dropdown')
-
-      menuBtn.addEventListener('click', () => {
-        dropdown.classList.toggle('hidden')
-        dropdown.classList.toggle('flex')
-      })
-
-    })
-
-      //blog Categories
-
-      var Categories = document.getElementsByClassName('elem');
-
-      for(var i=0; i<Categories.length; i++){
-        Categories[i].addEventListener('click',function(event){
-          event.preventDefault();
-        var targetCategoryId = this.getAttribute('href');
-        var targetCategory = document.getElementById(targetCategoryId);
-        console.log(targetCategoryId);
-
-        var contantCategory = document.getElementsByClassName('categ');
-        console.log(contantCategory);
-
-        for(var j=0; j<contantCategory.length; j++){
-          if(contantCategory[j].classList.contains('grid')){
-            contantCategory[j].classList.remove("grid");
-            contantCategory[j].classList.add("hidden");
-          }
-        }
-
-        targetCategory.classList.remove('hidden');
-        targetCategory.classList.add('grid');
-
-        });
-      }
-
-      function articlePage() {
-        window.location.href = "/article-page.html";
-      }
-
-    </script>
+    <script src="./src/blog_js.js"></script>
+    <script src="./src/header.js"></script>
 </body>
 
 </html>

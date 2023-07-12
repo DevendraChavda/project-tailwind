@@ -7,124 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./dist/main.css" rel="stylesheet" />
+  <link href="./src/about_css.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  <style type="text/tailwindcss">
-    .about-Services-module-2 .wd_ourJourney {
-            @apply px-0 py-[145px];
-        }
-.about-Services-module-2 .wd_ourJourney-head {
-  @apply text-center max-w-[940px] mb-[75px] mx-auto;
-}
-.about-Services-module-2 .wd_ourJourney-caption {
-  @apply text-xs uppercase tracking-[2px] text-[#ee4a03] font-[normal] m-0;
-  font-family: "proxima_nova_rgbold";
-}
-.about-Services-module-2 .wd_ourJourney-timelineyear {
-  @apply text-[52px] font-[normal] bg-[url(../src/assest/timeline-shape.png)] bg-no-repeat bg-center bg-contain text-white w-60 h-60 leading-[240px] text-center ml-[92px];
-  font-family: "proxima_nova_rgbold";
-}
-.about-Services-module-2 .wd_ourJourney-timelineContent {
-  @apply shadow-[0_0_40px_rgb(0_0_0_/_15%)] max-w-[440px] ml-auto mr-[130px] p-[25px];
-}
-.about-Services-module-2 .wd_ourJourney-timelineContent h4 {
-  @apply m-0;
-}
-.about-Services-module-2 .wd_ourJourney-timelineRow {
-  @apply flex items-center bg-[url(../src/assest/dots-connector.png)] bg-no-repeat bg-center bg-[auto_22px] mb-[125px] last:mb-0;
-}
-.about-Services-module-2 .wd_ourJourney-timelineLeft,
-.about-Services-module-2 .wd_ourJourney-timelineRight {
-  @apply flex-[0_0_50%] max-w-[50%];
-}
-.about-Services-module-2 .wd_ourJourney-timeline:before {
-  @apply content-[""] w-[3px] h-full absolute z-[-1] mx-auto my-0 rounded-[75px] border-4 border-solid border-[#CBD6E2] top-0 inset-x-0;
-  background: #fff;
-}
-.about-Services-module-2 .wd_ourJourney-timeline {
-  @apply relative px-0 py-[75px];
-}
-.about-Services-module-2
-  .wd_ourJourney-timelineRow:nth-child(2n + 2)
-  .wd_ourJourney-timelineLeft {
-  @apply order-2;
-}
-.about-Services-module-2
-  .wd_ourJourney-timelineRow:nth-child(2n + 2)
-  .wd_ourJourney-timelineContent {
-  @apply ml-[130px] mr-0;
-}
-.about-Services-module-2
-  .wd_ourJourney-timelineRow:nth-child(2n + 2)
-  .wd_ourJourney-timelineyear {
-  @apply ml-auto mr-[92px];
-}
-@media screen and (max-width: 1199px) {
-  div.about-Services-module-2 .wd_ourJourney {
-    @apply px-0 py-[105px];
-  }
-}
-@media screen and (max-width: 991px) {
-  div.about-Services-module-2 .wd_ourJourney-timelineContent {
-    @apply mr-[115px] p-5;
-  }
-  div.about-Services-module-2
-    .wd_ourJourney-timelineRow:nth-child(2n + 2)
-    .wd_ourJourney-timelineContent {
-    @apply ml-[110px];
-  }
-  div.about-Services-module-2 .wd_ourJourney-timelineRow {
-    @apply mb-[75px];
-  }
-}
-@media screen and (max-width: 767px) {
-  .about-Services-module-2 .wd_ourJourney-timeline {
-    @apply relative p-0;
-  }
-  div.about-Services-module-2 .wd_ourJourney-timelineRow {
-    @apply flex-wrap;
-    background: none;
-  }
-  div.about-Services-module-2 .wd_ourJourney-timelineLeft,
-  div.about-Services-module-2 .wd_ourJourney-timelineRight {
-    @apply flex-[0_0_100%] max-w-full;
-  }
-  div.about-Services-module-2 .wd_ourJourney-timelineContent {
-    @apply text-center mr-auto pt-[120px] pb-5 px-5;
-    background: #fff;
-  }
-  .about-Services-module-2 .wd_ourJourney-timelineRight {
-    @apply -order-1 mb-[-120px] relative z-[2];
-  }
-  div.about-Services-module-2 .wd_ourJourney-timelineyear {
-    @apply text-center mx-auto;
-  }
-  div.about-Services-module-2
-    .wd_ourJourney-timelineRow:nth-child(2n + 2)
-    .wd_ourJourney-timelineContent {
-    @apply mx-auto;
-  }
-  div.about-Services-module-2
-    .wd_ourJourney-timelineRow:nth-child(2n + 2)
-    .wd_ourJourney-timelineyear {
-    @apply mx-auto;
-  }
-  div.about-Services-module-2 .wd_ourJourney-timeline:before {
-    @apply h-[85%] top-[5%];
-  }
-}
-@media screen and (max-width: 479px) {
-  .about-Services-module-2 .wd_ourJourney-timelineyear {
-    @apply text-[38px] w-[215px];
-  }
-  div.about-Services-module-2 .wd_ourJourney-timelineContent {
-    @apply pt-[110px] pb-5 px-5;
-  }
-  div.about-Services-module-2 .wd_ourJourney-head {
-    @apply mb-[25px];
-  }
-}
-
-    </style>
 </head>
 
 <body class="items-center w-full">
@@ -292,12 +177,6 @@
             <span class="relative text-[#ee4a03] transition duration-300 group-hover:text-white ease">Get a
               proposal</span>
           </a>
-
-
-
-
-
-
 
         </div>
       </div>
@@ -1195,49 +1074,7 @@
   <!-- Footer Section ENDS -->
 
 
-  <script>
-    var toggelbtn = document.getElementById('toggelbtn');
-    var dbox = document.getElementById('menudiv');
-    var closeicon = document.getElementById('closeicon');
-    var listicon = document.getElementById('listicon');
-
-    function showmenu() {
-      dbox.style.display = "flex";
-      dbox.style.flexDirection = 'col';
-      listicon.style.display = "none";
-      closeicon.style.display = "flex";
-    };
-
-    function hidemenu() {
-      dbox.style.display = "none";
-      listicon.style.display = "flex";
-      closeicon.style.display = "none";
-
-    }
-
-    //scroll button
-    window.addEventListener("scroll", function () {
-      var button = document.getElementById("scrollToTopButton");
-      var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-      if (scrollPosition > 200) {
-        button.classList.remove("hidden");
-      } else {
-        button.classList.add("hidden");
-      }
-    });
-
-    var scrollToTopButton = document.getElementById("scrollToTopButton");
-    scrollToTopButton.addEventListener("click", function () {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    });
-
-
-
-  </script>
+  <script src="./src/header.js" ></script>
 
 
 </body>
